@@ -11,8 +11,14 @@ class PronunciationSystem {
     }
 
     async loadAudioIndex() {
+        // 根据当前页面位置确定正确的路径
+        const currentPath = window.location.pathname;
+        const indexPath = currentPath.includes('/output/') ? '../audio/index.json' : 'audio/index.json';
+        
+        console.log('📂 尝试加载音频索引:', indexPath);
+        
         try {
-            const response = await fetch('audio/index.json');
+            const response = await fetch(indexPath);
             if (!response.ok) {
                 throw new Error('音频索引加载失败');
             }
@@ -46,6 +52,19 @@ class PronunciationSystem {
         }
 
         return null;
+    }
+
+    resolveAudioPath(audioPath) {
+        // 根据当前页面位置调整音频路径
+        const currentPath = window.location.pathname;
+        
+        // 如果在output目录下，需要返回上级目录
+        if (currentPath.includes('/output/')) {
+            return '../' + audioPath;
+        }
+        
+        // 如果在根目录或其他位置，使用相对路径
+        return audioPath;
     }
 
     async playAudio(audioPath) {
@@ -97,9 +116,10 @@ class PronunciationSystem {
             return false;
         }
 
-        console.log(`🎵 播放音频: ${audioPath}`);
+        const resolvedPath = this.resolveAudioPath(audioPath);
+        console.log(`🎵 播放音频: ${resolvedPath}`);
         try {
-            await this.playAudio(audioPath);
+            await this.playAudio(resolvedPath);
             return true;
         } catch (error) {
             console.error('❌ 发音失败:', error);
