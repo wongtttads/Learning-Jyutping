@@ -34,6 +34,35 @@ env/
 *.swo
 *~
 
+# 测试和临时文件
+test_audio.html
+test_pronunciation.html
+convert_audio.py
+audio/single_chars_backup/
+audio/single_chars_converted/
+audio/single_chars/*_converted.m4a
+audio/single_chars/*_ffmpeg.mp3
+audio/single_chars/*_test.mp3
+audio/single_chars/*_real.mp3
+
+# Trae IDE
+.trae/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
 # OS
 .DS_Store
 Thumbs.db

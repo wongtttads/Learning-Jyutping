@@ -60,7 +60,7 @@ class UIRenderer {
             <div class="character-card" data-char="${char.char}" data-pinyin="${char.jyutping}">
                 <div class="character-char">${char.char}</div>
                 <div class="character-pinyin">${char.jyutping}</div>
-                <div class="character-rank">排名: ${char.freq_rank}</div>
+                <div class="character-rank">排名: ${char.frequency_rank}</div>
                 <button class="pronunciation-btn" data-char="${char.char}" data-pinyin="${char.jyutping}">
                     <i class="fas fa-volume-up"></i>
                     <span>朗读</span>

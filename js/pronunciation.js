@@ -85,7 +85,19 @@ class PronunciationSystem {
                 this.currentAudio.currentTime = 0;
             }
 
+            // 检查文件扩展名，如果是.mp3但实际是AIFF-C格式，需要特殊处理
+            const isAiffFile = audioPath.toLowerCase().endsWith('.mp3');
+            console.log(`📁 文件扩展名检查: ${audioPath}, 可能是AIFF-C格式: ${isAiffFile}`);
+            
             this.currentAudio = new Audio(audioPath);
+            
+            // 如果是AIFF-C格式，尝试设置正确的MIME类型
+            if (isAiffFile) {
+                console.log('⚠️ 检测到可能是AIFF-C格式的MP3文件，尝试设置MIME类型');
+                // 注意：HTML5 Audio元素不支持直接设置MIME类型
+                // 但我们可以尝试其他方法
+            }
+            
             console.log(`🔊 音频对象创建完成`);
             
             this.currentAudio.onended = () => {
@@ -98,8 +110,16 @@ class PronunciationSystem {
                 console.error('❌ 音频播放错误:', error);
                 console.error('  错误类型:', error.type);
                 console.error('  错误目标:', error.target);
-                this.isSpeaking = false;
-                reject(error);
+                
+                // 如果是格式错误，尝试使用Web Speech API作为备选
+                if (error.type === 'media' || error.type === 'decode') {
+                    console.log('⚠️ 检测到媒体格式错误，尝试备选方案');
+                    this.isSpeaking = false;
+                    reject(new Error('MEDIA_FORMAT_ERROR'));
+                } else {
+                    this.isSpeaking = false;
+                    reject(error);
+                }
             };
 
             this.currentAudio.oncanplay = () => {
@@ -128,8 +148,16 @@ class PronunciationSystem {
                 console.error('❌ 音频播放失败:', error);
                 console.error('  错误名称:', error.name);
                 console.error('  错误消息:', error.message);
-                this.isSpeaking = false;
-                reject(error);
+                
+                // 如果是NotAllowedError，说明需要用户交互
+                if (error.name === 'NotAllowedError') {
+                    console.log('⚠️ 浏览器阻止自动播放，需要用户交互');
+                    this.isSpeaking = false;
+                    reject(new Error('AUTOPLAY_BLOCKED'));
+                } else {
+                    this.isSpeaking = false;
+                    reject(error);
+                }
             });
 
             this.isSpeaking = true;
@@ -148,7 +176,7 @@ class PronunciationSystem {
 
         if (!audioPath) {
             console.warn(`⚠️ 未找到音频: ${char} (${jyutping})`);
-            return false;
+            return this.speakWithWebSpeech(char, jyutping);
         }
 
         const resolvedPath = this.resolveAudioPath(audioPath);
@@ -158,8 +186,49 @@ class PronunciationSystem {
             return true;
         } catch (error) {
             console.error('❌ 发音失败:', error);
+            
+            // 根据错误类型选择备选方案
+            if (error.message === 'MEDIA_FORMAT_ERROR' || error.message === 'AUTOPLAY_BLOCKED') {
+                console.log('🔄 使用Web Speech API作为备选方案');
+                return this.speakWithWebSpeech(char, jyutping);
+            }
+            
             return false;
         }
+    }
+
+    async speakWithWebSpeech(char, jyutping) {
+        console.log(`🗣️ 使用Web Speech API: ${char} (${jyutping})`);
+        
+        if (!('speechSynthesis' in window)) {
+            console.error('❌ Web Speech API不可用');
+            return false;
+        }
+
+        return new Promise((resolve) => {
+            // 停止当前任何语音
+            speechSynthesis.cancel();
+            
+            const utterance = new SpeechSynthesisUtterance(`${char} ${jyutping}`);
+            utterance.lang = 'zh-CN'; // 使用中文语音
+            utterance.rate = 0.8; // 稍微慢一点
+            
+            utterance.onend = () => {
+                console.log('✅ Web Speech API发音完成');
+                this.isSpeaking = false;
+                resolve(true);
+            };
+            
+            utterance.onerror = (error) => {
+                console.error('❌ Web Speech API错误:', error);
+                this.isSpeaking = false;
+                resolve(false);
+            };
+            
+            this.isSpeaking = true;
+            speechSynthesis.speak(utterance);
+            console.log('▶️ Web Speech API开始发音');
+        });
     }
 
     stop() {
