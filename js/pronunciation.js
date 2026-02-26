@@ -85,18 +85,11 @@ class PronunciationSystem {
                 this.currentAudio.currentTime = 0;
             }
 
-            // 检查文件扩展名，如果是.mp3但实际是AIFF-C格式，需要特殊处理
-            const isAiffFile = audioPath.toLowerCase().endsWith('.mp3');
-            console.log(`📁 文件扩展名检查: ${audioPath}, 可能是AIFF-C格式: ${isAiffFile}`);
+            // 注意：我们已经将所有AIFF-C文件转换为标准MP3格式
+            // 所以不再需要特殊处理
+            console.log(`📁 播放音频文件: ${audioPath}`);
             
             this.currentAudio = new Audio(audioPath);
-            
-            // 如果是AIFF-C格式，尝试设置正确的MIME类型
-            if (isAiffFile) {
-                console.log('⚠️ 检测到可能是AIFF-C格式的MP3文件，尝试设置MIME类型');
-                // 注意：HTML5 Audio元素不支持直接设置MIME类型
-                // 但我们可以尝试其他方法
-            }
             
             console.log(`🔊 音频对象创建完成`);
             
