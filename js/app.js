@@ -118,32 +118,15 @@ class App {
 
         const errorDiv = document.createElement('div');
         errorDiv.className = 'error-message';
-        errorDiv.style.cssText = `
-            position: fixed;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #f44336;
-            color: white;
-            padding: 15px 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            z-index: 10000;
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-            animation: slideDown 0.3s ease;
-        `;
         errorDiv.innerHTML = `
-            <div style="display: flex; align-items: center; gap: 10px;">
-                <i class="fas fa-exclamation-triangle"></i>
-                <span>${message}</span>
-            </div>
+            <i class="fas fa-exclamation-triangle"></i>
+            <span>${message}</span>
         `;
         
         document.body.appendChild(errorDiv);
         
         setTimeout(() => {
-            errorDiv.style.opacity = '0';
+            errorDiv.style.animation = 'fadeOut 0.3s ease forwards';
             setTimeout(() => errorDiv.remove(), 300);
         }, 3000);
     }
