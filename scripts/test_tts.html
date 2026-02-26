@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>粤语TTS测试</title>
+</head>
+<body>
+    <h1>粤语TTS功能测试</h1>
+    
+    <div style="margin: 20px; padding: 20px; border: 1px solid #ccc;">
+        <h3>测试1: Web Speech API (浏览器原生)</h3>
+        <button onclick="testSpeechAPI()">测试朗读"一 jat1"</button>
+        <div id="speech-api-result" style="margin-top: 10px; color: #666;"></div>
+    </div>
+    
+    <div style="margin: 20px; padding: 20px; border: 1px solid #ccc;">
+        <h3>测试2: 音频文件播放</h3>
+        <button onclick="testAudioPlayback()">测试播放预设音频</button>
+        <audio id="test-audio" controls style="display: none;">
+            <source src="https://www.soundjay.com/buttons/button-3.mp3" type="audio/mp3">
+        </audio>
+        <div id="audio-result" style="margin-top: 10px; color: #666;"></div>
+    </div>
+    
+    <div style="margin: 20px; padding: 20px; border: 1px solid #ccc;">
+        <h3>测试3: 检查浏览器TTS支持</h3>
+        <button onclick="checkTTSSupport()">检查TTS支持情况</button>
+        <div id="tts-support" style="margin-top: 10px; color: #666;"></div>
+    </div>
+    
+    <script>
+        function testSpeechAPI() {
+            const resultDiv = document.getElementById('speech-api-result');
+            
+            if (!('speechSynthesis' in window)) {
+                resultDiv.innerHTML = '❌ 浏览器不支持Web Speech API';
+                return;
+            }
+            
+            // 停止当前任何语音
+            speechSynthesis.cancel();
+            
+            // 创建语音实例
+            const utterance = new SpeechSynthesisUtterance('一 jat1');
+            
+            // 尝试设置粤语
+            utterance.lang = 'zh-HK'; // 粤语（香港）
+            utterance.rate = 0.8; // 稍慢速度
+            
+            utterance.onstart = function() {
+                resultDiv.innerHTML = '🔊 正在朗读...';
+            };
+            
+            utterance.onend = function() {
+                resultDiv.innerHTML = '✅ 朗读完成';
+            };
+            
+            utterance.onerror = function(event) {
+                resultDiv.innerHTML = '❌ 朗读出错: ' + event.error;
+            };
+            
+            // 获取可用语音
+            const voices = speechSynthesis.getVoices();
+            console.log('可用语音:', voices);
+            
+            // 尝试找到粤语语音
+            const cantoneseVoice = voices.find(voice => 
+                voice.lang.includes('zh-HK') || 
+                voice.lang.includes('yue') ||
+                voice.name.toLowerCase().includes('cantonese')
+            );
+            
+            if (cantoneseVoice) {
+                utterance.voice = cantoneseVoice;
+                resultDiv.innerHTML = '✅ 找到粤语语音: ' + cantoneseVoice.name;
+            } else {
+                resultDiv.innerHTML = '⚠️ 未找到粤语语音，使用默认语音';
+            }
+            
+            speechSynthesis.speak(utterance);
+        }
+        
+        function testAudioPlayback() {
+            const audio = document.getElementById('test-audio');
+            const resultDiv = document.getElementById('audio-result');
+            
+            audio.play().then(() => {
+                resultDiv.innerHTML = '✅ 音频播放成功';
+            }).catch(error => {
+                resultDiv.innerHTML = '❌ 音频播放失败: ' + error.message;
+            });
+        }
+        
+        function checkTTSSupport() {
+            const resultDiv = document.getElementById('tts-support');
+            let html = '';
+            
+            // 检查Web Speech API
+            if ('speechSynthesis' in window) {
+                html += '✅ 支持Web Speech API<br>';
+                
+                const voices = speechSynthesis.getVoices();
+                html += `可用语音数量: ${voices.length}<br>`;
+                
+                // 检查粤语语音
+                const cantoneseVoices = voices.filter(voice => 
+                    voice.lang.includes('zh-HK') || 
+                    voice.lang.includes('yue') ||
+                    voice.name.toLowerCase().includes('cantonese')
+                );
+                
+                if (cantoneseVoices.length > 0) {
+                    html += `✅ 找到 ${cantoneseVoices.length} 个粤语语音:<br>`;
+                    cantoneseVoices.forEach(voice => {
+                        html += `&nbsp;&nbsp;- ${voice.name} (${voice.lang})<br>`;
+                    });
+                } else {
+                    html += '❌ 未找到粤语语音<br>';
+                    
+                    // 显示所有可用语音
+                    html += '所有可用语音:<br>';
+                    voices.slice(0, 10).forEach(voice => {
+                        html += `&nbsp;&nbsp;- ${voice.name} (${voice.lang})<br>`;
+                    });
+                    if (voices.length > 10) {
+                        html += `&nbsp;&nbsp;... 还有 ${voices.length - 10} 个语音<br>`;
+                    }
+                }
+            } else {
+                html += '❌ 不支持Web Speech API<br>';
+            }
+            
+            // 检查Audio API
+            if ('Audio' in window) {
+                html += '✅ 支持Audio API<br>';
+            } else {
+                html += '❌ 不支持Audio API<br>';
+            }
+            
+            resultDiv.innerHTML = html;
+        }
+        
+        // 页面加载时检查语音
+        window.addEventListener('load', function() {
+            // 某些浏览器需要触发一次getVoices才能加载语音列表
+            speechSynthesis.getVoices();
+            
+            // 延迟一点再检查，确保语音加载完成
+            setTimeout(checkTTSSupport, 1000);
+        });
+    </script>
+</body>
+</html>

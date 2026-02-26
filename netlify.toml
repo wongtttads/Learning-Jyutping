@@ -1,0 +1,16 @@
+[build]
+  publish = "output"
+  command = "pip install -r requirements.txt && python scripts/build_master_db.py && python scripts/generate_char_data.py && python scripts/generate_example_words_v3.py"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/server/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build.environment]
+  PYTHON_VERSION = "3.10"
