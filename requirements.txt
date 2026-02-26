@@ -1,5 +1,0 @@
-ToJyutping
-requests
-pandas
-flask
-flask-cors

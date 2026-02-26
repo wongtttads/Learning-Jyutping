@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>粤语拼音学习系统</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <h1 class="header-title">粤语拼音学习系统</h1>
+            <p class="header-subtitle">基于《通用规范汉字表》8105字 · 标准粤拼方案</p>
+            <div class="header-stats">
+                <div class="stat-card">
+                    <div class="stat-value" id="total-chars">8105</div>
+                    <div class="stat-label">总汉字数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="total-chapters">10</div>
+                    <div class="stat-label">学习章节</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="audio-count">7990</div>
+                    <div class="stat-label">发音音频</div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div id="chapters-container" class="chapters-container">
+                <div class="loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>加载中...</p>
+                </div>
+            </div>
+
+            <div id="chapter-content" class="chapter-content hidden">
+                <div class="chapter-header">
+                    <h2 id="chapter-title"></h2>
+                    <button id="back-btn" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> 返回章节列表
+                    </button>
+                </div>
+                <div id="characters-grid" class="characters-grid"></div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p><i class="fas fa-info-circle"></i> 本系统基于《通用规范汉字表》全量8105字构建，拼音采用香港语言学学会官方粤拼方案 (Jyutping)</p>
+            <p>点击发音按钮即可听到标准粤语发音 · 建议按章节顺序每日学习80-100字</p>
+        </footer>
+    </div>
+
+    <script src="js/data-manager.js"></script>
+    <script src="js/pronunciation.js"></script>
+    <script src="js/ui-renderer.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

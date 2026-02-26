@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "title": "第 1 章",
+        "start_rank": 1,
+        "end_rank": 811,
+        "char_count": 811
+    },
+    {
+        "id": 2,
+        "title": "第 2 章",
+        "start_rank": 812,
+        "end_rank": 1622,
+        "char_count": 811
+    },
+    {
+        "id": 3,
+        "title": "第 3 章",
+        "start_rank": 1623,
+        "end_rank": 2433,
+        "char_count": 811
+    },
+    {
+        "id": 4,
+        "title": "第 4 章",
+        "start_rank": 2434,
+        "end_rank": 3244,
+        "char_count": 811
+    },
+    {
+        "id": 5,
+        "title": "第 5 章",
+        "start_rank": 3245,
+        "end_rank": 4055,
+        "char_count": 811
+    },
+    {
+        "id": 6,
+        "title": "第 6 章",
+        "start_rank": 4056,
+        "end_rank": 4866,
+        "char_count": 831
+    },
+    {
+        "id": 7,
+        "title": "第 7 章",
+        "start_rank": 4867,
+        "end_rank": 5677,
+        "char_count": 811
+    },
+    {
+        "id": 8,
+        "title": "第 8 章",
+        "start_rank": 5678,
+        "end_rank": 6488,
+        "char_count": 811
+    },
+    {
+        "id": 9,
+        "title": "第 9 章",
+        "start_rank": 6489,
+        "end_rank": 7299,
+        "char_count": 811
+    },
+    {
+        "id": 10,
+        "title": "第 10 章",
+        "start_rank": 7300,
+        "end_rank": 8105,
+        "char_count": 806
+    }
+]
