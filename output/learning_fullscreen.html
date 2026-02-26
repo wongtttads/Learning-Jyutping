@@ -65587,7 +65587,7 @@
                     event.stopPropagation();
                     const char = button.dataset.char;
                     const pinyin = button.dataset.pinyin;
-                    speakCharacter(char, pinyin, button);
+                    playPronunciation(char, pinyin, button);
                 });
             });
             
@@ -65728,7 +65728,7 @@
         let isSpeaking = false;
         let speakTimeout = null;
         
-        async function speakCharacter(char, pinyin, button) {
+        async function playPronunciation(char, pinyin, button) {
             // 防止重复调用
             if (isSpeaking) {
                 console.log('正在朗读中，忽略重复调用');
@@ -65748,8 +65748,8 @@
             
             try {
                 // 调用预录制音频发音系统
-                if (window.speakCharacter) {
-                    await window.speakCharacter(char, pinyin);
+                if (window.cantonesePronunciation) {
+                    await window.cantonesePronunciation.speak(char, pinyin);
                 } else {
                     throw new Error('发音系统未初始化');
                 }
