@@ -65790,11 +65790,6 @@
                 window.currentSpeakingButton = null;
             }
             
-            // 停止服务器端的朗读
-            fetch('http://localhost:5001/api/stop', {
-                method: 'POST'
-            }).catch(console.error);
-            
             // 停止Web Speech API
             if ('speechSynthesis' in window) {
                 speechSynthesis.cancel();
