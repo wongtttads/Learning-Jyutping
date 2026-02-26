@@ -440,6 +440,8 @@
             </div>
         </main>
         
+        <script src="scripts/pronunciation_audio.js"></script>
+        
         <footer class="footer">
             <p><i class="fas fa-info-circle"></i> 本系统基于《通用规范汉字表》全量8105字构建，拼音采用香港语言学学会官方粤拼方案 (Jyutping)</p>
             <p>生成时间：<span id="generation-time">2026-02-25</span> · 项目版本：1.0 · 数据状态：7990字标准拼音 + 115字待补充</p>
@@ -65745,10 +65747,11 @@
             }
             
             try {
-                
-                
-                if (!response.ok) {
-                    throw new Error('发音请求失败');
+                // 调用预录制音频发音系统
+                if (window.speakCharacter) {
+                    await window.speakCharacter(char, pinyin);
+                } else {
+                    throw new Error('发音系统未初始化');
                 }
                 
                 // 3秒后恢复按钮状态
@@ -65767,19 +65770,13 @@
             } catch (error) {
                 console.error('发音错误:', error);
                 
-                // 备选方案：使用Web Speech API
-                if ('speechSynthesis' in window) {
-                    const utterance = new SpeechSynthesisUtterance(`${char} ${pinyin}`);
-                    utterance.lang = 'zh-HK';
-                    speechSynthesis.speak(utterance);
-                } else {
-                    alert(`汉字: ${char}\n粤拼: ${pinyin}\n\n请手动朗读`);
-                }
-                
                 if (button) {
                     button.classList.remove('playing');
                     window.currentSpeakingButton = null;
                 }
+                
+                // 重置状态，允许下次点击
+                isSpeaking = false;
             }
         }
         
@@ -65790,12 +65787,15 @@
                 window.currentSpeakingButton = null;
             }
             
-            // 停止Web Speech API
-            if ('speechSynthesis' in window) {
-                speechSynthesis.cancel();
+            // 停止发音系统
+            if (window.cantonesePronunciation) {
+                window.cantonesePronunciation.stop();
             }
+            
+            // 重置状态
+            isSpeaking = false;
         }
-        
+
         // 显示汉字详细信息
         function showCharacterInfo(char, pinyin) {
             alert(`汉字: ${char}\n粤拼: ${pinyin}\n\n点击确定继续学习`);
