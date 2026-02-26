@@ -61,7 +61,15 @@ class App {
                 throw new Error(`章节 ${chapterId} 不存在`);
             }
 
+            console.log(`📊 章节信息: ${chapter.title}, 字符数: ${chapter.char_count}`);
+            
             const characters = await window.dataManager.getChapterCharacters(chapterId);
+            console.log(`📋 加载到的字符数: ${characters.length}`);
+            
+            if (characters.length > 0) {
+                console.log(`📝 前3个字符:`, characters.slice(0, 3));
+            }
+
             this.currentChapter = chapter;
             this.currentCharacters = characters;
 

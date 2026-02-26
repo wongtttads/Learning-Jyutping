@@ -78,7 +78,7 @@ class DataManager {
                 throw new Error(`第${chapterId}章汉字数据加载失败`);
             }
             const data = await response.json();
-            this.characters = data.characters || [];
+            this.characters = Array.isArray(data) ? data : (data.characters || []);
             console.log(`✅ 第${chapterId}章汉字数据加载成功: ${this.characters.length} 个`);
             return this.characters;
         } catch (error) {
