@@ -101,6 +101,10 @@ body {
     gap: 20px;
 }
 
+.chapters-container:not(.hidden) {
+    display: grid !important;
+}
+
 .chapter-card {
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     border-radius: 15px;
@@ -141,6 +145,10 @@ body {
 
 .chapter-content {
     animation: fadeIn 0.3s ease;
+}
+
+.chapter-content:not(.hidden) {
+    display: block !important;
 }
 
 .hidden {
