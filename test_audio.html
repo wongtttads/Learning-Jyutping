@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试音频播放 - 粤语拼音学习系统</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 16px;
+        }
+        
+        .status {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            background: #f0f0f0;
+        }
+        
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+        .status.info {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+        
+        .audio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .audio-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .audio-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .char-display {
+            font-size: 48px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .pinyin-display {
+            font-size: 24px;
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .play-button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .play-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .play-button:active {
+            transform: scale(0.98);
+        }
+        
+        .play-button.playing {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        
+        .play-button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .audio-info {
+            margin-top: 15px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .audio-info div {
+            margin: 5px 0;
+        }
+        
+        .controls {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .controls h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        .control-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .control-btn {
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        
+        .control-btn:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+        
+        .control-btn:active {
+            transform: translateY(0);
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 40px;
+        }
+        
+        .loading.active {
+            display: block;
+        }
+        
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎵 测试音频播放</h1>
+            <p>测试预录制粤语发音音频的播放效果</p>
+            
+            <div id="status" class="status info">
+                <i class="fas fa-info-circle"></i> 正在加载音频索引...
+            </div>
+        </div>
+        
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>正在加载音频数据...</p>
+        </div>
+        
+        <div id="audio-grid" class="audio-grid" style="display: none;">
+        </div>
+        
+        <div class="controls">
+            <h2>🎛️ 控制面板</h2>
+            <div class="control-buttons">
+                <button class="control-btn" onclick="playAll()">
+                    <i class="fas fa-play"></i> 全部播放
+                </button>
+                <button class="control-btn" onclick="stopAll()">
+                    <i class="fas fa-stop"></i> 全部停止
+                </button>
+                <button class="control-btn" onclick="refreshData()">
+                    <i class="fas fa-sync"></i> 刷新数据
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="scripts/pronunciation_audio.js"></script>
+    <script>
+        let audioIndex = null;
+        let currentAudio = null;
+        
+        async function loadAudioIndex() {
+            const statusDiv = document.getElementById('status');
+            const loadingDiv = document.getElementById('loading');
+            const audioGrid = document.getElementById('audio-grid');
+            
+            try {
+                loadingDiv.classList.add('active');
+                
+                const response = await fetch('audio/index.json');
+                
+                if (!response.ok) {
+                    throw new Error('音频索引文件加载失败');
+                }
+                
+                audioIndex = await response.json();
+                
+                statusDiv.className = 'status success';
+                statusDiv.innerHTML = `
+                    <i class="fas fa-check-circle"></i> 
+                    成功加载 ${audioIndex.total_count} 个音频文件
+                    (单音字: ${audioIndex.single_chars_count}, 多音字: ${audioIndex.multi_chars_count})
+                `;
+                
+                displayAudioCards();
+                loadingDiv.classList.remove('active');
+                audioGrid.style.display = 'grid';
+                
+            } catch (error) {
+                console.error('加载音频索引失败:', error);
+                statusDiv.className = 'status error';
+                statusDiv.innerHTML = `
+                    <i class="fas fa-exclamation-circle"></i> 
+                    加载失败: ${error.message}
+                    <br><br>
+                    请先运行测试音频生成脚本:
+                    <code>python scripts/test_audio_generation.py</code>
+                `;
+                loadingDiv.classList.remove('active');
+            }
+        }
+        
+        function displayAudioCards() {
+            const audioGrid = document.getElementById('audio-grid');
+            audioGrid.innerHTML = '';
+            
+            const allChars = [
+                ...audioIndex.single_chars,
+                ...audioIndex.multi_chars
+            ];
+            
+            allChars.forEach((item, index) => {
+                const card = document.createElement('div');
+                card.className = 'audio-card';
+                card.innerHTML = `
+                    <div class="char-display">${item.char}</div>
+                    <div class="pinyin-display">${item.jyutping}</div>
+                    <button class="play-button" onclick="playAudio('${item.audio_path}', this, '${item.char}', '${item.jyutping}')">
+                        <i class="fas fa-volume-up"></i> 播放
+                    </button>
+                    <div class="audio-info">
+                        <div><strong>类型:</strong> ${item.type === 'single' ? '单音字' : '多音字'}</div>
+                        <div><strong>路径:</strong> ${item.audio_path}</div>
+                    </div>
+                `;
+                audioGrid.appendChild(card);
+            });
+        }
+        
+        function playAudio(audioPath, button, char, jyutping) {
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+            }
+            
+            const allButtons = document.querySelectorAll('.play-button');
+            allButtons.forEach(btn => {
+                btn.classList.remove('playing');
+                btn.innerHTML = '<i class="fas fa-volume-up"></i> 播放';
+            });
+            
+            currentAudio = new Audio(audioPath);
+            
+            button.classList.add('playing');
+            button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 播放中...';
+            
+            currentAudio.onended = () => {
+                button.classList.remove('playing');
+                button.innerHTML = '<i class="fas fa-volume-up"></i> 播放';
+                currentAudio = null;
+            };
+            
+            currentAudio.onerror = () => {
+                button.classList.remove('playing');
+                button.innerHTML = '<i class="fas fa-exclamation-triangle"></i> 播放失败';
+                currentAudio = null;
+                
+                setTimeout(() => {
+                    button.innerHTML = '<i class="fas fa-volume-up"></i> 播放';
+                }, 2000);
+            };
+            
+            currentAudio.play();
+        }
+        
+        function playAll() {
+            const buttons = document.querySelectorAll('.play-button');
+            let delay = 0;
+            
+            buttons.forEach((button, index) => {
+                setTimeout(() => {
+                    button.click();
+                }, delay);
+                delay += 2000; // 每个音频间隔2秒
+            });
+        }
+        
+        function stopAll() {
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+                currentAudio = null;
+            }
+            
+            const allButtons = document.querySelectorAll('.play-button');
+            allButtons.forEach(btn => {
+                btn.classList.remove('playing');
+                btn.innerHTML = '<i class="fas fa-volume-up"></i> 播放';
+            });
+        }
+        
+        function refreshData() {
+            stopAll();
+            loadAudioIndex();
+        }
+        
+        window.addEventListener('load', loadAudioIndex);
+    </script>
+</body>
+</html>

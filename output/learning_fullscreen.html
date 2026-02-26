@@ -65745,16 +65745,7 @@
             }
             
             try {
-                const response = await fetch('http://localhost:5001/api/speak', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        text: `${char} ${pinyin}`,
-                        voice: 'Sinji'
-                    })
-                });
+                
                 
                 if (!response.ok) {
                     throw new Error('发音请求失败');

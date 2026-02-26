@@ -50,6 +50,7 @@ jobs:
           cp -r output/* _site/
           cp -r data _site/
           cp -r scripts _site/
+          cp -r audio _site/
           
           # 复制HTML文件
           cp *.html _site/ 2>/dev/null || true
@@ -103,8 +104,8 @@ jobs:
           </html>
           EOF
           
-          # 更新发音脚本以使用Web Speech API
-          cp scripts/pronunciation_standalone.js _site/scripts/pronunciation.js
+          # 更新发音脚本以使用预录制音频
+          cp scripts/pronunciation_audio.js _site/scripts/pronunciation.js
           
           # 创建.nojekyll文件（防止GitHub Pages处理）
           touch _site/.nojekyll
