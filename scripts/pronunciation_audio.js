@@ -13,8 +13,14 @@ class CantonesePronunciation {
     }
     
     async loadAudioIndex() {
+        // 根据当前页面位置确定正确的路径
+        const currentPath = window.location.pathname;
+        const indexPath = currentPath.includes('/output/') ? '../audio/index.json' : 'audio/index.json';
+        
+        console.log('📂 尝试加载音频索引:', indexPath);
+        
         try {
-            const response = await fetch('audio/index.json');
+            const response = await fetch(indexPath);
             if (response.ok) {
                 this.audioIndex = await response.json();
                 console.log('✅ 音频索引加载成功');
