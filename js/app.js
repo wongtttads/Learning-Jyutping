@@ -42,6 +42,7 @@ class App {
         try {
             const chapters = window.dataManager.getAllChapters();
             window.uiRenderer.renderChapters(chapters);
+            window.uiRenderer.showChaptersView();
             window.uiRenderer.hideLoading();
         } catch (error) {
             console.error('❌ 章节加载失败:', error);
@@ -107,7 +108,9 @@ class App {
         console.log('🔙 返回章节列表');
         this.currentChapter = null;
         this.currentCharacters = [];
-        window.uiRenderer.showChaptersView();
+        
+        // 重新加载章节列表
+        this.loadChapters();
     }
 
     showError(message) {
