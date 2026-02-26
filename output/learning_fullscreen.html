@@ -65725,18 +65725,23 @@
         }
         
         // 朗读汉字
-        let isSpeaking = false;
-        let speakTimeout = null;
-        
         async function playPronunciation(char, pinyin, button) {
-            // 防止重复调用
-            if (isSpeaking) {
-                console.log('正在朗读中，忽略重复调用');
+            console.log(`🎯 播放按钮点击: ${char} (${pinyin})`);
+            
+            // 检查发音系统是否初始化
+            if (!window.cantonesePronunciation) {
+                console.error('❌ 发音系统未初始化');
+                alert('发音系统未初始化，请刷新页面重试');
                 return;
             }
             
-            isSpeaking = true;
+            // 检查是否正在朗读
+            if (window.cantonesePronunciation.isSpeaking) {
+                console.log('⏳ 正在朗读中，先停止当前朗读');
+                window.cantonesePronunciation.stop();
+            }
             
+            // 更新按钮状态
             if (window.currentSpeakingButton) {
                 window.currentSpeakingButton.classList.remove('playing');
             }
@@ -65748,35 +65753,27 @@
             
             try {
                 // 调用预录制音频发音系统
-                if (window.cantonesePronunciation) {
-                    await window.cantonesePronunciation.speak(char, pinyin);
-                } else {
-                    throw new Error('发音系统未初始化');
-                }
+                console.log('📢 调用发音系统...');
+                const result = await window.cantonesePronunciation.speak(char, pinyin);
+                console.log('✅ 发音完成:', result);
                 
-                // 3秒后恢复按钮状态
-                if (speakTimeout) {
-                    clearTimeout(speakTimeout);
-                }
-                
-                speakTimeout = setTimeout(() => {
-                    isSpeaking = false;
+                // 播放完成后恢复按钮状态
+                setTimeout(() => {
                     if (button) {
                         button.classList.remove('playing');
+                    }
+                    if (window.currentSpeakingButton === button) {
                         window.currentSpeakingButton = null;
                     }
-                }, 3000);
+                }, 500);
                 
             } catch (error) {
-                console.error('发音错误:', error);
+                console.error('❌ 发音错误:', error);
                 
                 if (button) {
                     button.classList.remove('playing');
-                    window.currentSpeakingButton = null;
                 }
-                
-                // 重置状态，允许下次点击
-                isSpeaking = false;
+                window.currentSpeakingButton = null;
             }
         }
         

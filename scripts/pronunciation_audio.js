@@ -35,6 +35,7 @@ class CantonesePronunciation {
     
     findAudioPath(char, jyutping) {
         if (!this.audioIndex) {
+            console.log('⚠️ 音频索引未加载');
             return null;
         }
         
@@ -44,7 +45,7 @@ class CantonesePronunciation {
         );
         
         if (multiChar) {
-            return multiChar.audio_path;
+            return this.resolveAudioPath(multiChar.audio_path);
         }
         
         // 再查找单音字
@@ -53,14 +54,28 @@ class CantonesePronunciation {
         );
         
         if (singleChar) {
-            return singleChar.audio_path;
+            return this.resolveAudioPath(singleChar.audio_path);
         }
         
+        console.log(`⚠️ 未找到音频: ${char} (${jyutping})`);
         return null;
     }
     
+    resolveAudioPath(audioPath) {
+        // 根据当前页面位置调整音频路径
+        const currentPath = window.location.pathname;
+        
+        // 如果在output目录下，需要返回上级目录
+        if (currentPath.includes('/output/')) {
+            return '../' + audioPath;
+        }
+        
+        // 如果在根目录或其他位置，使用相对路径
+        return audioPath;
+    }
+    
     async playAudio(audioPath) {
-        return new Promise((resolve, reject) => {
+        return new Promise(async (resolve, reject) => {
             const audio = new Audio(audioPath);
             
             audio.onended = () => {
@@ -76,7 +91,14 @@ class CantonesePronunciation {
                 reject(error);
             };
             
-            audio.play();
+            try {
+                await audio.play();
+            } catch (error) {
+                console.error('音频播放失败:', error);
+                this.isSpeaking = false;
+                this.hideSpeakingStatus();
+                reject(error);
+            }
         });
     }
     
@@ -125,10 +147,14 @@ class CantonesePronunciation {
     }
     
     async speak(char, jyutping) {
+        console.log(`🔊 发音请求: ${char} (${jyutping})`);
+        
         if (this.isSpeaking) {
             console.log('正在朗读中，忽略重复调用');
             return false;
         }
+        
+        this.isSpeaking = true;
         
         try {
             this.showSpeakingStatus(char, jyutping);
@@ -138,15 +164,17 @@ class CantonesePronunciation {
             
             if (audioPath) {
                 console.log('🎵 使用预录制音频:', audioPath);
-                return await this.playAudio(audioPath);
+                const result = await this.playAudio(audioPath);
+                return result;
             } else {
                 console.log('⚠️ 未找到预录制音频，使用Web Speech API');
                 const text = `${char} ${jyutping}`;
-                return await this.speakWithWebSpeech(text);
+                const result = await this.speakWithWebSpeech(text);
+                return result;
             }
             
         } catch (error) {
-            console.error('发音错误:', error);
+            console.error('❌ 发音错误:', error);
             this.showFallbackMessage(char, jyutping);
             this.hideSpeakingStatus();
             this.isSpeaking = false;
