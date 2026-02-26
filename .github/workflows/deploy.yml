@@ -104,7 +104,7 @@ jobs:
           EOF
           
           # 更新发音脚本以使用Web Speech API
-          cp scripts/pronunciation_enhanced.js _site/scripts/pronunciation.js
+          cp scripts/pronunciation_standalone.js _site/scripts/pronunciation.js
           
           # 创建.nojekyll文件（防止GitHub Pages处理）
           touch _site/.nojekyll
