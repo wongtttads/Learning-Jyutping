@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>返回按钮调试</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .hidden {
+            display: none !important;
+        }
+        .container {
+            border: 2px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
+            min-height: 100px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .debug-info {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-family: monospace;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>返回按钮调试</h1>
+    
+    <div class="container" id="chapters-container">
+        <h2>章节列表容器</h2>
+        <p>这个应该显示章节列表</p>
+    </div>
+    
+    <div class="container hidden" id="chapter-content">
+        <h2>章节内容容器</h2>
+        <p>这个应该显示汉字列表</p>
+        <button id="back-btn">返回章节列表</button>
+    </div>
+    
+    <div>
+        <button onclick="testShowChaptersView()">显示章节列表</button>
+        <button onclick="testShowChapterView()">显示章节内容</button>
+        <button onclick="testBackButton()">测试返回按钮</button>
+        <button onclick="checkElements()">检查DOM元素</button>
+    </div>
+    
+    <div id="debug-output" class="debug-info">
+        等待调试...
+    </div>
+
+    <script>
+        function logDebug(message) {
+            const output = document.getElementById('debug-output');
+            output.innerHTML += `<div>${new Date().toLocaleTimeString()}: ${message}</div>`;
+            output.scrollTop = output.scrollHeight;
+        }
+        
+        function clearDebug() {
+            document.getElementById('debug-output').innerHTML = '等待调试...';
+        }
+        
+        function checkElements() {
+            clearDebug();
+            logDebug('=== 检查DOM元素 ===');
+            
+            const chaptersContainer = document.getElementById('chapters-container');
+            const chapterContent = document.getElementById('chapter-content');
+            const backBtn = document.getElementById('back-btn');
+            
+            logDebug(`1. chapters-container: ${chaptersContainer ? '找到' : '未找到'}`);
+            logDebug(`   类名: "${chaptersContainer.className}"`);
+            logDebug(`   是否隐藏: ${chaptersContainer.classList.contains('hidden')}`);
+            
+            logDebug(`2. chapter-content: ${chapterContent ? '找到' : '未找到'}`);
+            logDebug(`   类名: "${chapterContent.className}"`);
+            logDebug(`   是否隐藏: ${chapterContent.classList.contains('hidden')}`);
+            
+            logDebug(`3. back-btn: ${backBtn ? '找到' : '未找到'}`);
+            
+            // 检查CSS计算样式
+            const chaptersStyle = window.getComputedStyle(chaptersContainer);
+            const contentStyle = window.getComputedStyle(chapterContent);
+            
+            logDebug(`4. chapters-container计算样式:`);
+            logDebug(`   display: ${chaptersStyle.display}`);
+            logDebug(`   visibility: ${chaptersStyle.visibility}`);
+            
+            logDebug(`5. chapter-content计算样式:`);
+            logDebug(`   display: ${contentStyle.display}`);
+            logDebug(`   visibility: ${contentStyle.visibility}`);
+        }
+        
+        function testShowChaptersView() {
+            clearDebug();
+            logDebug('=== 测试显示章节列表 ===');
+            
+            const chaptersContainer = document.getElementById('chapters-container');
+            const chapterContent = document.getElementById('chapter-content');
+            
+            logDebug('调用前:');
+            logDebug(`  chapters-container隐藏: ${chaptersContainer.classList.contains('hidden')}`);
+            logDebug(`  chapter-content隐藏: ${chapterContent.classList.contains('hidden')}`);
+            
+            chaptersContainer.classList.remove('hidden');
+            chapterContent.classList.add('hidden');
+            
+            logDebug('调用后:');
+            logDebug(`  chapters-container隐藏: ${chaptersContainer.classList.contains('hidden')}`);
+            logDebug(`  chapter-content隐藏: ${chapterContent.classList.contains('hidden')}`);
+            
+            // 检查实际显示状态
+            setTimeout(() => {
+                const chaptersStyle = window.getComputedStyle(chaptersContainer);
+                const contentStyle = window.getComputedStyle(chapterContent);
+                logDebug('计算样式:');
+                logDebug(`  chapters-container display: ${chaptersStyle.display}`);
+                logDebug(`  chapter-content display: ${contentStyle.display}`);
+            }, 100);
+        }
+        
+        function testShowChapterView() {
+            clearDebug();
+            logDebug('=== 测试显示章节内容 ===');
+            
+            const chaptersContainer = document.getElementById('chapters-container');
+            const chapterContent = document.getElementById('chapter-content');
+            
+            logDebug('调用前:');
+            logDebug(`  chapters-container隐藏: ${chaptersContainer.classList.contains('hidden')}`);
+            logDebug(`  chapter-content隐藏: ${chapterContent.classList.contains('hidden')}`);
+            
+            chaptersContainer.classList.add('hidden');
+            chapterContent.classList.remove('hidden');
+            
+            logDebug('调用后:');
+            logDebug(`  chapters-container隐藏: ${chaptersContainer.classList.contains('hidden')}`);
+            logDebug(`  chapter-content隐藏: ${chapterContent.classList.contains('hidden')}`);
+        }
+        
+        function testBackButton() {
+            clearDebug();
+            logDebug('=== 测试返回按钮 ===');
+            
+            // 模拟返回按钮点击
+            testShowChaptersView();
+        }
+        
+        // 绑定返回按钮事件
+        document.getElementById('back-btn').addEventListener('click', testBackButton);
+        
+        // 初始检查
+        window.onload = function() {
+            checkElements();
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,1306 @@
+{
+  "total_characters": 8105,
+  "top_100_chars": [
+    {
+      "char": "的",
+      "jyutping": "dik1",
+      "frequency_rank": 1,
+      "estimated_frequency": 1000000
+    },
+    {
+      "char": "是",
+      "jyutping": "si6",
+      "frequency_rank": 2,
+      "estimated_frequency": 750000
+    },
+    {
+      "char": "在",
+      "jyutping": "zoi6",
+      "frequency_rank": 3,
+      "estimated_frequency": 700000
+    },
+    {
+      "char": "不",
+      "jyutping": "bat1",
+      "frequency_rank": 4,
+      "estimated_frequency": 680000
+    },
+    {
+      "char": "有",
+      "jyutping": "jau5",
+      "frequency_rank": 5,
+      "estimated_frequency": 620000
+    },
+    {
+      "char": "这",
+      "jyutping": "ze5",
+      "frequency_rank": 6,
+      "estimated_frequency": 560000
+    },
+    {
+      "char": "国",
+      "jyutping": "gwok3",
+      "frequency_rank": 7,
+      "estimated_frequency": 440000
+    },
+    {
+      "char": "我",
+      "jyutping": "ngo5",
+      "frequency_rank": 8,
+      "estimated_frequency": 420000
+    },
+    {
+      "char": "要",
+      "jyutping": "jiu3",
+      "frequency_rank": 9,
+      "estimated_frequency": 380000
+    },
+    {
+      "char": "他",
+      "jyutping": "taa1",
+      "frequency_rank": 10,
+      "estimated_frequency": 360000
+    },
+    {
+      "char": "用",
+      "jyutping": "jung6",
+      "frequency_rank": 11,
+      "estimated_frequency": 300000
+    },
+    {
+      "char": "们",
+      "jyutping": "mun4",
+      "frequency_rank": 12,
+      "estimated_frequency": 280000
+    },
+    {
+      "char": "生",
+      "jyutping": "saang1",
+      "frequency_rank": 13,
+      "estimated_frequency": 260000
+    },
+    {
+      "char": "作",
+      "jyutping": "zok3",
+      "frequency_rank": 14,
+      "estimated_frequency": 220000
+    },
+    {
+      "char": "就",
+      "jyutping": "zau6",
+      "frequency_rank": 15,
+      "estimated_frequency": 140000
+    },
+    {
+      "char": "一",
+      "jyutping": "jat1",
+      "frequency_rank": 16,
+      "estimated_frequency": 100000
+    },
+    {
+      "char": "成",
+      "jyutping": "sing4",
+      "frequency_rank": 17,
+      "estimated_frequency": 98000
+    },
+    {
+      "char": "会",
+      "jyutping": "wui6",
+      "frequency_rank": 18,
+      "estimated_frequency": 96000
+    },
+    {
+      "char": "可",
+      "jyutping": "ho2",
+      "frequency_rank": 19,
+      "estimated_frequency": 94000
+    },
+    {
+      "char": "主",
+      "jyutping": "zyu2",
+      "frequency_rank": 20,
+      "estimated_frequency": 92000
+    },
+    {
+      "char": "二",
+      "jyutping": "ji6",
+      "frequency_rank": 21,
+      "estimated_frequency": 90000
+    },
+    {
+      "char": "地",
+      "jyutping": "dei6",
+      "frequency_rank": 22,
+      "estimated_frequency": 90000
+    },
+    {
+      "char": "动",
+      "jyutping": "dung6",
+      "frequency_rank": 23,
+      "estimated_frequency": 86000
+    },
+    {
+      "char": "同",
+      "jyutping": "tung4",
+      "frequency_rank": 24,
+      "estimated_frequency": 84000
+    },
+    {
+      "char": "工",
+      "jyutping": "gung1",
+      "frequency_rank": 25,
+      "estimated_frequency": 82000
+    },
+    {
+      "char": "三",
+      "jyutping": "saam1",
+      "frequency_rank": 26,
+      "estimated_frequency": 80000
+    },
+    {
+      "char": "也",
+      "jyutping": "jaa5",
+      "frequency_rank": 27,
+      "estimated_frequency": 80000
+    },
+    {
+      "char": "得",
+      "jyutping": "dak1",
+      "frequency_rank": 28,
+      "estimated_frequency": 80000
+    },
+    {
+      "char": "能",
+      "jyutping": "nang4",
+      "frequency_rank": 29,
+      "estimated_frequency": 78000
+    },
+    {
+      "char": "了",
+      "jyutping": "liu5",
+      "frequency_rank": 30,
+      "estimated_frequency": 70000
+    },
+    {
+      "char": "四",
+      "jyutping": "sei3",
+      "frequency_rank": 31,
+      "estimated_frequency": 70000
+    },
+    {
+      "char": "说",
+      "jyutping": "syut3",
+      "frequency_rank": 32,
+      "estimated_frequency": 70000
+    },
+    {
+      "char": "产",
+      "jyutping": "caan2",
+      "frequency_rank": 33,
+      "estimated_frequency": 68000
+    },
+    {
+      "char": "种",
+      "jyutping": "cung4",
+      "frequency_rank": 34,
+      "estimated_frequency": 66000
+    },
+    {
+      "char": "五",
+      "jyutping": "ng5",
+      "frequency_rank": 35,
+      "estimated_frequency": 60000
+    },
+    {
+      "char": "方",
+      "jyutping": "fong1",
+      "frequency_rank": 36,
+      "estimated_frequency": 60000
+    },
+    {
+      "char": "着",
+      "jyutping": "zoek6",
+      "frequency_rank": 37,
+      "estimated_frequency": 60000
+    },
+    {
+      "char": "定",
+      "jyutping": "ding6",
+      "frequency_rank": 38,
+      "estimated_frequency": 54000
+    },
+    {
+      "char": "行",
+      "jyutping": "haang4",
+      "frequency_rank": 39,
+      "estimated_frequency": 52000
+    },
+    {
+      "char": "好",
+      "jyutping": "hou2",
+      "frequency_rank": 40,
+      "estimated_frequency": 50000
+    },
+    {
+      "char": "六",
+      "jyutping": "luk6",
+      "frequency_rank": 41,
+      "estimated_frequency": 50000
+    },
+    {
+      "char": "和",
+      "jyutping": "wo4",
+      "frequency_rank": 42,
+      "estimated_frequency": 50000
+    },
+    {
+      "char": "学",
+      "jyutping": "hok6",
+      "frequency_rank": 43,
+      "estimated_frequency": 50000
+    },
+    {
+      "char": "与",
+      "jyutping": "jyu5",
+      "frequency_rank": 44,
+      "estimated_frequency": 49000
+    },
+    {
+      "char": "过",
+      "jyutping": "gwo3",
+      "frequency_rank": 45,
+      "estimated_frequency": 50000
+    },
+    {
+      "char": "坏",
+      "jyutping": "pui1",
+      "frequency_rank": 46,
+      "estimated_frequency": 49000
+    },
+    {
+      "char": "及",
+      "jyutping": "kap6",
+      "frequency_rank": 47,
+      "estimated_frequency": 48000
+    },
+    {
+      "char": "大",
+      "jyutping": "daai6",
+      "frequency_rank": 48,
+      "estimated_frequency": 48000
+    },
+    {
+      "char": "法",
+      "jyutping": "faat3",
+      "frequency_rank": 49,
+      "estimated_frequency": 48000
+    },
+    {
+      "char": "小",
+      "jyutping": "siu2",
+      "frequency_rank": 50,
+      "estimated_frequency": 47000
+    },
+    {
+      "char": "或",
+      "jyutping": "waak6",
+      "frequency_rank": 51,
+      "estimated_frequency": 47000
+    },
+    {
+      "char": "多",
+      "jyutping": "do1",
+      "frequency_rank": 52,
+      "estimated_frequency": 46000
+    },
+    {
+      "char": "但",
+      "jyutping": "daan6",
+      "frequency_rank": 53,
+      "estimated_frequency": 46000
+    },
+    {
+      "char": "所",
+      "jyutping": "so2",
+      "frequency_rank": 54,
+      "estimated_frequency": 46000
+    },
+    {
+      "char": "少",
+      "jyutping": "siu2",
+      "frequency_rank": 55,
+      "estimated_frequency": 45000
+    },
+    {
+      "char": "做",
+      "jyutping": "zou6",
+      "frequency_rank": 56,
+      "estimated_frequency": 45000
+    },
+    {
+      "char": "且",
+      "jyutping": "ce2",
+      "frequency_rank": 57,
+      "estimated_frequency": 44000
+    },
+    {
+      "char": "而",
+      "jyutping": "ji4",
+      "frequency_rank": 58,
+      "estimated_frequency": 45000
+    },
+    {
+      "char": "长",
+      "jyutping": "coeng4",
+      "frequency_rank": 59,
+      "estimated_frequency": 44000
+    },
+    {
+      "char": "民",
+      "jyutping": "man4",
+      "frequency_rank": 60,
+      "estimated_frequency": 44000
+    },
+    {
+      "char": "看",
+      "jyutping": "hon3",
+      "frequency_rank": 61,
+      "estimated_frequency": 44000
+    },
+    {
+      "char": "听",
+      "jyutping": "ting1",
+      "frequency_rank": 62,
+      "estimated_frequency": 43000
+    },
+    {
+      "char": "因",
+      "jyutping": "jan1",
+      "frequency_rank": 63,
+      "estimated_frequency": 43000
+    },
+    {
+      "char": "短",
+      "jyutping": "dyun2",
+      "frequency_rank": 64,
+      "estimated_frequency": 43000
+    },
+    {
+      "char": "为",
+      "jyutping": "wai4",
+      "frequency_rank": 65,
+      "estimated_frequency": 42000
+    },
+    {
+      "char": "吃",
+      "jyutping": "hek3",
+      "frequency_rank": 66,
+      "estimated_frequency": 42000
+    },
+    {
+      "char": "以",
+      "jyutping": "ji5",
+      "frequency_rank": 67,
+      "estimated_frequency": 41000
+    },
+    {
+      "char": "低",
+      "jyutping": "dai1",
+      "frequency_rank": 68,
+      "estimated_frequency": 41000
+    },
+    {
+      "char": "喝",
+      "jyutping": "hot3",
+      "frequency_rank": 69,
+      "estimated_frequency": 41000
+    },
+    {
+      "char": "七",
+      "jyutping": "cat1",
+      "frequency_rank": 70,
+      "estimated_frequency": 40000
+    },
+    {
+      "char": "个",
+      "jyutping": "go3",
+      "frequency_rank": 71,
+      "estimated_frequency": 40000
+    },
+    {
+      "char": "天",
+      "jyutping": "tin1",
+      "frequency_rank": 72,
+      "estimated_frequency": 40000
+    },
+    {
+      "char": "啊",
+      "jyutping": "aa3",
+      "frequency_rank": 73,
+      "estimated_frequency": 40000
+    },
+    {
+      "char": "走",
+      "jyutping": "zau2",
+      "frequency_rank": 74,
+      "estimated_frequency": 40000
+    },
+    {
+      "char": "胖",
+      "jyutping": "bun6",
+      "frequency_rank": 75,
+      "estimated_frequency": 40000
+    },
+    {
+      "char": "经",
+      "jyutping": "ging1",
+      "frequency_rank": 76,
+      "estimated_frequency": 40000
+    },
+    {
+      "char": "人",
+      "jyutping": "jan4",
+      "frequency_rank": 77,
+      "estimated_frequency": 38000
+    },
+    {
+      "char": "瘦",
+      "jyutping": "sau3",
+      "frequency_rank": 78,
+      "estimated_frequency": 39000
+    },
+    {
+      "char": "跑",
+      "jyutping": "paau2",
+      "frequency_rank": 79,
+      "estimated_frequency": 39000
+    },
+    {
+      "char": "快",
+      "jyutping": "faai3",
+      "frequency_rank": 80,
+      "estimated_frequency": 38000
+    },
+    {
+      "char": "坐",
+      "jyutping": "zo6",
+      "frequency_rank": 81,
+      "estimated_frequency": 37000
+    },
+    {
+      "char": "山",
+      "jyutping": "saan1",
+      "frequency_rank": 82,
+      "estimated_frequency": 37000
+    },
+    {
+      "char": "慢",
+      "jyutping": "maan6",
+      "frequency_rank": 83,
+      "estimated_frequency": 37000
+    },
+    {
+      "char": "水",
+      "jyutping": "seoi2",
+      "frequency_rank": 84,
+      "estimated_frequency": 36000
+    },
+    {
+      "char": "热",
+      "jyutping": "jit6",
+      "frequency_rank": 85,
+      "estimated_frequency": 36000
+    },
+    {
+      "char": "站",
+      "jyutping": "zaam6",
+      "frequency_rank": 86,
+      "estimated_frequency": 36000
+    },
+    {
+      "char": "王",
+      "jyutping": "wong4",
+      "frequency_rank": 87,
+      "estimated_frequency": 35000
+    },
+    {
+      "char": "冷",
+      "jyutping": "laang5",
+      "frequency_rank": 88,
+      "estimated_frequency": 35000
+    },
+    {
+      "char": "心",
+      "jyutping": "sam1",
+      "frequency_rank": 89,
+      "estimated_frequency": 35000
+    },
+    {
+      "char": "睡",
+      "jyutping": "seoi6",
+      "frequency_rank": 90,
+      "estimated_frequency": 35000
+    },
+    {
+      "char": "火",
+      "jyutping": "fo2",
+      "frequency_rank": 91,
+      "estimated_frequency": 35000
+    },
+    {
+      "char": "之",
+      "jyutping": "zi1",
+      "frequency_rank": 92,
+      "estimated_frequency": 34000
+    },
+    {
+      "char": "醒",
+      "jyutping": "seng2",
+      "frequency_rank": 93,
+      "estimated_frequency": 34000
+    },
+    {
+      "char": "风",
+      "jyutping": "fung1",
+      "frequency_rank": 94,
+      "estimated_frequency": 34000
+    },
+    {
+      "char": "新",
+      "jyutping": "san1",
+      "frequency_rank": 95,
+      "estimated_frequency": 34000
+    },
+    {
+      "char": "手",
+      "jyutping": "sau2",
+      "frequency_rank": 96,
+      "estimated_frequency": 34000
+    },
+    {
+      "char": "李",
+      "jyutping": "lei5",
+      "frequency_rank": 97,
+      "estimated_frequency": 34000
+    },
+    {
+      "char": "雨",
+      "jyutping": "jyu5",
+      "frequency_rank": 98,
+      "estimated_frequency": 33000
+    },
+    {
+      "char": "旧",
+      "jyutping": "gau6",
+      "frequency_rank": 99,
+      "estimated_frequency": 33000
+    },
+    {
+      "char": "想",
+      "jyutping": "soeng2",
+      "frequency_rank": 100,
+      "estimated_frequency": 33000
+    }
+  ],
+  "bottom_100_chars": [
+    {
+      "char": "躬",
+      "jyutping": "gung1",
+      "frequency_rank": 8006,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "躯",
+      "jyutping": "keoi1",
+      "frequency_rank": 8007,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "躲",
+      "jyutping": "do2",
+      "frequency_rank": 8008,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "躺",
+      "jyutping": "tong2",
+      "frequency_rank": 8009,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "轨",
+      "jyutping": "gwai2",
+      "frequency_rank": 8010,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "轪",
+      "jyutping": "dai6",
+      "frequency_rank": 8011,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "轫",
+      "jyutping": "jan6",
+      "frequency_rank": 8012,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "轮",
+      "jyutping": "leon4",
+      "frequency_rank": 8013,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "软",
+      "jyutping": "jyun5",
+      "frequency_rank": 8014,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "轰",
+      "jyutping": "gwang1",
+      "frequency_rank": 8015,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "轱",
+      "jyutping": "gu1",
+      "frequency_rank": 8016,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "轳",
+      "jyutping": "lou4",
+      "frequency_rank": 8017,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "轴",
+      "jyutping": "zuk6",
+      "frequency_rank": 8018,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "轵",
+      "jyutping": "zi2",
+      "frequency_rank": 8019,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "轶",
+      "jyutping": "jat6",
+      "frequency_rank": 8020,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "轷",
+      "jyutping": "fu1",
+      "frequency_rank": 8021,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "轸",
+      "jyutping": "zan2",
+      "frequency_rank": 8022,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "轹",
+      "jyutping": "lik1",
+      "frequency_rank": 8023,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "轺",
+      "jyutping": "jiu4",
+      "frequency_rank": 8024,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "轻",
+      "jyutping": "hing1",
+      "frequency_rank": 8025,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "轼",
+      "jyutping": "sik1",
+      "frequency_rank": 8026,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "载",
+      "jyutping": "zoi3",
+      "frequency_rank": 8027,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "轾",
+      "jyutping": "zi3",
+      "frequency_rank": 8028,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "轿",
+      "jyutping": "giu2",
+      "frequency_rank": 8029,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辀",
+      "jyutping": "zau1",
+      "frequency_rank": 8030,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辁",
+      "jyutping": "cyun4",
+      "frequency_rank": 8031,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辂",
+      "jyutping": "lou6",
+      "frequency_rank": 8032,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辄",
+      "jyutping": "zip3",
+      "frequency_rank": 8033,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辅",
+      "jyutping": "fu6",
+      "frequency_rank": 8034,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辆",
+      "jyutping": "loeng6",
+      "frequency_rank": 8035,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辇",
+      "jyutping": "lin5",
+      "frequency_rank": 8036,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辉",
+      "jyutping": "fai1",
+      "frequency_rank": 8037,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辊",
+      "jyutping": "gwan2",
+      "frequency_rank": 8038,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辋",
+      "jyutping": "mong5",
+      "frequency_rank": 8039,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辌",
+      "jyutping": "loeng4",
+      "frequency_rank": 8040,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辍",
+      "jyutping": "zyut3",
+      "frequency_rank": 8041,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辎",
+      "jyutping": "zi1",
+      "frequency_rank": 8042,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辏",
+      "jyutping": "cau3",
+      "frequency_rank": 8043,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辐",
+      "jyutping": "fuk1",
+      "frequency_rank": 8044,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辑",
+      "jyutping": "cap1",
+      "frequency_rank": 8045,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辒",
+      "jyutping": "wan1",
+      "frequency_rank": 8046,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "输",
+      "jyutping": "syu1",
+      "frequency_rank": 8047,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辔",
+      "jyutping": "bei3",
+      "frequency_rank": 8048,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辖",
+      "jyutping": "hat6",
+      "frequency_rank": 8049,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辗",
+      "jyutping": "zin2",
+      "frequency_rank": 8050,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辘",
+      "jyutping": "luk1",
+      "frequency_rank": 8051,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辙",
+      "jyutping": "cit3",
+      "frequency_rank": 8052,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辚",
+      "jyutping": "leon4",
+      "frequency_rank": 8053,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辜",
+      "jyutping": "gu1",
+      "frequency_rank": 8054,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辞",
+      "jyutping": "ci4",
+      "frequency_rank": 8055,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辟",
+      "jyutping": "pik1",
+      "frequency_rank": 8056,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辣",
+      "jyutping": "laat6",
+      "frequency_rank": 8057,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辨",
+      "jyutping": "bin6",
+      "frequency_rank": 8058,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辩",
+      "jyutping": "bin6",
+      "frequency_rank": 8059,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辫",
+      "jyutping": "bin1",
+      "frequency_rank": 8060,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辱",
+      "jyutping": "juk6",
+      "frequency_rank": 8061,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辽",
+      "jyutping": "liu4",
+      "frequency_rank": 8062,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "辿",
+      "jyutping": "cin4",
+      "frequency_rank": 8063,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "迁",
+      "jyutping": "cin1",
+      "frequency_rank": 8064,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "迂",
+      "jyutping": "jyu1",
+      "frequency_rank": 8065,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "迄",
+      "jyutping": "ngat6",
+      "frequency_rank": 8066,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "迅",
+      "jyutping": "seon3",
+      "frequency_rank": 8067,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "迈",
+      "jyutping": "maai6",
+      "frequency_rank": 8068,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "迎",
+      "jyutping": "jing4",
+      "frequency_rank": 8069,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "迓",
+      "jyutping": "ngaa6",
+      "frequency_rank": 8070,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "返",
+      "jyutping": "faan2",
+      "frequency_rank": 8071,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "远",
+      "jyutping": "jyun5",
+      "frequency_rank": 8072,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "违",
+      "jyutping": "wai4",
+      "frequency_rank": 8073,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "迢",
+      "jyutping": "tiu4",
+      "frequency_rank": 8074,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "迤",
+      "jyutping": "ji5",
+      "frequency_rank": 8075,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "迥",
+      "jyutping": "gwing2",
+      "frequency_rank": 8076,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "迦",
+      "jyutping": "gaa1",
+      "frequency_rank": 8077,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "迨",
+      "jyutping": "doi6",
+      "frequency_rank": 8078,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "迩",
+      "jyutping": "ji5",
+      "frequency_rank": 8079,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "迪",
+      "jyutping": "dik6",
+      "frequency_rank": 8080,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "迫",
+      "jyutping": "bik1",
+      "frequency_rank": 8081,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "迭",
+      "jyutping": "dit6",
+      "frequency_rank": 8082,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "迮",
+      "jyutping": "zaak3",
+      "frequency_rank": 8083,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "述",
+      "jyutping": "seot6",
+      "frequency_rank": 8084,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "迳",
+      "jyutping": "ging3",
+      "frequency_rank": 8085,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "迷",
+      "jyutping": "mai4",
+      "frequency_rank": 8086,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "迸",
+      "jyutping": "bing3",
+      "frequency_rank": 8087,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "迹",
+      "jyutping": "zik1",
+      "frequency_rank": 8088,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "迺",
+      "jyutping": "naai5",
+      "frequency_rank": 8089,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "追",
+      "jyutping": "zeoi1",
+      "frequency_rank": 8090,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "蜈",
+      "jyutping": "ng4",
+      "frequency_rank": 8091,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "误",
+      "jyutping": "ng6",
+      "frequency_rank": 8092,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "迕",
+      "jyutping": "ng5",
+      "frequency_rank": 8093,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "肟",
+      "jyutping": "ok3",
+      "frequency_rank": 8094,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "胺",
+      "jyutping": "on1",
+      "frequency_rank": 8095,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "苊",
+      "jyutping": "ak1",
+      "frequency_rank": 8096,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "莺",
+      "jyutping": "ang1",
+      "frequency_rank": 8097,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "蔼",
+      "jyutping": "oi2",
+      "frequency_rank": 8098,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "蕹",
+      "jyutping": "ung3",
+      "frequency_rank": 8099,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "袄",
+      "jyutping": "ou2",
+      "frequency_rank": 8100,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "讴",
+      "jyutping": "au1",
+      "frequency_rank": 8101,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "谙",
+      "jyutping": "am1",
+      "frequency_rank": 8102,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "轧",
+      "jyutping": "aat3",
+      "frequency_rank": 8103,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "轭",
+      "jyutping": "aak1",
+      "frequency_rank": 8104,
+      "estimated_frequency": 50
+    },
+    {
+      "char": "轲",
+      "jyutping": "o1",
+      "frequency_rank": 8105,
+      "estimated_frequency": 50
+    }
+  ],
+  "chapters_summary": {
+    "chapter_1": {
+      "character_count": 811,
+      "first_char": "的",
+      "first_char_rank": 1,
+      "first_char_frequency": 1000000,
+      "last_char": "偷",
+      "last_char_rank": 811,
+      "last_char_frequency": 1000
+    },
+    "chapter_2": {
+      "character_count": 811,
+      "first_char": "偻",
+      "first_char_rank": 812,
+      "first_char_frequency": 1000,
+      "last_char": "始",
+      "last_char_rank": 1622,
+      "last_char_frequency": 1000
+    },
+    "chapter_3": {
+      "character_count": 811,
+      "first_char": "姒",
+      "first_char_rank": 1623,
+      "first_char_frequency": 1000,
+      "last_char": "邸",
+      "last_char_rank": 2433,
+      "last_char_frequency": 500
+    },
+    "chapter_4": {
+      "character_count": 811,
+      "first_char": "邺",
+      "first_char_rank": 2434,
+      "first_char_frequency": 500,
+      "last_char": "鳤",
+      "last_char_rank": 3244,
+      "last_char_frequency": 500
+    },
+    "chapter_5": {
+      "character_count": 811,
+      "first_char": "鸠",
+      "first_char_rank": 3245,
+      "first_char_frequency": 500,
+      "last_char": "挎",
+      "last_char_rank": 4055,
+      "last_char_frequency": 500
+    },
+    "chapter_6": {
+      "character_count": 810,
+      "first_char": "挑",
+      "first_char_rank": 4056,
+      "first_char_frequency": 500,
+      "last_char": "泔",
+      "last_char_rank": 4865,
+      "last_char_frequency": 500
+    },
+    "chapter_7": {
+      "character_count": 810,
+      "first_char": "泖",
+      "first_char_rank": 4866,
+      "first_char_frequency": 500,
+      "last_char": "琔",
+      "last_char_rank": 5675,
+      "last_char_frequency": 200
+    },
+    "chapter_8": {
+      "character_count": 810,
+      "first_char": "琚",
+      "first_char_rank": 5676,
+      "first_char_frequency": 200,
+      "last_char": "绉",
+      "last_char_rank": 6485,
+      "last_char_frequency": 200
+    },
+    "chapter_9": {
+      "character_count": 810,
+      "first_char": "绊",
+      "first_char_rank": 6486,
+      "first_char_frequency": 200,
+      "last_char": "蓏",
+      "last_char_rank": 7295,
+      "last_char_frequency": 50
+    },
+    "chapter_10": {
+      "character_count": 810,
+      "first_char": "蓐",
+      "first_char_rank": 7296,
+      "first_char_frequency": 50,
+      "last_char": "轲",
+      "last_char_rank": 8105,
+      "last_char_frequency": 50
+    }
+  },
+  "frequency_distribution": {
+    "very_high": 39,
+    "high": 200,
+    "medium": 202,
+    "low": 6211,
+    "very_low": 1453
+  }
+}

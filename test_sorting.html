@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>汉字排序测试</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .test-section {
+            background: #f5f5f5;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #667eea;
+        }
+        .characters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .character-card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+        }
+        .character-char {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+        .character-info {
+            font-size: 12px;
+            color: #666;
+        }
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        button.active {
+            background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
+        }
+        .console {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            max-height: 300px;
+            overflow-y: auto;
+            margin-top: 20px;
+        }
+        .console-line {
+            margin: 2px 0;
+        }
+        .console-info {
+            color: #9cdcfe;
+        }
+        .console-success {
+            color: #4ec9b0;
+        }
+        .statistics {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .stat-card {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+        .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>汉字排序测试</h1>
+    
+    <div class="test-section">
+        <h2>排序方式测试</h2>
+        <p>当前数据文件中的汉字顺序：检查是否按频率排名排序</p>
+        
+        <div class="controls">
+            <button onclick="loadChapter(1)" id="btn-chapter-1">第1章</button>
+            <button onclick="loadChapter(2)" id="btn-chapter-2">第2章</button>
+            <button onclick="loadChapter(3)" id="btn-chapter-3">第3章</button>
+            <button onclick="loadChapter(4)" id="btn-chapter-4">第4章</button>
+            <button onclick="loadChapter(5)" id="btn-chapter-5">第5章</button>
+        </div>
+        
+        <div class="controls">
+            <button onclick="sortByFrequency()" id="btn-sort-frequency" class="active">按频率排序</button>
+            <button onclick="sortByStroke()" id="btn-sort-stroke">按笔画排序</button>
+            <button onclick="sortByPinyin()" id="btn-sort-pinyin">按拼音排序</button>
+            <button onclick="sortByChar()" id="btn-sort-char">按汉字排序</button>
+        </div>
+        
+        <div class="statistics">
+            <div class="stat-card">
+                <div class="stat-value" id="stat-total">0</div>
+                <div class="stat-label">总汉字数</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="stat-current-sort">频率</div>
+                <div class="stat-label">当前排序方式</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="stat-chapter">-</div>
+                <div class="stat-label">当前章节</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="stat-first-char">-</div>
+                <div class="stat-label">第一个汉字</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="

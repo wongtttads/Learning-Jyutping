@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发音修复测试</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .test-section {
+            background: #f5f5f5;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #667eea;
+        }
+        .char-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .char-card {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .char-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .char-hanzi {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+        .char-pinyin {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            width: 100%;
+            transition: opacity 0.2s;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        button:active {
+            opacity: 0.8;
+        }
+        button.playing {
+            background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
+        }
+        .status {
+            font-size: 12px;
+            margin-top: 5px;
+            padding: 3px 6px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+        .status-pending {
+            background: #fff3cd;
+            color: #856404;
+        }
+        .status-success {
+            background: #d4edda;
+            color: #155724;
+        }
+        .status-error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .console {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            max-height: 300px;
+            overflow-y: auto;
+            margin-top: 20px;
+        }
+        .console-line {
+            margin: 2px 0;
+        }
+        .console-time {
+            color: #6a9955;
+        }
+        .console-info {
+            color: #9cdcfe;
+        }
+        .console-success {
+            color: #4ec9b0;
+        }
+        .console-error {
+            color: #f48771;
+        }
+        .console-warning {
+            color: #dcdcaa;
+        }
+    </style>
+</head>
+<body>
+    <h1>发音修复测试</h1>
+    
+    <div class="test-section">
+        <h2>问题说明</h2>
+        <p>之前的问题：发音系统错误地将所有.mp3文件标记为AIFF-C格式，导致部分文件无法播放。</p>
+        <p>修复方案：移除了错误的AIFF-C检测逻辑，现在所有标准MP3文件应该都能正常播放。</p>
+    </div>
+    
+    <div class="test-section">
+        <h2>测试用例</h2>
+        <p>之前有问题的汉字：一、乙</p>
+        <p>之前正常的汉字：二</p>
+        <div class="char-grid" id="char-grid">
+            <!-- 汉字卡片将通过JavaScript动态生成 -->
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>控制台输出</h2>
+        <div class="console" id="console-output">
+            <div class="console-line"><span class="console-time">[00:00:00]</span> <span class="console-info">等待测试开始...</span></div>
+        </div>
+        <button onclick="clearConsole()" style="width: auto; padding: 8px 16px; margin-top: 10px; background: #6c757d;">清空控制台</button>
+    </div>
+
+    <script>
+        // 测试数据 - 包含之前有问题的汉字
+        const testCharacters = [
+            { char: '一', pinyin: 'jat1', description: '之前有问题 - 数字一' },
+            { char: '乙', pinyin: 'jyut3', description: '之前有问题 - 天干第二位' },
+            { char: '二', pinyin: 'ji6', description: '之前正常 - 数字二' },
+            { char: '人', pinyin: 'jan4', description: '测试 - 人类' },
+            { char: '大', pinyin: 'daai6', description: '测试 - 大小的大' },
+            { char: '小', pinyin: 'siu2', description: '测试 - 大小的小' }
+        ];
+        
+        // 控制台输出
+        const consoleOutput = document.getElementById('console-output');
+        let consoleLines = [];
+        
+        function logToConsole(message, type = 'info') {
+            const now = new Date();
+            const time = `[${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}:${now.getSeconds().toString().padStart(2, '0')}]`;
+            
+            const line = document.createElement('div');
+            line.className = 'console-line';
+            line.innerHTML = `<span class="console-time">${time}</span> <span class="console-${type}">${message}</span>`;
+            
+            consoleOutput.appendChild(line);
+            consoleLines.push({ time, message, type });
+            
+            // 滚动到底部
+            consoleOutput.scrollTop = consoleOutput.scrollHeight;
+            
+            // 保持最多100行
+            if (consoleLines.length > 100) {
+                const firstLine = consoleOutput.querySelector('.console-line');
+                if (firstLine) {
+                    consoleOutput.removeChild(firstLine);
+                    consoleLines.shift();
+                }
+            }
+        }
+        
+        function clearConsole() {
+            consoleOutput.innerHTML = '';
+            consoleLines = [];
+            logToConsole('控制台已清空', 'info');
+        }
+        
+        // 初始化汉字卡片
+        function initCharCards() {
+            const charGrid = document.getElementById('char-grid');
+            charGrid.innerHTML = '';
+            
+            testCharacters.forEach((item, index) => {
+                const card = document.createElement('div');
+                card.className = 'char-card';
+                card.id = `char-${index}`;
+                card.innerHTML = `
+                    <div class="char-hanzi">${item.char}</div>
+                    <div class="char-pinyin">${item.pinyin}</div>
+                    <div style="font-size: 12px; color: #888; margin-bottom: 10px;">${item.description}</div>
+                    <button onclick="testSingleChar(${index})" id="btn-${index}">测试发音</button>
+                    <div class="status status-pending" id="status-${index}">待测试</div>
+                `;
+                charGrid.appendChild(card);
+            });
+        }
+        
+        // 测试单个汉字
+        async function testSingleChar(index) {
+            const item = testCharacters[index];
+            const button = document.getElementById(`btn-${index}`);
+            const status = document.getElementById(`status-${index}`);
+            const audioPath = `audio/single_chars/${encodeURIComponent(item.char)}.mp3`;
+            
+            logToConsole(`开始测试: ${item.char} (${item.pinyin})`, 'info');
+            
+            button.disabled = true;
+            button.textContent = '测试中...';
+            button.classList.add('playing');
+            status.textContent = '测试中';
+            status.className = 'status status-pending';
+            
+            try {
+                // 创建音频对象
+                const audio = new Audio(audioPath);
+                
+                // 设置事件监听器
+                const playPromise = new Promise((resolve, reject) => {
+                    audio.oncanplay = () => {
+                        logToConsole(`${item.char}: 音频可以播放`, 'success');
+                    };
+                    
+                    audio.onerror = (e) => {
+                        logToConsole(`${item.char}: 播放错误 - ${e.type}`, 'error');
+                        reject(new Error(`播放错误: ${e.type}`));
+                    };
+                    
+                    audio.onended = () => {
+                        logToConsole(`${item.char}: 播放完成`, 'success');
+                        resolve(true);
+                    };
+                    
+                    // 设置超时
+                    setTimeout(() => {
+                        reject(new Error('播放超时'));
+                    }, 5000);
+                });
+                
+                // 尝试播放
+                await audio.play();
+                logToConsole(`${item.char}: 开始播放`, 'info');
+                
+                // 等待播放完成
+                await playPromise;
+                
+                // 成功
+                button.textContent = '测试成功 ✓';
+                button.style.background = 'linear-gradient(135deg, #4caf50 0%, #2e7d32 100%)';
+                status.textContent = '成功';
+                status.className = 'status status-success';
+                logToConsole(`${item.char}: 测试成功`, 'success');
+                
+            } catch (error) {
+                // 失败
+                button.textContent = '测试失败 ✗';
+                button.style.background = 'linear-gradient(135deg, #f44336 0%, #c62828 100%)';
+                status.textContent = '失败';
+                status.className = 'status status-error';
+                logToConsole(`${item.char}: 测试失败 - ${error.message}`, 'error');
+                
+                // 检查文件是否存在
+                try {
+                    const response = await fetch(audioPath);
+                    if (!response.ok) {
+                        logToConsole(`${item.char}: 文件不存在 (HTTP ${response.status})`, 'error');
+                    } else {
+                        logToConsole(`${item.char}: 文件存在但无法播放`, 'warning');
+                    }
+                } catch (fetchError) {
+                    logToConsole(`${item.char}: 无法检查文件 - ${fetchError.message}`, 'error');
+                }
+            } finally {
+                setTimeout(() => {
+                    button.disabled = false;
+                    button.textContent = '重新测试';
+                    button.classList.remove('playing');
+                    button.style.background = '';
+                }, 1000);
+            }
+        }
+        
+        // 页面加载时初始化
+        window.onload = function() {
+            initCharCards();
+            logToConsole('发音修复测试页面已加载', 'info');
+            logToConsole('点击汉字卡片测试修复后的发音功能', 'info');
+        };
+    </script>
+</body>
+</html>

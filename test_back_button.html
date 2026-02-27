@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>返回按钮测试</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .test-section {
+            background: #f5f5f5;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #667eea;
+        }
+        .container {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            min-height: 200px;
+            position: relative;
+        }
+        .chapters-container {
+            background: #e8f4fd;
+        }
+        .chapter-content {
+            background: #f0f8f0;
+        }
+        .hidden {
+            display: none !important;
+        }
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 5px;
+            transition: opacity 0.2s;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        button.secondary {
+            background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+        }
+        .status {
+            font-size: 12px;
+            margin-top: 5px;
+            padding: 3px 6px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+        .status-success {
+            background: #d4edda;
+            color: #155724;
+        }
+        .status-error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .console {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            max-height: 300px;
+            overflow-y: auto;
+            margin-top: 20px;
+        }
+        .console-line {
+            margin: 2px 0;
+        }
+        .console-time {
+            color: #6a9955;
+        }
+        .console-info {
+            color: #9cdcfe;
+        }
+        .console-success {
+            color: #4ec9b0;
+        }
+        .console-error {
+            color: #f48771;
+        }
+    </style>
+</head>
+<body>
+    <h1>返回按钮功能测试</h1>
+    
+    <div class="test-section">
+        <h2>问题描述</h2>
+        <p>用户反馈：点击章节列表后，应该返回到选择1-10章节的列表，但实际上返回的是空白。</p>
+        <p>可能的问题：</p>
+        <ol>
+            <li>CSS类名冲突或错误</li>
+            <li>DOM元素选择器问题</li>
+            <li>事件监听器未正确绑定</li>
+            <li>视图切换逻辑错误</li>
+        </ol>
+    </div>
+    
+    <div class="test-section">
+        <h2>UI渲染器测试</h2>
+        <div class="container chapters-container" id="test-chapters-container">
+            <h3>章节列表容器</h3>
+            <p>这个容器应该显示章节列表</p>
+            <div class="chapter-card" data-chapter-id="1">
+                <div class="chapter-number">第 1 章</div>
+                <div class="chapter-title">高频常用字</div>
+                <div class="chapter-info">
+                    <span><i class="fas fa-font"></i> 811 字</span>
+                    <span><i class="fas fa-sort-numeric-down"></i> 排名 1-811</span>
+                </div>
+            </div>
+            <div class="chapter-card" data-chapter-id="2">
+                <div class="chapter-number">第 2 章</div>
+                <div class="chapter-title">次高频字</div>
+                <div class="chapter-info">
+                    <span><i class="fas fa-font"></i> 811 字</span>
+                    <span><i class="fas fa-sort-numeric-down"></i> 排名 812-1622</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container chapter-content hidden" id="test-chapter-content">
+            <h3>章节内容容器</h3>
+            <p>这个容器应该显示汉字列表</p>
+            <div class="chapter-header">
+                <h2 id="test-chapter-title">第 1 章 - 高频常用字</h2>
+                <button id="test-back-btn" class="btn secondary">
+                    <i class="fas fa-arrow-left"></i> 返回章节列表
+                </button>
+            </div>
+            <div id="test-characters-grid" class="characters-grid">
+                <div class="character-card">
+                    <div class="character-char">一</div>
+                    <div class="character-pinyin">jat1</div>
+                    <div class="character-rank">排名: 1</div>
+                    <button class="pronunciation-btn">
+                        <i class="fas fa-volume-up"></i>
+                        <span>朗读</span>
+                    </button>
+                </div>
+                <div class="character-card">
+                    <div class="character-char">乙</div>
+                    <div class="character-pinyin">jyut3</div>
+                    <div class="character-rank">排名: 2</div>
+                    <button class="pronunciation-btn">
+                        <i class="fas fa-volume-up"></i>
+                        <span>朗读</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div style="margin-top: 20px;">
+            <button onclick="testShowChaptersView()">测试显示章节列表</button>
+            <button onclick="testShowChapterView()">测试显示章节内容</button>
+            <button onclick="testBackButton()" class="secondary">测试返回按钮</button>
+        </div>
+        
+        <div id="test-status" class="status"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>控制台输出</h2>
+        <div class="console" id="console-output">
+            <div class="console-line"><span class="console-time">[00:00:00]</span> <span class="console-info">等待测试开始...</span></div>
+        </div>
+    </div>
+
+    <script>
+        // 模拟UIRenderer类的方法
+        class TestUIRenderer {
+            constructor() {
+                this.chaptersContainer = document.getElementById('test-chapters-container');
+                this.chapterContent = document.getElementById('test-chapter-content');
+                this.charactersGrid = document.getElementById('test-characters-grid');
+                this.chapterTitle = document.getElementById('test-chapter-title');
+                this.backBtn = document.getElementById('test-back-btn');
+            }
+
+            showChaptersView() {
+                console.log('🔄 调用 showChaptersView()');
+                console.log('   章节容器类名:', this.chaptersContainer.className);
+                console.log('   内容容器类名:', this.chapterContent.className);
+                
+                this.chaptersContainer.classList.remove('hidden');
+                this.chapterContent.classList.add('hidden');
+                
+                console.log('   修改后 - 章节容器类名:', this.chaptersContainer.className);
+                console.log('   修改后 - 内容容器类名:', this.chapterContent.className);
+                
+                this.updateStatus('章节列表已显示', 'success');
+            }
+
+            showChapterView() {
+                console.log('🔄 调用 showChapterView()');
+                console.log('   章节容器类名:', this.chaptersContainer.className);
+                console.log('   内容容器类名:', this.chapterContent.className);
+                
+                this.chaptersContainer.classList.add('hidden');
+                this.chapterContent.classList.remove('hidden');
+                
+                console.log('   修改后 - 章节容器类名:', this.chaptersContainer.className);
+                console.log('   修改后 - 内容容器类名:', this.chapterContent.className);
+                
+                this.updateStatus('章节内容已显示', 'success');
+            }
+            
+            updateStatus(message, type) {
+                const status = document.getElementById('test-status');
+                status.textContent = message;
+                status.className = `status status-${type}`;
+            }
+        }
+
+        // 控制台输出
+        const consoleOutput = document.getElementById('console-output');
+        let consoleLines = [];
+        
+        function logToConsole(message, type = 'info') {
+            const now = new Date();
+            const time = `[${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}:${now.getSeconds().toString().padStart(2, '0')}]`;
+            
+            const line = document.createElement('div');
+            line.className = 'console-line';
+            line.innerHTML = `<span class="console-time">${time}</span> <span class="console-${type}">${message}</span>`;
+            
+            consoleOutput.appendChild(line);
+            consoleLines.push({ time, message, type });
+            
+            // 滚动到底部
+            consoleOutput.scrollTop = consoleOutput.scrollHeight;
+            
+            // 保持最多100行
+            if (consoleLines.length > 100) {
+                const firstLine = consoleOutput.querySelector('.console-line');
+                if (firstLine) {
+                    consoleOutput.removeChild(firstLine);
+                    consoleLines.shift();
+                }
+            }
+        }
+        
+        // 创建测试实例
+        const testRenderer = new TestUIRenderer();
+        
+        // 测试函数
+        function testShowChaptersView() {
+            logToConsole('开始测试: showChaptersView()', 'info');
+            testRenderer.showChaptersView();
+            logToConsole('测试完成', 'success');
+        }
+        
+        function testShowChapterView() {
+            logToConsole('开始测试: showChapterView()', 'info');
+            testRenderer.showChapterView();
+            logToConsole('测试完成', 'success');
+        }
+        
+        function testBackButton() {
+            logToConsole('开始测试: 返回按钮功能', 'info');
+            
+            // 模拟点击返回按钮
+            logToConsole('1. 当前状态检查:', 'info');
+            logToConsole(`   章节容器是否隐藏: ${testRenderer.chaptersContainer.classList.contains('hidden')}`, 'info');
+            logToConsole(`   内容容器是否隐藏: ${testRenderer.chapterContent.classList.contains('hidden')}`, 'info');
+            
+            // 调用返回功能
+            testRenderer.showChaptersView();
+            
+            logToConsole('2. 返回后状态检查:', 'info');
+            logToConsole(`   章节容器是否隐藏: ${testRenderer.chaptersContainer.classList.contains('hidden')}`, 'info');
+            logToConsole(`   内容容器是否隐藏: ${testRenderer.chapterContent.classList.contains('hidden')}`, 'info');
+            
+            logToConsole('测试完成', 'success');
+        }
+        
+        // 初始化
+        window.onload = function() {
+            logToConsole('返回按钮测试页面已加载', 'info');
+            logToConsole('点击按钮测试视图切换功能', 'info');
+            
+            // 绑定返回按钮事件
+            document.getElementById('test-back-btn').addEventListener('click', testBackButton);
+            
+            // 绑定章节卡片点击事件
+            document.querySelectorAll('.chapter-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    const chapterId = card.dataset.chapterId;
+                    logToConsole(`点击章节: ${chapterId}`, 'info');
+                    testRenderer.showChapterView();
+                });
+            });
+        };
+    </script>
+</body>
+</html>

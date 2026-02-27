@@ -56,7 +56,17 @@ class UIRenderer {
             return;
         }
 
-        const html = characters.map(char => `
+        // 确保按频率排名排序（从小到大）
+        const sortedCharacters = [...characters].sort((a, b) => {
+            return (a.frequency_rank || 99999) - (b.frequency_rank || 99999);
+        });
+
+        console.log('📊 排序检查 - 前5个字符:');
+        sortedCharacters.slice(0, 5).forEach((char, index) => {
+            console.log(`   ${index + 1}. ${char.char} - 排名: ${char.frequency_rank}`);
+        });
+
+        const html = sortedCharacters.map(char => `
             <div class="character-card" data-char="${char.char}" data-pinyin="${char.jyutping}">
                 <div class="character-char">${char.char}</div>
                 <div class="character-pinyin">${char.jyutping}</div>

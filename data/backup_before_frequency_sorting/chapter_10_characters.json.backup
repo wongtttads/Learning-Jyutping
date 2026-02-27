@@ -1,0 +1,4838 @@
+[
+  {
+    "char": "𡎚",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 800
+  },
+  {
+    "char": "葜",
+    "jyutping": "kit3",
+    "tone": 3,
+    "frequency_rank": 801
+  },
+  {
+    "char": "惎",
+    "jyutping": "gei6",
+    "tone": 6,
+    "frequency_rank": 802
+  },
+  {
+    "char": "萳",
+    "jyutping": "naam5",
+    "tone": 5,
+    "frequency_rank": 803
+  },
+  {
+    "char": "葙",
+    "jyutping": "soeng1",
+    "tone": 1,
+    "frequency_rank": 804
+  },
+  {
+    "char": "靬",
+    "jyutping": "gin1",
+    "tone": 1,
+    "frequency_rank": 805
+  },
+  {
+    "char": "葴",
+    "jyutping": "zam1",
+    "tone": 1,
+    "frequency_rank": 806
+  },
+  {
+    "char": "蒇",
+    "jyutping": "cin2",
+    "tone": 2,
+    "frequency_rank": 807
+  },
+  {
+    "char": "蒈",
+    "jyutping": "kaai2",
+    "tone": 2,
+    "frequency_rank": 808
+  },
+  {
+    "char": "鄚",
+    "jyutping": "mok6",
+    "tone": 6,
+    "frequency_rank": 809
+  },
+  {
+    "char": "蒉",
+    "jyutping": "gwai6",
+    "tone": 6,
+    "frequency_rank": 810
+  },
+  {
+    "char": "蓇",
+    "jyutping": "gwat1",
+    "tone": 1,
+    "frequency_rank": 811
+  },
+  {
+    "char": "萩",
+    "jyutping": "cau1",
+    "tone": 1,
+    "frequency_rank": 812
+  },
+  {
+    "char": "蒐",
+    "jyutping": "sau1",
+    "tone": 1,
+    "frequency_rank": 813
+  },
+  {
+    "char": "葰",
+    "jyutping": "seoi1",
+    "tone": 1,
+    "frequency_rank": 814
+  },
+  {
+    "char": "葎",
+    "jyutping": "leot6",
+    "tone": 6,
+    "frequency_rank": 815
+  },
+  {
+    "char": "鄑",
+    "jyutping": "zi1",
+    "tone": 1,
+    "frequency_rank": 816
+  },
+  {
+    "char": "蒎",
+    "jyutping": "paai3",
+    "tone": 3,
+    "frequency_rank": 817
+  },
+  {
+    "char": "葖",
+    "jyutping": "dat6",
+    "tone": 6,
+    "frequency_rank": 818
+  },
+  {
+    "char": "蒄",
+    "jyutping": "gun1",
+    "tone": 1,
+    "frequency_rank": 819
+  },
+  {
+    "char": "萹",
+    "jyutping": "pin1",
+    "tone": 1,
+    "frequency_rank": 820
+  },
+  {
+    "char": "棤",
+    "jyutping": "co3",
+    "tone": 3,
+    "frequency_rank": 821
+  },
+  {
+    "char": "棽",
+    "jyutping": "cam1",
+    "tone": 1,
+    "frequency_rank": 822
+  },
+  {
+    "char": "棫",
+    "jyutping": "wik6",
+    "tone": 6,
+    "frequency_rank": 823
+  },
+  {
+    "char": "椓",
+    "jyutping": "doek3",
+    "tone": 3,
+    "frequency_rank": 824
+  },
+  {
+    "char": "椑",
+    "jyutping": "pei4",
+    "tone": 4,
+    "frequency_rank": 825
+  },
+  {
+    "char": "𬃊",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 826
+  },
+  {
+    "char": "鹀",
+    "jyutping": "mou4",
+    "tone": 4,
+    "frequency_rank": 827
+  },
+  {
+    "char": "椆",
+    "jyutping": "cau4",
+    "tone": 4,
+    "frequency_rank": 828
+  },
+  {
+    "char": "棓",
+    "jyutping": "paang5",
+    "tone": 5,
+    "frequency_rank": 829
+  },
+  {
+    "char": "棬",
+    "jyutping": "hyun1",
+    "tone": 1,
+    "frequency_rank": 830
+  },
+  {
+    "char": "棪",
+    "jyutping": "jim5",
+    "tone": 5,
+    "frequency_rank": 831
+  },
+  {
+    "char": "椀",
+    "jyutping": "wun2",
+    "tone": 2,
+    "frequency_rank": 832
+  },
+  {
+    "char": "楗",
+    "jyutping": "gin6",
+    "tone": 6,
+    "frequency_rank": 833
+  },
+  {
+    "char": "𬷕",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 834
+  },
+  {
+    "char": "甦",
+    "jyutping": "sou1",
+    "tone": 1,
+    "frequency_rank": 835
+  },
+  {
+    "char": "酦",
+    "jyutping": "put3",
+    "tone": 3,
+    "frequency_rank": 836
+  },
+  {
+    "char": "觌",
+    "jyutping": "dik6",
+    "tone": 6,
+    "frequency_rank": 837
+  },
+  {
+    "char": "奡",
+    "jyutping": "ngou6",
+    "tone": 6,
+    "frequency_rank": 838
+  },
+  {
+    "char": "皕",
+    "jyutping": "bik1",
+    "tone": 1,
+    "frequency_rank": 839
+  },
+  {
+    "char": "硪",
+    "jyutping": "ngo4",
+    "tone": 4,
+    "frequency_rank": 840
+  },
+  {
+    "char": "欹",
+    "jyutping": "ji1",
+    "tone": 1,
+    "frequency_rank": 841
+  },
+  {
+    "char": "詟",
+    "jyutping": "sip3",
+    "tone": 3,
+    "frequency_rank": 842
+  },
+  {
+    "char": "𫐐",
+    "jyutping": "ngai4",
+    "tone": 4,
+    "frequency_rank": 843
+  },
+  {
+    "char": "辌",
+    "jyutping": "loeng4",
+    "tone": 4,
+    "frequency_rank": 844
+  },
+  {
+    "char": "棐",
+    "jyutping": "fei2",
+    "tone": 2,
+    "frequency_rank": 845
+  },
+  {
+    "char": "龂",
+    "jyutping": "ngan4",
+    "tone": 4,
+    "frequency_rank": 846
+  },
+  {
+    "char": "𬹼",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 847
+  },
+  {
+    "char": "黹",
+    "jyutping": "zi2",
+    "tone": 2,
+    "frequency_rank": 848
+  },
+  {
+    "char": "牚",
+    "jyutping": "caang1",
+    "tone": 1,
+    "frequency_rank": 849
+  },
+  {
+    "char": "睎",
+    "jyutping": "hei1",
+    "tone": 1,
+    "frequency_rank": 850
+  },
+  {
+    "char": "晫",
+    "jyutping": "zoek3",
+    "tone": 3,
+    "frequency_rank": 851
+  },
+  {
+    "char": "晪",
+    "jyutping": "long4",
+    "tone": 4,
+    "frequency_rank": 852
+  },
+  {
+    "char": "晱",
+    "jyutping": "sim2",
+    "tone": 2,
+    "frequency_rank": 853
+  },
+  {
+    "char": "𧿹",
+    "jyutping": "mou5",
+    "tone": 5,
+    "frequency_rank": 854
+  },
+  {
+    "char": "蛑",
+    "jyutping": "mau4",
+    "tone": 4,
+    "frequency_rank": 855
+  },
+  {
+    "char": "畯",
+    "jyutping": "zeon3",
+    "tone": 3,
+    "frequency_rank": 856
+  },
+  {
+    "char": "斝",
+    "jyutping": "gaa2",
+    "tone": 2,
+    "frequency_rank": 857
+  },
+  {
+    "char": "喤",
+    "jyutping": "wong4",
+    "tone": 4,
+    "frequency_rank": 858
+  },
+  {
+    "char": "崶",
+    "jyutping": "fung1",
+    "tone": 1,
+    "frequency_rank": 859
+  },
+  {
+    "char": "嵁",
+    "jyutping": "ham1",
+    "tone": 1,
+    "frequency_rank": 860
+  },
+  {
+    "char": "𫶇",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 861
+  },
+  {
+    "char": "崾",
+    "jyutping": "jiu5",
+    "tone": 5,
+    "frequency_rank": 862
+  },
+  {
+    "char": "嵅",
+    "jyutping": "haam4",
+    "tone": 4,
+    "frequency_rank": 863
+  },
+  {
+    "char": "崿",
+    "jyutping": "ngok6",
+    "tone": 6,
+    "frequency_rank": 864
+  },
+  {
+    "char": "嵚",
+    "jyutping": "jam1",
+    "tone": 1,
+    "frequency_rank": 865
+  },
+  {
+    "char": "翙",
+    "jyutping": "wai3",
+    "tone": 3,
+    "frequency_rank": 866
+  },
+  {
+    "char": "𫖮",
+    "jyutping": "ngai5",
+    "tone": 5,
+    "frequency_rank": 867
+  },
+  {
+    "char": "圌",
+    "jyutping": "cyun4",
+    "tone": 4,
+    "frequency_rank": 868
+  },
+  {
+    "char": "圐",
+    "jyutping": "ku1",
+    "tone": 1,
+    "frequency_rank": 869
+  },
+  {
+    "char": "赑",
+    "jyutping": "bai3",
+    "tone": 3,
+    "frequency_rank": 870
+  },
+  {
+    "char": "淼",
+    "jyutping": "miu5",
+    "tone": 5,
+    "frequency_rank": 871
+  },
+  {
+    "char": "赒",
+    "jyutping": "zau1",
+    "tone": 1,
+    "frequency_rank": 872
+  },
+  {
+    "char": "鿏",
+    "jyutping": "faan6",
+    "tone": 6,
+    "frequency_rank": 873
+  },
+  {
+    "char": "铹",
+    "jyutping": "lou4",
+    "tone": 4,
+    "frequency_rank": 874
+  },
+  {
+    "char": "𬭊",
+    "jyutping": "dou6",
+    "tone": 6,
+    "frequency_rank": 875
+  },
+  {
+    "char": "铽",
+    "jyutping": "tik1",
+    "tone": 1,
+    "frequency_rank": 876
+  },
+  {
+    "char": "𨱇",
+    "jyutping": "kau4",
+    "tone": 4,
+    "frequency_rank": 877
+  },
+  {
+    "char": "𫓶",
+    "jyutping": "hyun1",
+    "tone": 1,
+    "frequency_rank": 878
+  },
+  {
+    "char": "锊",
+    "jyutping": "lyut3",
+    "tone": 3,
+    "frequency_rank": 879
+  },
+  {
+    "char": "锍",
+    "jyutping": "lau5",
+    "tone": 5,
+    "frequency_rank": 880
+  },
+  {
+    "char": "锎",
+    "jyutping": "hoi1",
+    "tone": 1,
+    "frequency_rank": 881
+  },
+  {
+    "char": "𬭎",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 882
+  },
+  {
+    "char": "锓",
+    "jyutping": "cim1",
+    "tone": 1,
+    "frequency_rank": 883
+  },
+  {
+    "char": "犇",
+    "jyutping": "ban1",
+    "tone": 1,
+    "frequency_rank": 884
+  },
+  {
+    "char": "颋",
+    "jyutping": "ting5",
+    "tone": 5,
+    "frequency_rank": 885
+  },
+  {
+    "char": "稌",
+    "jyutping": "tou4",
+    "tone": 4,
+    "frequency_rank": 886
+  },
+  {
+    "char": "筀",
+    "jyutping": "gai3",
+    "tone": 3,
+    "frequency_rank": 887
+  },
+  {
+    "char": "筘",
+    "jyutping": "kau3",
+    "tone": 3,
+    "frequency_rank": 888
+  },
+  {
+    "char": "筜",
+    "jyutping": "dong1",
+    "tone": 1,
+    "frequency_rank": 889
+  },
+  {
+    "char": "筥",
+    "jyutping": "geoi2",
+    "tone": 2,
+    "frequency_rank": 890
+  },
+  {
+    "char": "筅",
+    "jyutping": "sin2",
+    "tone": 2,
+    "frequency_rank": 891
+  },
+  {
+    "char": "傃",
+    "jyutping": "sou3",
+    "tone": 3,
+    "frequency_rank": 892
+  },
+  {
+    "char": "傉",
+    "jyutping": "nuk6",
+    "tone": 6,
+    "frequency_rank": 893
+  },
+  {
+    "char": "翛",
+    "jyutping": "siu1",
+    "tone": 1,
+    "frequency_rank": 894
+  },
+  {
+    "char": "傒",
+    "jyutping": "hai4",
+    "tone": 4,
+    "frequency_rank": 895
+  },
+  {
+    "char": "傕",
+    "jyutping": "gok3",
+    "tone": 3,
+    "frequency_rank": 896
+  },
+  {
+    "char": "舾",
+    "jyutping": "sai1",
+    "tone": 1,
+    "frequency_rank": 897
+  },
+  {
+    "char": "畬",
+    "jyutping": "jyu4",
+    "tone": 4,
+    "frequency_rank": 898
+  },
+  {
+    "char": "𫖯",
+    "jyutping": "fu2",
+    "tone": 2,
+    "frequency_rank": 899
+  },
+  {
+    "char": "脿",
+    "jyutping": "biu2",
+    "tone": 2,
+    "frequency_rank": 900
+  },
+  {
+    "char": "腘",
+    "jyutping": "gwok3",
+    "tone": 3,
+    "frequency_rank": 901
+  },
+  {
+    "char": "䐃",
+    "jyutping": "kwan5",
+    "tone": 5,
+    "frequency_rank": 902
+  },
+  {
+    "char": "腙",
+    "jyutping": "zung1",
+    "tone": 1,
+    "frequency_rank": 903
+  },
+  {
+    "char": "腒",
+    "jyutping": "geoi1",
+    "tone": 1,
+    "frequency_rank": 904
+  },
+  {
+    "char": "𬱟",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 905
+  },
+  {
+    "char": "鲃",
+    "jyutping": "baa1",
+    "tone": 1,
+    "frequency_rank": 906
+  },
+  {
+    "char": "猰",
+    "jyutping": "aat3",
+    "tone": 3,
+    "frequency_rank": 907
+  },
+  {
+    "char": "𫛭",
+    "jyutping": "kwong4",
+    "tone": 4,
+    "frequency_rank": 908
+  },
+  {
+    "char": "猯",
+    "jyutping": "teon1",
+    "tone": 1,
+    "frequency_rank": 909
+  },
+  {
+    "char": "㺄",
+    "jyutping": "jyu5",
+    "tone": 5,
+    "frequency_rank": 910
+  },
+  {
+    "char": "馉",
+    "jyutping": "gwat1",
+    "tone": 1,
+    "frequency_rank": 911
+  },
+  {
+    "char": "凓",
+    "jyutping": "leot6",
+    "tone": 6,
+    "frequency_rank": 912
+  },
+  {
+    "char": "鄗",
+    "jyutping": "hou6",
+    "tone": 6,
+    "frequency_rank": 913
+  },
+  {
+    "char": "𫷷",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 914
+  },
+  {
+    "char": "廋",
+    "jyutping": "sau1",
+    "tone": 1,
+    "frequency_rank": 915
+  },
+  {
+    "char": "廆",
+    "jyutping": "gwai1",
+    "tone": 1,
+    "frequency_rank": 916
+  },
+  {
+    "char": "鄌",
+    "jyutping": "tong4",
+    "tone": 4,
+    "frequency_rank": 917
+  },
+  {
+    "char": "粢",
+    "jyutping": "zi1",
+    "tone": 1,
+    "frequency_rank": 918
+  },
+  {
+    "char": "遆",
+    "jyutping": "tai4",
+    "tone": 4,
+    "frequency_rank": 919
+  },
+  {
+    "char": "旐",
+    "jyutping": "siu6",
+    "tone": 6,
+    "frequency_rank": 920
+  },
+  {
+    "char": "𬮱",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 921
+  },
+  {
+    "char": "焞",
+    "jyutping": "seon4",
+    "tone": 4,
+    "frequency_rank": 922
+  },
+  {
+    "char": "𬊤",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 923
+  },
+  {
+    "char": "欻",
+    "jyutping": "fat1",
+    "tone": 1,
+    "frequency_rank": 924
+  },
+  {
+    "char": "𣸣",
+    "jyutping": "fan4",
+    "tone": 4,
+    "frequency_rank": 925
+  },
+  {
+    "char": "溚",
+    "jyutping": "taap3",
+    "tone": 3,
+    "frequency_rank": 926
+  },
+  {
+    "char": "溁",
+    "jyutping": "jing4",
+    "tone": 4,
+    "frequency_rank": 927
+  },
+  {
+    "char": "湝",
+    "jyutping": "gaai1",
+    "tone": 1,
+    "frequency_rank": 928
+  },
+  {
+    "char": "渰",
+    "jyutping": "jim1",
+    "tone": 1,
+    "frequency_rank": 929
+  },
+  {
+    "char": "湓",
+    "jyutping": "pun4",
+    "tone": 4,
+    "frequency_rank": 930
+  },
+  {
+    "char": "㴔",
+    "jyutping": "kap1",
+    "tone": 1,
+    "frequency_rank": 931
+  },
+  {
+    "char": "渟",
+    "jyutping": "ting4",
+    "tone": 4,
+    "frequency_rank": 932
+  },
+  {
+    "char": "溠",
+    "jyutping": "zaa3",
+    "tone": 3,
+    "frequency_rank": 933
+  },
+  {
+    "char": "渼",
+    "jyutping": "mei5",
+    "tone": 5,
+    "frequency_rank": 934
+  },
+  {
+    "char": "溇",
+    "jyutping": "lau4",
+    "tone": 4,
+    "frequency_rank": 935
+  },
+  {
+    "char": "湣",
+    "jyutping": "man5",
+    "tone": 5,
+    "frequency_rank": 936
+  },
+  {
+    "char": "湑",
+    "jyutping": "seoi2",
+    "tone": 2,
+    "frequency_rank": 937
+  },
+  {
+    "char": "溞",
+    "jyutping": "sou1",
+    "tone": 1,
+    "frequency_rank": 938
+  },
+  {
+    "char": "愐",
+    "jyutping": "min5",
+    "tone": 5,
+    "frequency_rank": 939
+  },
+  {
+    "char": "愃",
+    "jyutping": "syun1",
+    "tone": 1,
+    "frequency_rank": 940
+  },
+  {
+    "char": "敩",
+    "jyutping": "haau6",
+    "tone": 6,
+    "frequency_rank": 941
+  },
+  {
+    "char": "甯",
+    "jyutping": "ning4",
+    "tone": 4,
+    "frequency_rank": 942
+  },
+  {
+    "char": "棨",
+    "jyutping": "kai2",
+    "tone": 2,
+    "frequency_rank": 943
+  },
+  {
+    "char": "扊",
+    "jyutping": "jim5",
+    "tone": 5,
+    "frequency_rank": 944
+  },
+  {
+    "char": "裣",
+    "jyutping": "lim5",
+    "tone": 5,
+    "frequency_rank": 945
+  },
+  {
+    "char": "祼",
+    "jyutping": "gun3",
+    "tone": 3,
+    "frequency_rank": 946
+  },
+  {
+    "char": "婻",
+    "jyutping": "naam6",
+    "tone": 6,
+    "frequency_rank": 947
+  },
+  {
+    "char": "媆",
+    "jyutping": "jyun5",
+    "tone": 5,
+    "frequency_rank": 948
+  },
+  {
+    "char": "媞",
+    "jyutping": "tai4",
+    "tone": 4,
+    "frequency_rank": 949
+  },
+  {
+    "char": "㛹",
+    "jyutping": "pin4",
+    "tone": 4,
+    "frequency_rank": 950
+  },
+  {
+    "char": "媓",
+    "jyutping": "wong4",
+    "tone": 4,
+    "frequency_rank": 951
+  },
+  {
+    "char": "媂",
+    "jyutping": "dai3",
+    "tone": 3,
+    "frequency_rank": 952
+  },
+  {
+    "char": "媄",
+    "jyutping": "mei5",
+    "tone": 5,
+    "frequency_rank": 953
+  },
+  {
+    "char": "毵",
+    "jyutping": "saam1",
+    "tone": 1,
+    "frequency_rank": 954
+  },
+  {
+    "char": "矞",
+    "jyutping": "wat6",
+    "tone": 6,
+    "frequency_rank": 955
+  },
+  {
+    "char": "𬴃",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 956
+  },
+  {
+    "char": "𫘨",
+    "jyutping": "tai4",
+    "tone": 4,
+    "frequency_rank": 957
+  },
+  {
+    "char": "缊",
+    "jyutping": "wan3",
+    "tone": 3,
+    "frequency_rank": 958
+  },
+  {
+    "char": "缐",
+    "jyutping": "sin3",
+    "tone": 3,
+    "frequency_rank": 959
+  },
+  {
+    "char": "骙",
+    "jyutping": "kwai4",
+    "tone": 4,
+    "frequency_rank": 960
+  },
+  {
+    "char": "瑃",
+    "jyutping": "ceon1",
+    "tone": 1,
+    "frequency_rank": 961
+  },
+  {
+    "char": "瑓",
+    "jyutping": "lin6",
+    "tone": 6,
+    "frequency_rank": 962
+  },
+  {
+    "char": "瑅",
+    "jyutping": "tai4",
+    "tone": 4,
+    "frequency_rank": 963
+  },
+  {
+    "char": "瑆",
+    "jyutping": "sing1",
+    "tone": 1,
+    "frequency_rank": 964
+  },
+  {
+    "char": "䴖",
+    "jyutping": "zing1",
+    "tone": 1,
+    "frequency_rank": 965
+  },
+  {
+    "char": "瑖",
+    "jyutping": "dyun3",
+    "tone": 3,
+    "frequency_rank": 966
+  },
+  {
+    "char": "瑝",
+    "jyutping": "waang4",
+    "tone": 4,
+    "frequency_rank": 967
+  },
+  {
+    "char": "瑔",
+    "jyutping": "cyun4",
+    "tone": 4,
+    "frequency_rank": 968
+  },
+  {
+    "char": "瑀",
+    "jyutping": "jyu5",
+    "tone": 5,
+    "frequency_rank": 969
+  },
+  {
+    "char": "𤧛",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 970
+  },
+  {
+    "char": "瑳",
+    "jyutping": "co1",
+    "tone": 1,
+    "frequency_rank": 971
+  },
+  {
+    "char": "瑂",
+    "jyutping": "mei4",
+    "tone": 4,
+    "frequency_rank": 972
+  },
+  {
+    "char": "嶅",
+    "jyutping": "ngou4",
+    "tone": 4,
+    "frequency_rank": 973
+  },
+  {
+    "char": "瑑",
+    "jyutping": "syun6",
+    "tone": 6,
+    "frequency_rank": 974
+  },
+  {
+    "char": "遘",
+    "jyutping": "gau3",
+    "tone": 3,
+    "frequency_rank": 975
+  },
+  {
+    "char": "髢",
+    "jyutping": "tai3",
+    "tone": 3,
+    "frequency_rank": 976
+  },
+  {
+    "char": "塥",
+    "jyutping": "gaak3",
+    "tone": 3,
+    "frequency_rank": 977
+  },
+  {
+    "char": "堽",
+    "jyutping": "gong1",
+    "tone": 1,
+    "frequency_rank": 978
+  },
+  {
+    "char": "赪",
+    "jyutping": "cing1",
+    "tone": 1,
+    "frequency_rank": 979
+  },
+  {
+    "char": "摛",
+    "jyutping": "ci1",
+    "tone": 1,
+    "frequency_rank": 980
+  },
+  {
+    "char": "塝",
+    "jyutping": "bong6",
+    "tone": 6,
+    "frequency_rank": 981
+  },
+  {
+    "char": "搒",
+    "jyutping": "pong3",
+    "tone": 3,
+    "frequency_rank": 982
+  },
+  {
+    "char": "搌",
+    "jyutping": "zin2",
+    "tone": 2,
+    "frequency_rank": 983
+  },
+  {
+    "char": "蒱",
+    "jyutping": "pou4",
+    "tone": 4,
+    "frequency_rank": 984
+  },
+  {
+    "char": "蒨",
+    "jyutping": "sin6",
+    "tone": 6,
+    "frequency_rank": 985
+  },
+  {
+    "char": "蓏",
+    "jyutping": "lo2",
+    "tone": 2,
+    "frequency_rank": 986
+  },
+  {
+    "char": "蔀",
+    "jyutping": "bou6",
+    "tone": 6,
+    "frequency_rank": 987
+  },
+  {
+    "char": "蓢",
+    "jyutping": "long5",
+    "tone": 5,
+    "frequency_rank": 988
+  },
+  {
+    "char": "蓂",
+    "jyutping": "ming4",
+    "tone": 4,
+    "frequency_rank": 989
+  },
+  {
+    "char": "蒻",
+    "jyutping": "joek6",
+    "tone": 6,
+    "frequency_rank": 990
+  },
+  {
+    "char": "蓣",
+    "jyutping": "jyu6",
+    "tone": 6,
+    "frequency_rank": 991
+  },
+  {
+    "char": "椹",
+    "jyutping": "zam1",
+    "tone": 1,
+    "frequency_rank": 992
+  },
+  {
+    "char": "楪",
+    "jyutping": "dip6",
+    "tone": 6,
+    "frequency_rank": 993
+  },
+  {
+    "char": "榃",
+    "jyutping": "dam4",
+    "tone": 4,
+    "frequency_rank": 994
+  },
+  {
+    "char": "榅",
+    "jyutping": "wat1",
+    "tone": 1,
+    "frequency_rank": 995
+  },
+  {
+    "char": "楒",
+    "jyutping": "si1",
+    "tone": 1,
+    "frequency_rank": 996
+  },
+  {
+    "char": "楞",
+    "jyutping": "ling4",
+    "tone": 4,
+    "frequency_rank": 997
+  },
+  {
+    "char": "楩",
+    "jyutping": "pin4",
+    "tone": 4,
+    "frequency_rank": 998
+  },
+  {
+    "char": "榇",
+    "jyutping": "can3",
+    "tone": 3,
+    "frequency_rank": 999
+  },
+  {
+    "char": "椸",
+    "jyutping": "ji4",
+    "tone": 4,
+    "frequency_rank": 1000
+  },
+  {
+    "char": "楙",
+    "jyutping": "mau6",
+    "tone": 6,
+    "frequency_rank": 1001
+  },
+  {
+    "char": "歅",
+    "jyutping": "jan1",
+    "tone": 1,
+    "frequency_rank": 1002
+  },
+  {
+    "char": "𬪩",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1003
+  },
+  {
+    "char": "碃",
+    "jyutping": "cing3",
+    "tone": 3,
+    "frequency_rank": 1004
+  },
+  {
+    "char": "碏",
+    "jyutping": "coek3",
+    "tone": 3,
+    "frequency_rank": 1005
+  },
+  {
+    "char": "𬒔",
+    "jyutping": "ang2",
+    "tone": 2,
+    "frequency_rank": 1006
+  },
+  {
+    "char": "碈",
+    "jyutping": "man4",
+    "tone": 4,
+    "frequency_rank": 1007
+  },
+  {
+    "char": "䃅",
+    "jyutping": "dai1",
+    "tone": 1,
+    "frequency_rank": 1008
+  },
+  {
+    "char": "硿",
+    "jyutping": "hung1",
+    "tone": 1,
+    "frequency_rank": 1009
+  },
+  {
+    "char": "鄠",
+    "jyutping": "wu6",
+    "tone": 6,
+    "frequency_rank": 1010
+  },
+  {
+    "char": "辒",
+    "jyutping": "wan1",
+    "tone": 1,
+    "frequency_rank": 1011
+  },
+  {
+    "char": "𬨎",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1012
+  },
+  {
+    "char": "𫐓",
+    "jyutping": "jau4",
+    "tone": 4,
+    "frequency_rank": 1013
+  },
+  {
+    "char": "龆",
+    "jyutping": "tiu4",
+    "tone": 4,
+    "frequency_rank": 1014
+  },
+  {
+    "char": "觜",
+    "jyutping": "zi1",
+    "tone": 1,
+    "frequency_rank": 1015
+  },
+  {
+    "char": "䣘",
+    "jyutping": "tong4",
+    "tone": 4,
+    "frequency_rank": 1016
+  },
+  {
+    "char": "暕",
+    "jyutping": "gaan2",
+    "tone": 2,
+    "frequency_rank": 1017
+  },
+  {
+    "char": "鹍",
+    "jyutping": "kwan1",
+    "tone": 1,
+    "frequency_rank": 1018
+  },
+  {
+    "char": "𫫇",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1019
+  },
+  {
+    "char": "㬊",
+    "jyutping": "wun6",
+    "tone": 6,
+    "frequency_rank": 1020
+  },
+  {
+    "char": "暅",
+    "jyutping": "hyun1",
+    "tone": 1,
+    "frequency_rank": 1021
+  },
+  {
+    "char": "跱",
+    "jyutping": "zi6",
+    "tone": 6,
+    "frequency_rank": 1022
+  },
+  {
+    "char": "蜐",
+    "jyutping": "gip3",
+    "tone": 3,
+    "frequency_rank": 1023
+  },
+  {
+    "char": "蜎",
+    "jyutping": "jyun1",
+    "tone": 1,
+    "frequency_rank": 1024
+  },
+  {
+    "char": "嵲",
+    "jyutping": "jit6",
+    "tone": 6,
+    "frequency_rank": 1025
+  },
+  {
+    "char": "赗",
+    "jyutping": "fung3",
+    "tone": 3,
+    "frequency_rank": 1026
+  },
+  {
+    "char": "骱",
+    "jyutping": "gaai3",
+    "tone": 3,
+    "frequency_rank": 1027
+  },
+  {
+    "char": "锖",
+    "jyutping": "coeng1",
+    "tone": 1,
+    "frequency_rank": 1028
+  },
+  {
+    "char": "𫓹",
+    "jyutping": "gei1",
+    "tone": 1,
+    "frequency_rank": 1029
+  },
+  {
+    "char": "锘",
+    "jyutping": "nok6",
+    "tone": 6,
+    "frequency_rank": 1030
+  },
+  {
+    "char": "锳",
+    "jyutping": "joeng1",
+    "tone": 1,
+    "frequency_rank": 1031
+  },
+  {
+    "char": "锧",
+    "jyutping": "zat1",
+    "tone": 1,
+    "frequency_rank": 1032
+  },
+  {
+    "char": "锪",
+    "jyutping": "fat1",
+    "tone": 1,
+    "frequency_rank": 1033
+  },
+  {
+    "char": "𬭚",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1034
+  },
+  {
+    "char": "锫",
+    "jyutping": "pui4",
+    "tone": 4,
+    "frequency_rank": 1035
+  },
+  {
+    "char": "锬",
+    "jyutping": "taam4",
+    "tone": 4,
+    "frequency_rank": 1036
+  },
+  {
+    "char": "𬭛",
+    "jyutping": "bo1",
+    "tone": 1,
+    "frequency_rank": 1037
+  },
+  {
+    "char": "稑",
+    "jyutping": "luk6",
+    "tone": 6,
+    "frequency_rank": 1038
+  },
+  {
+    "char": "稙",
+    "jyutping": "zik6",
+    "tone": 6,
+    "frequency_rank": 1039
+  },
+  {
+    "char": "䅟",
+    "jyutping": "saam1",
+    "tone": 1,
+    "frequency_rank": 1040
+  },
+  {
+    "char": "𬕂",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1041
+  },
+  {
+    "char": "筻",
+    "jyutping": "gaang3",
+    "tone": 3,
+    "frequency_rank": 1042
+  },
+  {
+    "char": "筼",
+    "jyutping": "wan4",
+    "tone": 4,
+    "frequency_rank": 1043
+  },
+  {
+    "char": "筶",
+    "jyutping": "gou3",
+    "tone": 3,
+    "frequency_rank": 1044
+  },
+  {
+    "char": "筦",
+    "jyutping": "gun2",
+    "tone": 2,
+    "frequency_rank": 1045
+  },
+  {
+    "char": "筤",
+    "jyutping": "long4",
+    "tone": 4,
+    "frequency_rank": 1046
+  },
+  {
+    "char": "傺",
+    "jyutping": "cai3",
+    "tone": 3,
+    "frequency_rank": 1047
+  },
+  {
+    "char": "鹎",
+    "jyutping": "bei1",
+    "tone": 1,
+    "frequency_rank": 1048
+  },
+  {
+    "char": "僇",
+    "jyutping": "luk6",
+    "tone": 6,
+    "frequency_rank": 1049
+  },
+  {
+    "char": "艅",
+    "jyutping": "jyu4",
+    "tone": 4,
+    "frequency_rank": 1050
+  },
+  {
+    "char": "艉",
+    "jyutping": "mei5",
+    "tone": 5,
+    "frequency_rank": 1051
+  },
+  {
+    "char": "谼",
+    "jyutping": "hung4",
+    "tone": 4,
+    "frequency_rank": 1052
+  },
+  {
+    "char": "貆",
+    "jyutping": "wun4",
+    "tone": 4,
+    "frequency_rank": 1053
+  },
+  {
+    "char": "腽",
+    "jyutping": "wat1",
+    "tone": 1,
+    "frequency_rank": 1054
+  },
+  {
+    "char": "腨",
+    "jyutping": "syun6",
+    "tone": 6,
+    "frequency_rank": 1055
+  },
+  {
+    "char": "腯",
+    "jyutping": "dat1",
+    "tone": 1,
+    "frequency_rank": 1056
+  },
+  {
+    "char": "鲉",
+    "jyutping": "jau4",
+    "tone": 4,
+    "frequency_rank": 1057
+  },
+  {
+    "char": "鲊",
+    "jyutping": "zaa2",
+    "tone": 2,
+    "frequency_rank": 1058
+  },
+  {
+    "char": "鲌",
+    "jyutping": "baak6",
+    "tone": 6,
+    "frequency_rank": 1059
+  },
+  {
+    "char": "䲟",
+    "jyutping": "jan3",
+    "tone": 3,
+    "frequency_rank": 1060
+  },
+  {
+    "char": "𬶋",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1061
+  },
+  {
+    "char": "𬶍",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1062
+  },
+  {
+    "char": "鲏",
+    "jyutping": "pei4",
+    "tone": 4,
+    "frequency_rank": 1063
+  },
+  {
+    "char": "雊",
+    "jyutping": "gau3",
+    "tone": 3,
+    "frequency_rank": 1064
+  },
+  {
+    "char": "猺",
+    "jyutping": "jiu4",
+    "tone": 4,
+    "frequency_rank": 1065
+  },
+  {
+    "char": "飔",
+    "jyutping": "si1",
+    "tone": 1,
+    "frequency_rank": 1066
+  },
+  {
+    "char": "觟",
+    "jyutping": "waa6",
+    "tone": 6,
+    "frequency_rank": 1067
+  },
+  {
+    "char": "𦝼",
+    "jyutping": "leoi4",
+    "tone": 4,
+    "frequency_rank": 1068
+  },
+  {
+    "char": "馌",
+    "jyutping": "jip3",
+    "tone": 3,
+    "frequency_rank": 1069
+  },
+  {
+    "char": "裛",
+    "jyutping": "jap1",
+    "tone": 1,
+    "frequency_rank": 1070
+  },
+  {
+    "char": "廒",
+    "jyutping": "ngou4",
+    "tone": 4,
+    "frequency_rank": 1071
+  },
+  {
+    "char": "瘀",
+    "jyutping": "jyu2",
+    "tone": 2,
+    "frequency_rank": 1072
+  },
+  {
+    "char": "瘅",
+    "jyutping": "daan3",
+    "tone": 3,
+    "frequency_rank": 1073
+  },
+  {
+    "char": "鄘",
+    "jyutping": "jung4",
+    "tone": 4,
+    "frequency_rank": 1074
+  },
+  {
+    "char": "鹒",
+    "jyutping": "gang1",
+    "tone": 1,
+    "frequency_rank": 1075
+  },
+  {
+    "char": "鄜",
+    "jyutping": "fu1",
+    "tone": 1,
+    "frequency_rank": 1076
+  },
+  {
+    "char": "麀",
+    "jyutping": "jau1",
+    "tone": 1,
+    "frequency_rank": 1077
+  },
+  {
+    "char": "鄣",
+    "jyutping": "zoeng1",
+    "tone": 1,
+    "frequency_rank": 1078
+  },
+  {
+    "char": "阘",
+    "jyutping": "taap3",
+    "tone": 3,
+    "frequency_rank": 1079
+  },
+  {
+    "char": "𫔶",
+    "jyutping": "jit6",
+    "tone": 6,
+    "frequency_rank": 1080
+  },
+  {
+    "char": "煁",
+    "jyutping": "sam4",
+    "tone": 4,
+    "frequency_rank": 1081
+  },
+  {
+    "char": "煃",
+    "jyutping": "kwai2",
+    "tone": 2,
+    "frequency_rank": 1082
+  },
+  {
+    "char": "煴",
+    "jyutping": "wan1",
+    "tone": 1,
+    "frequency_rank": 1083
+  },
+  {
+    "char": "煋",
+    "jyutping": "sing1",
+    "tone": 1,
+    "frequency_rank": 1084
+  },
+  {
+    "char": "煟",
+    "jyutping": "wai6",
+    "tone": 6,
+    "frequency_rank": 1085
+  },
+  {
+    "char": "煓",
+    "jyutping": "tyun1",
+    "tone": 1,
+    "frequency_rank": 1086
+  },
+  {
+    "char": "滠",
+    "jyutping": "sip3",
+    "tone": 3,
+    "frequency_rank": 1087
+  },
+  {
+    "char": "溍",
+    "jyutping": "zeon3",
+    "tone": 3,
+    "frequency_rank": 1088
+  },
+  {
+    "char": "溹",
+    "jyutping": "sok3",
+    "tone": 3,
+    "frequency_rank": 1089
+  },
+  {
+    "char": "滆",
+    "jyutping": "gaak3",
+    "tone": 3,
+    "frequency_rank": 1090
+  },
+  {
+    "char": "滉",
+    "jyutping": "fong2",
+    "tone": 2,
+    "frequency_rank": 1091
+  },
+  {
+    "char": "溦",
+    "jyutping": "mei4",
+    "tone": 4,
+    "frequency_rank": 1092
+  },
+  {
+    "char": "溵",
+    "jyutping": "jan1",
+    "tone": 1,
+    "frequency_rank": 1093
+  },
+  {
+    "char": "漷",
+    "jyutping": "gwok3",
+    "tone": 3,
+    "frequency_rank": 1094
+  },
+  {
+    "char": "滧",
+    "jyutping": "haau6",
+    "tone": 6,
+    "frequency_rank": 1095
+  },
+  {
+    "char": "滘",
+    "jyutping": "gaau3",
+    "tone": 3,
+    "frequency_rank": 1096
+  },
+  {
+    "char": "滍",
+    "jyutping": "zi6",
+    "tone": 6,
+    "frequency_rank": 1097
+  },
+  {
+    "char": "愭",
+    "jyutping": "kei4",
+    "tone": 4,
+    "frequency_rank": 1098
+  },
+  {
+    "char": "慥",
+    "jyutping": "zou6",
+    "tone": 6,
+    "frequency_rank": 1099
+  },
+  {
+    "char": "慆",
+    "jyutping": "tou1",
+    "tone": 1,
+    "frequency_rank": 1100
+  },
+  {
+    "char": "塱",
+    "jyutping": "long5",
+    "tone": 5,
+    "frequency_rank": 1101
+  },
+  {
+    "char": "𫌀",
+    "jyutping": "zik1",
+    "tone": 1,
+    "frequency_rank": 1102
+  },
+  {
+    "char": "裼",
+    "jyutping": "sik1",
+    "tone": 1,
+    "frequency_rank": 1103
+  },
+  {
+    "char": "禋",
+    "jyutping": "jan1",
+    "tone": 1,
+    "frequency_rank": 1104
+  },
+  {
+    "char": "禔",
+    "jyutping": "tai4",
+    "tone": 4,
+    "frequency_rank": 1105
+  },
+  {
+    "char": "禘",
+    "jyutping": "dai3",
+    "tone": 3,
+    "frequency_rank": 1106
+  },
+  {
+    "char": "禒",
+    "jyutping": "sin2",
+    "tone": 2,
+    "frequency_rank": 1107
+  },
+  {
+    "char": "谫",
+    "jyutping": "zin2",
+    "tone": 2,
+    "frequency_rank": 1108
+  },
+  {
+    "char": "鹔",
+    "jyutping": "suk1",
+    "tone": 1,
+    "frequency_rank": 1109
+  },
+  {
+    "char": "𫖳",
+    "jyutping": "wan1",
+    "tone": 1,
+    "frequency_rank": 1110
+  },
+  {
+    "char": "愍",
+    "jyutping": "man5",
+    "tone": 5,
+    "frequency_rank": 1111
+  },
+  {
+    "char": "嫄",
+    "jyutping": "jyun4",
+    "tone": 4,
+    "frequency_rank": 1112
+  },
+  {
+    "char": "媱",
+    "jyutping": "jiu4",
+    "tone": 4,
+    "frequency_rank": 1113
+  },
+  {
+    "char": "戤",
+    "jyutping": "koi3",
+    "tone": 3,
+    "frequency_rank": 1114
+  },
+  {
+    "char": "勠",
+    "jyutping": "luk6",
+    "tone": 6,
+    "frequency_rank": 1115
+  },
+  {
+    "char": "戣",
+    "jyutping": "kwai4",
+    "tone": 4,
+    "frequency_rank": 1116
+  },
+  {
+    "char": "𫘪",
+    "jyutping": "jyun4",
+    "tone": 4,
+    "frequency_rank": 1117
+  },
+  {
+    "char": "𫘬",
+    "jyutping": "hai4",
+    "tone": 4,
+    "frequency_rank": 1118
+  },
+  {
+    "char": "缞",
+    "jyutping": "ceoi1",
+    "tone": 1,
+    "frequency_rank": 1119
+  },
+  {
+    "char": "耤",
+    "jyutping": "zik6",
+    "tone": 6,
+    "frequency_rank": 1120
+  },
+  {
+    "char": "瑧",
+    "jyutping": "zeon1",
+    "tone": 1,
+    "frequency_rank": 1121
+  },
+  {
+    "char": "𫞩",
+    "jyutping": "mun4",
+    "tone": 4,
+    "frequency_rank": 1122
+  },
+  {
+    "char": "瑨",
+    "jyutping": "zeon3",
+    "tone": 3,
+    "frequency_rank": 1123
+  },
+  {
+    "char": "瑱",
+    "jyutping": "tin3",
+    "tone": 3,
+    "frequency_rank": 1124
+  },
+  {
+    "char": "瑷",
+    "jyutping": "oi3",
+    "tone": 3,
+    "frequency_rank": 1125
+  },
+  {
+    "char": "瑢",
+    "jyutping": "jung4",
+    "tone": 4,
+    "frequency_rank": 1126
+  },
+  {
+    "char": "斠",
+    "jyutping": "gaau3",
+    "tone": 3,
+    "frequency_rank": 1127
+  },
+  {
+    "char": "摏",
+    "jyutping": "zung1",
+    "tone": 1,
+    "frequency_rank": 1128
+  },
+  {
+    "char": "墕",
+    "jyutping": "jin2",
+    "tone": 2,
+    "frequency_rank": 1129
+  },
+  {
+    "char": "墈",
+    "jyutping": "ham3",
+    "tone": 3,
+    "frequency_rank": 1130
+  },
+  {
+    "char": "墐",
+    "jyutping": "gan6",
+    "tone": 6,
+    "frequency_rank": 1131
+  },
+  {
+    "char": "墘",
+    "jyutping": "kin4",
+    "tone": 4,
+    "frequency_rank": 1132
+  },
+  {
+    "char": "摴",
+    "jyutping": "syu1",
+    "tone": 1,
+    "frequency_rank": 1133
+  },
+  {
+    "char": "銎",
+    "jyutping": "kung4",
+    "tone": 4,
+    "frequency_rank": 1134
+  },
+  {
+    "char": "𡐓",
+    "jyutping": "hong1",
+    "tone": 1,
+    "frequency_rank": 1135
+  },
+  {
+    "char": "墚",
+    "jyutping": "loeng4",
+    "tone": 4,
+    "frequency_rank": 1136
+  },
+  {
+    "char": "撖",
+    "jyutping": "hon6",
+    "tone": 6,
+    "frequency_rank": 1137
+  },
+  {
+    "char": "𪤗",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1138
+  },
+  {
+    "char": "靽",
+    "jyutping": "bun3",
+    "tone": 3,
+    "frequency_rank": 1139
+  },
+  {
+    "char": "鞁",
+    "jyutping": "bei6",
+    "tone": 6,
+    "frequency_rank": 1140
+  },
+  {
+    "char": "蔌",
+    "jyutping": "cuk1",
+    "tone": 1,
+    "frequency_rank": 1141
+  },
+  {
+    "char": "蔈",
+    "jyutping": "biu1",
+    "tone": 1,
+    "frequency_rank": 1142
+  },
+  {
+    "char": "蓰",
+    "jyutping": "saai2",
+    "tone": 2,
+    "frequency_rank": 1143
+  },
+  {
+    "char": "蔹",
+    "jyutping": "lim5",
+    "tone": 5,
+    "frequency_rank": 1144
+  },
+  {
+    "char": "蔊",
+    "jyutping": "hon2",
+    "tone": 2,
+    "frequency_rank": 1145
+  },
+  {
+    "char": "嘏",
+    "jyutping": "gu2",
+    "tone": 2,
+    "frequency_rank": 1146
+  },
+  {
+    "char": "榰",
+    "jyutping": "zi1",
+    "tone": 1,
+    "frequency_rank": 1147
+  },
+  {
+    "char": "榑",
+    "jyutping": "fu4",
+    "tone": 4,
+    "frequency_rank": 1148
+  },
+  {
+    "char": "槚",
+    "jyutping": "gaa2",
+    "tone": 2,
+    "frequency_rank": 1149
+  },
+  {
+    "char": "𣗋",
+    "jyutping": "dong2",
+    "tone": 2,
+    "frequency_rank": 1150
+  },
+  {
+    "char": "槜",
+    "jyutping": "zeoi3",
+    "tone": 3,
+    "frequency_rank": 1151
+  },
+  {
+    "char": "榍",
+    "jyutping": "sit3",
+    "tone": 3,
+    "frequency_rank": 1152
+  },
+  {
+    "char": "疐",
+    "jyutping": "zi3",
+    "tone": 3,
+    "frequency_rank": 1153
+  },
+  {
+    "char": "𬸘",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1154
+  },
+  {
+    "char": "酺",
+    "jyutping": "pou4",
+    "tone": 4,
+    "frequency_rank": 1155
+  },
+  {
+    "char": "酾",
+    "jyutping": "si1",
+    "tone": 1,
+    "frequency_rank": 1156
+  },
+  {
+    "char": "酲",
+    "jyutping": "cing4",
+    "tone": 4,
+    "frequency_rank": 1157
+  },
+  {
+    "char": "酴",
+    "jyutping": "tou4",
+    "tone": 4,
+    "frequency_rank": 1158
+  },
+  {
+    "char": "碶",
+    "jyutping": "kai3",
+    "tone": 3,
+    "frequency_rank": 1159
+  },
+  {
+    "char": "䃎",
+    "jyutping": "zaa3",
+    "tone": 3,
+    "frequency_rank": 1160
+  },
+  {
+    "char": "𬒗",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1161
+  },
+  {
+    "char": "碨",
+    "jyutping": "wai3",
+    "tone": 3,
+    "frequency_rank": 1162
+  },
+  {
+    "char": "𥔲",
+    "jyutping": "ngok6",
+    "tone": 6,
+    "frequency_rank": 1163
+  },
+  {
+    "char": "碹",
+    "jyutping": "syun4",
+    "tone": 4,
+    "frequency_rank": 1164
+  },
+  {
+    "char": "碥",
+    "jyutping": "bin2",
+    "tone": 2,
+    "frequency_rank": 1165
+  },
+  {
+    "char": "劂",
+    "jyutping": "kyut3",
+    "tone": 3,
+    "frequency_rank": 1166
+  },
+  {
+    "char": "𫚖",
+    "jyutping": "cai5",
+    "tone": 5,
+    "frequency_rank": 1167
+  },
+  {
+    "char": "䴗",
+    "jyutping": "gwik1",
+    "tone": 1,
+    "frequency_rank": 1168
+  },
+  {
+    "char": "夥",
+    "jyutping": "fo2",
+    "tone": 2,
+    "frequency_rank": 1169
+  },
+  {
+    "char": "瞍",
+    "jyutping": "sau2",
+    "tone": 2,
+    "frequency_rank": 1170
+  },
+  {
+    "char": "鹖",
+    "jyutping": "hot3",
+    "tone": 3,
+    "frequency_rank": 1171
+  },
+  {
+    "char": "㬎",
+    "jyutping": "hin2",
+    "tone": 2,
+    "frequency_rank": 1172
+  },
+  {
+    "char": "跽",
+    "jyutping": "gei6",
+    "tone": 6,
+    "frequency_rank": 1173
+  },
+  {
+    "char": "蜾",
+    "jyutping": "gwo2",
+    "tone": 2,
+    "frequency_rank": 1174
+  },
+  {
+    "char": "幖",
+    "jyutping": "biu1",
+    "tone": 1,
+    "frequency_rank": 1175
+  },
+  {
+    "char": "嶍",
+    "jyutping": "zaap6",
+    "tone": 6,
+    "frequency_rank": 1176
+  },
+  {
+    "char": "圙",
+    "jyutping": "loek6",
+    "tone": 6,
+    "frequency_rank": 1177
+  },
+  {
+    "char": "𨱏",
+    "jyutping": "saap3",
+    "tone": 3,
+    "frequency_rank": 1178
+  },
+  {
+    "char": "锺",
+    "jyutping": "zung1",
+    "tone": 1,
+    "frequency_rank": 1179
+  },
+  {
+    "char": "锼",
+    "jyutping": "sau1",
+    "tone": 1,
+    "frequency_rank": 1180
+  },
+  {
+    "char": "锽",
+    "jyutping": "wong4",
+    "tone": 4,
+    "frequency_rank": 1181
+  },
+  {
+    "char": "𬭤",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1182
+  },
+  {
+    "char": "锾",
+    "jyutping": "waan4",
+    "tone": 4,
+    "frequency_rank": 1183
+  },
+  {
+    "char": "锿",
+    "jyutping": "oi1",
+    "tone": 1,
+    "frequency_rank": 1184
+  },
+  {
+    "char": "镃",
+    "jyutping": "zi1",
+    "tone": 1,
+    "frequency_rank": 1185
+  },
+  {
+    "char": "镄",
+    "jyutping": "fai3",
+    "tone": 3,
+    "frequency_rank": 1186
+  },
+  {
+    "char": "镅",
+    "jyutping": "mei4",
+    "tone": 4,
+    "frequency_rank": 1187
+  },
+  {
+    "char": "馝",
+    "jyutping": "bit6",
+    "tone": 6,
+    "frequency_rank": 1188
+  },
+  {
+    "char": "鹙",
+    "jyutping": "cau1",
+    "tone": 1,
+    "frequency_rank": 1189
+  },
+  {
+    "char": "箨",
+    "jyutping": "tok3",
+    "tone": 3,
+    "frequency_rank": 1190
+  },
+  {
+    "char": "箖",
+    "jyutping": "lam4",
+    "tone": 4,
+    "frequency_rank": 1191
+  },
+  {
+    "char": "劄",
+    "jyutping": "zaat3",
+    "tone": 3,
+    "frequency_rank": 1192
+  },
+  {
+    "char": "僬",
+    "jyutping": "ziu1",
+    "tone": 1,
+    "frequency_rank": 1193
+  },
+  {
+    "char": "僦",
+    "jyutping": "zau6",
+    "tone": 6,
+    "frequency_rank": 1194
+  },
+  {
+    "char": "僔",
+    "jyutping": "zyun2",
+    "tone": 2,
+    "frequency_rank": 1195
+  },
+  {
+    "char": "僎",
+    "jyutping": "zaan6",
+    "tone": 6,
+    "frequency_rank": 1196
+  },
+  {
+    "char": "槃",
+    "jyutping": "pun4",
+    "tone": 4,
+    "frequency_rank": 1197
+  },
+  {
+    "char": "㙦",
+    "jyutping": "ce4",
+    "tone": 4,
+    "frequency_rank": 1198
+  },
+  {
+    "char": "鲒",
+    "jyutping": "git3",
+    "tone": 3,
+    "frequency_rank": 1199
+  },
+  {
+    "char": "鲕",
+    "jyutping": "ji4",
+    "tone": 4,
+    "frequency_rank": 1200
+  },
+  {
+    "char": "𫚕",
+    "jyutping": "si1",
+    "tone": 1,
+    "frequency_rank": 1201
+  },
+  {
+    "char": "鲖",
+    "jyutping": "tung4",
+    "tone": 4,
+    "frequency_rank": 1202
+  },
+  {
+    "char": "鲗",
+    "jyutping": "caak6",
+    "tone": 6,
+    "frequency_rank": 1203
+  },
+  {
+    "char": "鲘",
+    "jyutping": "hau6",
+    "tone": 6,
+    "frequency_rank": 1204
+  },
+  {
+    "char": "鲙",
+    "jyutping": "kui2",
+    "tone": 2,
+    "frequency_rank": 1205
+  },
+  {
+    "char": "𬶐",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1206
+  },
+  {
+    "char": "𬶏",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1207
+  },
+  {
+    "char": "𩽾",
+    "jyutping": "on1",
+    "tone": 1,
+    "frequency_rank": 1208
+  },
+  {
+    "char": "夐",
+    "jyutping": "hyun3",
+    "tone": 3,
+    "frequency_rank": 1209
+  },
+  {
+    "char": "獍",
+    "jyutping": "ging3",
+    "tone": 3,
+    "frequency_rank": 1210
+  },
+  {
+    "char": "飗",
+    "jyutping": "lau4",
+    "tone": 4,
+    "frequency_rank": 1211
+  },
+  {
+    "char": "𬸚",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1212
+  },
+  {
+    "char": "凘",
+    "jyutping": "si1",
+    "tone": 1,
+    "frequency_rank": 1213
+  },
+  {
+    "char": "廑",
+    "jyutping": "kan4",
+    "tone": 4,
+    "frequency_rank": 1214
+  },
+  {
+    "char": "廙",
+    "jyutping": "ji6",
+    "tone": 6,
+    "frequency_rank": 1215
+  },
+  {
+    "char": "瘗",
+    "jyutping": "ji3",
+    "tone": 3,
+    "frequency_rank": 1216
+  },
+  {
+    "char": "瘥",
+    "jyutping": "caai3",
+    "tone": 3,
+    "frequency_rank": 1217
+  },
+  {
+    "char": "瘕",
+    "jyutping": "gaa2",
+    "tone": 2,
+    "frequency_rank": 1218
+  },
+  {
+    "char": "鲝",
+    "jyutping": "zaa2",
+    "tone": 2,
+    "frequency_rank": 1219
+  },
+  {
+    "char": "鄫",
+    "jyutping": "cang4",
+    "tone": 4,
+    "frequency_rank": 1220
+  },
+  {
+    "char": "熇",
+    "jyutping": "huk6",
+    "tone": 6,
+    "frequency_rank": 1221
+  },
+  {
+    "char": "漹",
+    "jyutping": "jin4",
+    "tone": 4,
+    "frequency_rank": 1222
+  },
+  {
+    "char": "漖",
+    "jyutping": "gaau3",
+    "tone": 3,
+    "frequency_rank": 1223
+  },
+  {
+    "char": "潆",
+    "jyutping": "jing4",
+    "tone": 4,
+    "frequency_rank": 1224
+  },
+  {
+    "char": "漤",
+    "jyutping": "laam5",
+    "tone": 5,
+    "frequency_rank": 1225
+  },
+  {
+    "char": "潩",
+    "jyutping": "ji6",
+    "tone": 6,
+    "frequency_rank": 1226
+  },
+  {
+    "char": "漼",
+    "jyutping": "ceoi2",
+    "tone": 2,
+    "frequency_rank": 1227
+  },
+  {
+    "char": "漴",
+    "jyutping": "zong6",
+    "tone": 6,
+    "frequency_rank": 1228
+  },
+  {
+    "char": "㽏",
+    "jyutping": "gam3",
+    "tone": 3,
+    "frequency_rank": 1229
+  },
+  {
+    "char": "漈",
+    "jyutping": "zai3",
+    "tone": 3,
+    "frequency_rank": 1230
+  },
+  {
+    "char": "漋",
+    "jyutping": "lung4",
+    "tone": 4,
+    "frequency_rank": 1231
+  },
+  {
+    "char": "漻",
+    "jyutping": "liu4",
+    "tone": 4,
+    "frequency_rank": 1232
+  },
+  {
+    "char": "慬",
+    "jyutping": "kan4",
+    "tone": 4,
+    "frequency_rank": 1233
+  },
+  {
+    "char": "窬",
+    "jyutping": "jyu4",
+    "tone": 4,
+    "frequency_rank": 1234
+  },
+  {
+    "char": "窭",
+    "jyutping": "geoi6",
+    "tone": 6,
+    "frequency_rank": 1235
+  },
+  {
+    "char": "㮾",
+    "jyutping": "long5",
+    "tone": 5,
+    "frequency_rank": 1236
+  },
+  {
+    "char": "𬤝",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1237
+  },
+  {
+    "char": "褕",
+    "jyutping": "jyu4",
+    "tone": 4,
+    "frequency_rank": 1238
+  },
+  {
+    "char": "禛",
+    "jyutping": "zan1",
+    "tone": 1,
+    "frequency_rank": 1239
+  },
+  {
+    "char": "禚",
+    "jyutping": "zoek3",
+    "tone": 3,
+    "frequency_rank": 1240
+  },
+  {
+    "char": "隩",
+    "jyutping": "juk1",
+    "tone": 1,
+    "frequency_rank": 1241
+  },
+  {
+    "char": "嫕",
+    "jyutping": "ai3",
+    "tone": 3,
+    "frequency_rank": 1242
+  },
+  {
+    "char": "嫭",
+    "jyutping": "wu6",
+    "tone": 6,
+    "frequency_rank": 1243
+  },
+  {
+    "char": "嫜",
+    "jyutping": "zoeng1",
+    "tone": 1,
+    "frequency_rank": 1244
+  },
+  {
+    "char": "嫪",
+    "jyutping": "lou6",
+    "tone": 6,
+    "frequency_rank": 1245
+  },
+  {
+    "char": "𬙂",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1246
+  },
+  {
+    "char": "㻬",
+    "jyutping": "tou1",
+    "tone": 1,
+    "frequency_rank": 1247
+  },
+  {
+    "char": "麹",
+    "jyutping": "kuk1",
+    "tone": 1,
+    "frequency_rank": 1248
+  },
+  {
+    "char": "璆",
+    "jyutping": "kau4",
+    "tone": 4,
+    "frequency_rank": 1249
+  },
+  {
+    "char": "漦",
+    "jyutping": "lei4",
+    "tone": 4,
+    "frequency_rank": 1250
+  },
+  {
+    "char": "叇",
+    "jyutping": "doi6",
+    "tone": 6,
+    "frequency_rank": 1251
+  },
+  {
+    "char": "墣",
+    "jyutping": "pok3",
+    "tone": 3,
+    "frequency_rank": 1252
+  },
+  {
+    "char": "墦",
+    "jyutping": "faan4",
+    "tone": 4,
+    "frequency_rank": 1253
+  },
+  {
+    "char": "墡",
+    "jyutping": "sin6",
+    "tone": 6,
+    "frequency_rank": 1254
+  },
+  {
+    "char": "劐",
+    "jyutping": "fok3",
+    "tone": 3,
+    "frequency_rank": 1255
+  },
+  {
+    "char": "薁",
+    "jyutping": "juk1",
+    "tone": 1,
+    "frequency_rank": 1256
+  },
+  {
+    "char": "蕰",
+    "jyutping": "wan1",
+    "tone": 1,
+    "frequency_rank": 1257
+  },
+  {
+    "char": "蔃",
+    "jyutping": "koeng2",
+    "tone": 2,
+    "frequency_rank": 1258
+  },
+  {
+    "char": "鼒",
+    "jyutping": "zi1",
+    "tone": 1,
+    "frequency_rank": 1259
+  },
+  {
+    "char": "槱",
+    "jyutping": "jau5",
+    "tone": 5,
+    "frequency_rank": 1260
+  },
+  {
+    "char": "鹝",
+    "jyutping": "jik6",
+    "tone": 6,
+    "frequency_rank": 1261
+  },
+  {
+    "char": "磏",
+    "jyutping": "lim4",
+    "tone": 4,
+    "frequency_rank": 1262
+  },
+  {
+    "char": "磉",
+    "jyutping": "song2",
+    "tone": 2,
+    "frequency_rank": 1263
+  },
+  {
+    "char": "殣",
+    "jyutping": "gan2",
+    "tone": 2,
+    "frequency_rank": 1264
+  },
+  {
+    "char": "慭",
+    "jyutping": "jan6",
+    "tone": 6,
+    "frequency_rank": 1265
+  },
+  {
+    "char": "霅",
+    "jyutping": "zip3",
+    "tone": 3,
+    "frequency_rank": 1266
+  },
+  {
+    "char": "暵",
+    "jyutping": "hon3",
+    "tone": 3,
+    "frequency_rank": 1267
+  },
+  {
+    "char": "暲",
+    "jyutping": "zoeng1",
+    "tone": 1,
+    "frequency_rank": 1268
+  },
+  {
+    "char": "暶",
+    "jyutping": "syun4",
+    "tone": 4,
+    "frequency_rank": 1269
+  },
+  {
+    "char": "踦",
+    "jyutping": "kei1",
+    "tone": 1,
+    "frequency_rank": 1270
+  },
+  {
+    "char": "踣",
+    "jyutping": "baak6",
+    "tone": 6,
+    "frequency_rank": 1271
+  },
+  {
+    "char": "䗖",
+    "jyutping": "dai3",
+    "tone": 3,
+    "frequency_rank": 1272
+  },
+  {
+    "char": "蝘",
+    "jyutping": "jin2",
+    "tone": 2,
+    "frequency_rank": 1273
+  },
+  {
+    "char": "蝲",
+    "jyutping": "laat6",
+    "tone": 6,
+    "frequency_rank": 1274
+  },
+  {
+    "char": "蝤",
+    "jyutping": "jau4",
+    "tone": 4,
+    "frequency_rank": 1275
+  },
+  {
+    "char": "噇",
+    "jyutping": "cong4",
+    "tone": 4,
+    "frequency_rank": 1276
+  },
+  {
+    "char": "噂",
+    "jyutping": "zyun2",
+    "tone": 2,
+    "frequency_rank": 1277
+  },
+  {
+    "char": "噀",
+    "jyutping": "seon3",
+    "tone": 3,
+    "frequency_rank": 1278
+  },
+  {
+    "char": "罶",
+    "jyutping": "lau5",
+    "tone": 5,
+    "frequency_rank": 1279
+  },
+  {
+    "char": "嶲",
+    "jyutping": "kwai1",
+    "tone": 1,
+    "frequency_rank": 1280
+  },
+  {
+    "char": "嶓",
+    "jyutping": "bo1",
+    "tone": 1,
+    "frequency_rank": 1281
+  },
+  {
+    "char": "㠇",
+    "jyutping": "zau6",
+    "tone": 6,
+    "frequency_rank": 1282
+  },
+  {
+    "char": "嶟",
+    "jyutping": "zeon1",
+    "tone": 1,
+    "frequency_rank": 1283
+  },
+  {
+    "char": "嶒",
+    "jyutping": "cang4",
+    "tone": 4,
+    "frequency_rank": 1284
+  },
+  {
+    "char": "镆",
+    "jyutping": "mok6",
+    "tone": 6,
+    "frequency_rank": 1285
+  },
+  {
+    "char": "镈",
+    "jyutping": "bok3",
+    "tone": 3,
+    "frequency_rank": 1286
+  },
+  {
+    "char": "镋",
+    "jyutping": "tong2",
+    "tone": 2,
+    "frequency_rank": 1287
+  },
+  {
+    "char": "镎",
+    "jyutping": "naa4",
+    "tone": 4,
+    "frequency_rank": 1288
+  },
+  {
+    "char": "𬭩",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1289
+  },
+  {
+    "char": "镕",
+    "jyutping": "jung4",
+    "tone": 4,
+    "frequency_rank": 1290
+  },
+  {
+    "char": "稹",
+    "jyutping": "zan2",
+    "tone": 2,
+    "frequency_rank": 1291
+  },
+  {
+    "char": "儇",
+    "jyutping": "hyun1",
+    "tone": 1,
+    "frequency_rank": 1292
+  },
+  {
+    "char": "皞",
+    "jyutping": "hou6",
+    "tone": 6,
+    "frequency_rank": 1293
+  },
+  {
+    "char": "皛",
+    "jyutping": "kiu5",
+    "tone": 5,
+    "frequency_rank": 1294
+  },
+  {
+    "char": "䴘",
+    "jyutping": "tai1",
+    "tone": 1,
+    "frequency_rank": 1295
+  },
+  {
+    "char": "艎",
+    "jyutping": "wong4",
+    "tone": 4,
+    "frequency_rank": 1296
+  },
+  {
+    "char": "艏",
+    "jyutping": "sau2",
+    "tone": 2,
+    "frequency_rank": 1297
+  },
+  {
+    "char": "鹟",
+    "jyutping": "jung1",
+    "tone": 1,
+    "frequency_rank": 1298
+  },
+  {
+    "char": "𩾃",
+    "jyutping": "min5",
+    "tone": 5,
+    "frequency_rank": 1299
+  },
+  {
+    "char": "鲦",
+    "jyutping": "tiu4",
+    "tone": 4,
+    "frequency_rank": 1300
+  },
+  {
+    "char": "鲪",
+    "jyutping": "gwan1",
+    "tone": 1,
+    "frequency_rank": 1301
+  },
+  {
+    "char": "鲬",
+    "jyutping": "jung2",
+    "tone": 2,
+    "frequency_rank": 1302
+  },
+  {
+    "char": "橥",
+    "jyutping": "zyu1",
+    "tone": 1,
+    "frequency_rank": 1303
+  },
+  {
+    "char": "觭",
+    "jyutping": "gei1",
+    "tone": 1,
+    "frequency_rank": 1304
+  },
+  {
+    "char": "鹠",
+    "jyutping": "lau4",
+    "tone": 4,
+    "frequency_rank": 1305
+  },
+  {
+    "char": "鹡",
+    "jyutping": "zik3",
+    "tone": 3,
+    "frequency_rank": 1306
+  },
+  {
+    "char": "糇",
+    "jyutping": "hau4",
+    "tone": 4,
+    "frequency_rank": 1307
+  },
+  {
+    "char": "糈",
+    "jyutping": "seoi2",
+    "tone": 2,
+    "frequency_rank": 1308
+  },
+  {
+    "char": "翦",
+    "jyutping": "zin2",
+    "tone": 2,
+    "frequency_rank": 1309
+  },
+  {
+    "char": "鹢",
+    "jyutping": "jik6",
+    "tone": 6,
+    "frequency_rank": 1310
+  },
+  {
+    "char": "鹣",
+    "jyutping": "gim1",
+    "tone": 1,
+    "frequency_rank": 1311
+  },
+  {
+    "char": "熛",
+    "jyutping": "biu1",
+    "tone": 1,
+    "frequency_rank": 1312
+  },
+  {
+    "char": "潖",
+    "jyutping": "paa4",
+    "tone": 4,
+    "frequency_rank": 1313
+  },
+  {
+    "char": "潵",
+    "jyutping": "saat3",
+    "tone": 3,
+    "frequency_rank": 1314
+  },
+  {
+    "char": "㵐",
+    "jyutping": "kyut3",
+    "tone": 3,
+    "frequency_rank": 1315
+  },
+  {
+    "char": "澂",
+    "jyutping": "cing4",
+    "tone": 4,
+    "frequency_rank": 1316
+  },
+  {
+    "char": "澛",
+    "jyutping": "lou5",
+    "tone": 5,
+    "frequency_rank": 1317
+  },
+  {
+    "char": "瑬",
+    "jyutping": "lau4",
+    "tone": 4,
+    "frequency_rank": 1318
+  },
+  {
+    "char": "潽",
+    "jyutping": "pou1",
+    "tone": 1,
+    "frequency_rank": 1319
+  },
+  {
+    "char": "潾",
+    "jyutping": "leon4",
+    "tone": 4,
+    "frequency_rank": 1320
+  },
+  {
+    "char": "潏",
+    "jyutping": "kyut3",
+    "tone": 3,
+    "frequency_rank": 1321
+  },
+  {
+    "char": "憭",
+    "jyutping": "liu5",
+    "tone": 5,
+    "frequency_rank": 1322
+  },
+  {
+    "char": "憕",
+    "jyutping": "cing4",
+    "tone": 4,
+    "frequency_rank": 1323
+  },
+  {
+    "char": "𬸣",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1324
+  },
+  {
+    "char": "戭",
+    "jyutping": "jan5",
+    "tone": 5,
+    "frequency_rank": 1325
+  },
+  {
+    "char": "褯",
+    "jyutping": "zik6",
+    "tone": 6,
+    "frequency_rank": 1326
+  },
+  {
+    "char": "禤",
+    "jyutping": "hyun1",
+    "tone": 1,
+    "frequency_rank": 1327
+  },
+  {
+    "char": "𫍽",
+    "jyutping": "hyun1",
+    "tone": 1,
+    "frequency_rank": 1328
+  },
+  {
+    "char": "嫽",
+    "jyutping": "liu4",
+    "tone": 4,
+    "frequency_rank": 1329
+  },
+  {
+    "char": "遹",
+    "jyutping": "wat6",
+    "tone": 6,
+    "frequency_rank": 1330
+  },
+  {
+    "char": "𬴊",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1331
+  },
+  {
+    "char": "璥",
+    "jyutping": "ging2",
+    "tone": 2,
+    "frequency_rank": 1332
+  },
+  {
+    "char": "璲",
+    "jyutping": "seoi6",
+    "tone": 6,
+    "frequency_rank": 1333
+  },
+  {
+    "char": "璒",
+    "jyutping": "dang1",
+    "tone": 1,
+    "frequency_rank": 1334
+  },
+  {
+    "char": "憙",
+    "jyutping": "hei2",
+    "tone": 2,
+    "frequency_rank": 1335
+  },
+  {
+    "char": "擐",
+    "jyutping": "gwaan3",
+    "tone": 3,
+    "frequency_rank": 1336
+  },
+  {
+    "char": "鄹",
+    "jyutping": "zau1",
+    "tone": 1,
+    "frequency_rank": 1337
+  },
+  {
+    "char": "薳",
+    "jyutping": "jyun5",
+    "tone": 5,
+    "frequency_rank": 1338
+  },
+  {
+    "char": "鞔",
+    "jyutping": "mun4",
+    "tone": 4,
+    "frequency_rank": 1339
+  },
+  {
+    "char": "黇",
+    "jyutping": "tim1",
+    "tone": 1,
+    "frequency_rank": 1340
+  },
+  {
+    "char": "𬞟",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1341
+  },
+  {
+    "char": "蕗",
+    "jyutping": "lou6",
+    "tone": 6,
+    "frequency_rank": 1342
+  },
+  {
+    "char": "薢",
+    "jyutping": "haai6",
+    "tone": 6,
+    "frequency_rank": 1343
+  },
+  {
+    "char": "蕹",
+    "jyutping": "ung3",
+    "tone": 3,
+    "frequency_rank": 1344
+  },
+  {
+    "char": "橞",
+    "jyutping": "wai6",
+    "tone": 6,
+    "frequency_rank": 1345
+  },
+  {
+    "char": "橑",
+    "jyutping": "lou5",
+    "tone": 5,
+    "frequency_rank": 1346
+  },
+  {
+    "char": "橦",
+    "jyutping": "tung4",
+    "tone": 4,
+    "frequency_rank": 1347
+  },
+  {
+    "char": "醑",
+    "jyutping": "seoi2",
+    "tone": 2,
+    "frequency_rank": 1348
+  },
+  {
+    "char": "觱",
+    "jyutping": "bit1",
+    "tone": 1,
+    "frequency_rank": 1349
+  },
+  {
+    "char": "磡",
+    "jyutping": "ham3",
+    "tone": 3,
+    "frequency_rank": 1350
+  },
+  {
+    "char": "𥕢",
+    "jyutping": "cou4",
+    "tone": 4,
+    "frequency_rank": 1351
+  },
+  {
+    "char": "磜",
+    "jyutping": "zai3",
+    "tone": 3,
+    "frequency_rank": 1352
+  },
+  {
+    "char": "豮",
+    "jyutping": "fan4",
+    "tone": 4,
+    "frequency_rank": 1353
+  },
+  {
+    "char": "𫟦",
+    "jyutping": "seoi6",
+    "tone": 6,
+    "frequency_rank": 1354
+  },
+  {
+    "char": "𬺈",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1355
+  },
+  {
+    "char": "𫠜",
+    "jyutping": "ngai4",
+    "tone": 4,
+    "frequency_rank": 1356
+  },
+  {
+    "char": "鹾",
+    "jyutping": "co4",
+    "tone": 4,
+    "frequency_rank": 1357
+  },
+  {
+    "char": "虤",
+    "jyutping": "ngaan4",
+    "tone": 4,
+    "frequency_rank": 1358
+  },
+  {
+    "char": "暿",
+    "jyutping": "hei2",
+    "tone": 2,
+    "frequency_rank": 1359
+  },
+  {
+    "char": "曌",
+    "jyutping": "ziu3",
+    "tone": 3,
+    "frequency_rank": 1360
+  },
+  {
+    "char": "曈",
+    "jyutping": "tung4",
+    "tone": 4,
+    "frequency_rank": 1361
+  },
+  {
+    "char": "㬚",
+    "jyutping": "cit3",
+    "tone": 3,
+    "frequency_rank": 1362
+  },
+  {
+    "char": "蹅",
+    "jyutping": "caa5",
+    "tone": 5,
+    "frequency_rank": 1363
+  },
+  {
+    "char": "踶",
+    "jyutping": "dai6",
+    "tone": 6,
+    "frequency_rank": 1364
+  },
+  {
+    "char": "䗛",
+    "jyutping": "sau1",
+    "tone": 1,
+    "frequency_rank": 1365
+  },
+  {
+    "char": "螗",
+    "jyutping": "tong4",
+    "tone": 4,
+    "frequency_rank": 1366
+  },
+  {
+    "char": "疁",
+    "jyutping": "lau4",
+    "tone": 4,
+    "frequency_rank": 1367
+  },
+  {
+    "char": "㠓",
+    "jyutping": "mung4",
+    "tone": 4,
+    "frequency_rank": 1368
+  },
+  {
+    "char": "幪",
+    "jyutping": "mung4",
+    "tone": 4,
+    "frequency_rank": 1369
+  },
+  {
+    "char": "𪩘",
+    "jyutping": "jin2",
+    "tone": 2,
+    "frequency_rank": 1370
+  },
+  {
+    "char": "嶦",
+    "jyutping": "zim1",
+    "tone": 1,
+    "frequency_rank": 1371
+  },
+  {
+    "char": "𬭬",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1372
+  },
+  {
+    "char": "𨱑",
+    "jyutping": "waang4",
+    "tone": 4,
+    "frequency_rank": 1373
+  },
+  {
+    "char": "𬭯",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1374
+  },
+  {
+    "char": "馞",
+    "jyutping": "but6",
+    "tone": 6,
+    "frequency_rank": 1375
+  },
+  {
+    "char": "穄",
+    "jyutping": "zai3",
+    "tone": 3,
+    "frequency_rank": 1376
+  },
+  {
+    "char": "篚",
+    "jyutping": "fei2",
+    "tone": 2,
+    "frequency_rank": 1377
+  },
+  {
+    "char": "篯",
+    "jyutping": "zin1",
+    "tone": 1,
+    "frequency_rank": 1378
+  },
+  {
+    "char": "簉",
+    "jyutping": "zou6",
+    "tone": 6,
+    "frequency_rank": 1379
+  },
+  {
+    "char": "鼽",
+    "jyutping": "kau4",
+    "tone": 4,
+    "frequency_rank": 1380
+  },
+  {
+    "char": "衠",
+    "jyutping": "zeon1",
+    "tone": 1,
+    "frequency_rank": 1381
+  },
+  {
+    "char": "盦",
+    "jyutping": "am1",
+    "tone": 1,
+    "frequency_rank": 1382
+  },
+  {
+    "char": "螣",
+    "jyutping": "dak6",
+    "tone": 6,
+    "frequency_rank": 1383
+  },
+  {
+    "char": "縢",
+    "jyutping": "tang4",
+    "tone": 4,
+    "frequency_rank": 1384
+  },
+  {
+    "char": "鲭",
+    "jyutping": "cing1",
+    "tone": 1,
+    "frequency_rank": 1385
+  },
+  {
+    "char": "鲯",
+    "jyutping": "kei4",
+    "tone": 4,
+    "frequency_rank": 1386
+  },
+  {
+    "char": "鲰",
+    "jyutping": "zau1",
+    "tone": 1,
+    "frequency_rank": 1387
+  },
+  {
+    "char": "鲺",
+    "jyutping": "sat1",
+    "tone": 1,
+    "frequency_rank": 1388
+  },
+  {
+    "char": "鲹",
+    "jyutping": "sam1",
+    "tone": 1,
+    "frequency_rank": 1389
+  },
+  {
+    "char": "𫗴",
+    "jyutping": "zin1",
+    "tone": 1,
+    "frequency_rank": 1390
+  },
+  {
+    "char": "亸",
+    "jyutping": "do2",
+    "tone": 2,
+    "frequency_rank": 1391
+  },
+  {
+    "char": "癀",
+    "jyutping": "wong4",
+    "tone": 4,
+    "frequency_rank": 1392
+  },
+  {
+    "char": "瘭",
+    "jyutping": "biu1",
+    "tone": 1,
+    "frequency_rank": 1393
+  },
+  {
+    "char": "𬸦",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1394
+  },
+  {
+    "char": "羱",
+    "jyutping": "jyun4",
+    "tone": 4,
+    "frequency_rank": 1395
+  },
+  {
+    "char": "糒",
+    "jyutping": "bei6",
+    "tone": 6,
+    "frequency_rank": 1396
+  },
+  {
+    "char": "燋",
+    "jyutping": "ziu1",
+    "tone": 1,
+    "frequency_rank": 1397
+  },
+  {
+    "char": "熻",
+    "jyutping": "jap1",
+    "tone": 1,
+    "frequency_rank": 1398
+  },
+  {
+    "char": "燊",
+    "jyutping": "san1",
+    "tone": 1,
+    "frequency_rank": 1399
+  },
+  {
+    "char": "燚",
+    "jyutping": "jik6",
+    "tone": 6,
+    "frequency_rank": 1400
+  },
+  {
+    "char": "燏",
+    "jyutping": "wat6",
+    "tone": 6,
+    "frequency_rank": 1401
+  },
+  {
+    "char": "濩",
+    "jyutping": "wok6",
+    "tone": 6,
+    "frequency_rank": 1402
+  },
+  {
+    "char": "濋",
+    "jyutping": "co2",
+    "tone": 2,
+    "frequency_rank": 1403
+  },
+  {
+    "char": "澪",
+    "jyutping": "ling4",
+    "tone": 4,
+    "frequency_rank": 1404
+  },
+  {
+    "char": "澽",
+    "jyutping": "geoi6",
+    "tone": 6,
+    "frequency_rank": 1405
+  },
+  {
+    "char": "澴",
+    "jyutping": "waan4",
+    "tone": 4,
+    "frequency_rank": 1406
+  },
+  {
+    "char": "澭",
+    "jyutping": "jung1",
+    "tone": 1,
+    "frequency_rank": 1407
+  },
+  {
+    "char": "澼",
+    "jyutping": "pik1",
+    "tone": 1,
+    "frequency_rank": 1408
+  },
+  {
+    "char": "憷",
+    "jyutping": "co2",
+    "tone": 2,
+    "frequency_rank": 1409
+  },
+  {
+    "char": "憺",
+    "jyutping": "daam6",
+    "tone": 6,
+    "frequency_rank": 1410
+  },
+  {
+    "char": "懔",
+    "jyutping": "lam5",
+    "tone": 5,
+    "frequency_rank": 1411
+  },
+  {
+    "char": "黉",
+    "jyutping": "hung4",
+    "tone": 4,
+    "frequency_rank": 1412
+  },
+  {
+    "char": "嬛",
+    "jyutping": "waan4",
+    "tone": 4,
+    "frequency_rank": 1413
+  },
+  {
+    "char": "鹨",
+    "jyutping": "lau6",
+    "tone": 6,
+    "frequency_rank": 1414
+  },
+  {
+    "char": "翯",
+    "jyutping": "hok6",
+    "tone": 6,
+    "frequency_rank": 1415
+  },
+  {
+    "char": "𫄷",
+    "jyutping": "jik1",
+    "tone": 1,
+    "frequency_rank": 1416
+  },
+  {
+    "char": "璱",
+    "jyutping": "sat1",
+    "tone": 1,
+    "frequency_rank": 1417
+  },
+  {
+    "char": "𤩽",
+    "jyutping": "wun4",
+    "tone": 4,
+    "frequency_rank": 1418
+  },
+  {
+    "char": "璬",
+    "jyutping": "giu2",
+    "tone": 2,
+    "frequency_rank": 1419
+  },
+  {
+    "char": "璮",
+    "jyutping": "taan2",
+    "tone": 2,
+    "frequency_rank": 1420
+  },
+  {
+    "char": "髽",
+    "jyutping": "zaa1",
+    "tone": 1,
+    "frequency_rank": 1421
+  },
+  {
+    "char": "擿",
+    "jyutping": "tik1",
+    "tone": 1,
+    "frequency_rank": 1422
+  },
+  {
+    "char": "薿",
+    "jyutping": "ji5",
+    "tone": 5,
+    "frequency_rank": 1423
+  },
+  {
+    "char": "薸",
+    "jyutping": "piu1",
+    "tone": 1,
+    "frequency_rank": 1424
+  },
+  {
+    "char": "檑",
+    "jyutping": "leoi4",
+    "tone": 4,
+    "frequency_rank": 1425
+  },
+  {
+    "char": "櫆",
+    "jyutping": "fui1",
+    "tone": 1,
+    "frequency_rank": 1426
+  },
+  {
+    "char": "檞",
+    "jyutping": "gaai2",
+    "tone": 2,
+    "frequency_rank": 1427
+  },
+  {
+    "char": "醨",
+    "jyutping": "lei4",
+    "tone": 4,
+    "frequency_rank": 1428
+  },
+  {
+    "char": "繄",
+    "jyutping": "ji1",
+    "tone": 1,
+    "frequency_rank": 1429
+  },
+  {
+    "char": "磹",
+    "jyutping": "taam2",
+    "tone": 2,
+    "frequency_rank": 1430
+  },
+  {
+    "char": "磻",
+    "jyutping": "pun4",
+    "tone": 4,
+    "frequency_rank": 1431
+  },
+  {
+    "char": "瞫",
+    "jyutping": "sam2",
+    "tone": 2,
+    "frequency_rank": 1432
+  },
+  {
+    "char": "瞵",
+    "jyutping": "leon4",
+    "tone": 4,
+    "frequency_rank": 1433
+  },
+  {
+    "char": "蹐",
+    "jyutping": "zik3",
+    "tone": 3,
+    "frequency_rank": 1434
+  },
+  {
+    "char": "蟏",
+    "jyutping": "siu1",
+    "tone": 1,
+    "frequency_rank": 1435
+  },
+  {
+    "char": "㘎",
+    "jyutping": "haam3",
+    "tone": 3,
+    "frequency_rank": 1436
+  },
+  {
+    "char": "𬭳",
+    "jyutping": "hei2",
+    "tone": 2,
+    "frequency_rank": 1437
+  },
+  {
+    "char": "镤",
+    "jyutping": "pok3",
+    "tone": 3,
+    "frequency_rank": 1438
+  },
+  {
+    "char": "𬭶",
+    "jyutping": "hak1",
+    "tone": 1,
+    "frequency_rank": 1439
+  },
+  {
+    "char": "𫔍",
+    "jyutping": "faan4",
+    "tone": 4,
+    "frequency_rank": 1440
+  },
+  {
+    "char": "镥",
+    "jyutping": "lou5",
+    "tone": 5,
+    "frequency_rank": 1441
+  },
+  {
+    "char": "镨",
+    "jyutping": "pou2",
+    "tone": 2,
+    "frequency_rank": 1442
+  },
+  {
+    "char": "𬭸",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1443
+  },
+  {
+    "char": "𨱔",
+    "jyutping": "zeon1",
+    "tone": 1,
+    "frequency_rank": 1444
+  },
+  {
+    "char": "𬭼",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1445
+  },
+  {
+    "char": "𫔎",
+    "jyutping": "kyut3",
+    "tone": 3,
+    "frequency_rank": 1446
+  },
+  {
+    "char": "矰",
+    "jyutping": "zang1",
+    "tone": 1,
+    "frequency_rank": 1447
+  },
+  {
+    "char": "穙",
+    "jyutping": "buk6",
+    "tone": 6,
+    "frequency_rank": 1448
+  },
+  {
+    "char": "穜",
+    "jyutping": "tung4",
+    "tone": 4,
+    "frequency_rank": 1449
+  },
+  {
+    "char": "穟",
+    "jyutping": "seoi6",
+    "tone": 6,
+    "frequency_rank": 1450
+  },
+  {
+    "char": "簕",
+    "jyutping": "lak6",
+    "tone": 6,
+    "frequency_rank": 1451
+  },
+  {
+    "char": "簃",
+    "jyutping": "jyu4",
+    "tone": 4,
+    "frequency_rank": 1452
+  },
+  {
+    "char": "簏",
+    "jyutping": "luk1",
+    "tone": 1,
+    "frequency_rank": 1453
+  },
+  {
+    "char": "儦",
+    "jyutping": "biu1",
+    "tone": 1,
+    "frequency_rank": 1454
+  },
+  {
+    "char": "魋",
+    "jyutping": "teoi4",
+    "tone": 4,
+    "frequency_rank": 1455
+  },
+  {
+    "char": "斶",
+    "jyutping": "cuk1",
+    "tone": 1,
+    "frequency_rank": 1456
+  },
+  {
+    "char": "艚",
+    "jyutping": "cou4",
+    "tone": 4,
+    "frequency_rank": 1457
+  },
+  {
+    "char": "𬸪",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1458
+  },
+  {
+    "char": "谿",
+    "jyutping": "kai1",
+    "tone": 1,
+    "frequency_rank": 1459
+  },
+  {
+    "char": "䲠",
+    "jyutping": "ceon1",
+    "tone": 1,
+    "frequency_rank": 1460
+  },
+  {
+    "char": "𬶟",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1461
+  },
+  {
+    "char": "鲾",
+    "jyutping": "bik1",
+    "tone": 1,
+    "frequency_rank": 1462
+  },
+  {
+    "char": "𬶠",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1463
+  },
+  {
+    "char": "鲿",
+    "jyutping": "soeng4",
+    "tone": 4,
+    "frequency_rank": 1464
+  },
+  {
+    "char": "鳁",
+    "jyutping": "wan1",
+    "tone": 1,
+    "frequency_rank": 1465
+  },
+  {
+    "char": "鳂",
+    "jyutping": "wai1",
+    "tone": 1,
+    "frequency_rank": 1466
+  },
+  {
+    "char": "鳈",
+    "jyutping": "cyun4",
+    "tone": 4,
+    "frequency_rank": 1467
+  },
+  {
+    "char": "鳉",
+    "jyutping": "zoeng1",
+    "tone": 1,
+    "frequency_rank": 1468
+  },
+  {
+    "char": "獯",
+    "jyutping": "fan1",
+    "tone": 1,
+    "frequency_rank": 1469
+  },
+  {
+    "char": "䗪",
+    "jyutping": "ze3",
+    "tone": 3,
+    "frequency_rank": 1470
+  },
+  {
+    "char": "馘",
+    "jyutping": "gwok3",
+    "tone": 3,
+    "frequency_rank": 1471
+  },
+  {
+    "char": "襕",
+    "jyutping": "laan4",
+    "tone": 4,
+    "frequency_rank": 1472
+  },
+  {
+    "char": "襚",
+    "jyutping": "seoi6",
+    "tone": 6,
+    "frequency_rank": 1473
+  },
+  {
+    "char": "𬶨",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1474
+  },
+  {
+    "char": "螱",
+    "jyutping": "wai3",
+    "tone": 3,
+    "frequency_rank": 1475
+  },
+  {
+    "char": "甓",
+    "jyutping": "pik1",
+    "tone": 1,
+    "frequency_rank": 1476
+  },
+  {
+    "char": "嬬",
+    "jyutping": "jyu4",
+    "tone": 4,
+    "frequency_rank": 1477
+  },
+  {
+    "char": "嬥",
+    "jyutping": "tiu5",
+    "tone": 5,
+    "frequency_rank": 1478
+  },
+  {
+    "char": "𦈡",
+    "jyutping": "seoi1",
+    "tone": 1,
+    "frequency_rank": 1479
+  },
+  {
+    "char": "𫄸",
+    "jyutping": "fan1",
+    "tone": 1,
+    "frequency_rank": 1480
+  },
+  {
+    "char": "瓀",
+    "jyutping": "jyun5",
+    "tone": 5,
+    "frequency_rank": 1481
+  },
+  {
+    "char": "釐",
+    "jyutping": "lei4",
+    "tone": 4,
+    "frequency_rank": 1482
+  },
+  {
+    "char": "鬶",
+    "jyutping": "kwai1",
+    "tone": 1,
+    "frequency_rank": 1483
+  },
+  {
+    "char": "爇",
+    "jyutping": "jyut3",
+    "tone": 3,
+    "frequency_rank": 1484
+  },
+  {
+    "char": "鞳",
+    "jyutping": "taap3",
+    "tone": 3,
+    "frequency_rank": 1485
+  },
+  {
+    "char": "鞮",
+    "jyutping": "dai1",
+    "tone": 1,
+    "frequency_rank": 1486
+  },
+  {
+    "char": "𬟁",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1487
+  },
+  {
+    "char": "藟",
+    "jyutping": "leoi5",
+    "tone": 5,
+    "frequency_rank": 1488
+  },
+  {
+    "char": "藦",
+    "jyutping": "mo4",
+    "tone": 4,
+    "frequency_rank": 1489
+  },
+  {
+    "char": "藨",
+    "jyutping": "biu1",
+    "tone": 1,
+    "frequency_rank": 1490
+  },
+  {
+    "char": "鹲",
+    "jyutping": "mung4",
+    "tone": 4,
+    "frequency_rank": 1491
+  },
+  {
+    "char": "檫",
+    "jyutping": "caat3",
+    "tone": 3,
+    "frequency_rank": 1492
+  },
+  {
+    "char": "黡",
+    "jyutping": "jim2",
+    "tone": 2,
+    "frequency_rank": 1493
+  },
+  {
+    "char": "礞",
+    "jyutping": "mung4",
+    "tone": 4,
+    "frequency_rank": 1494
+  },
+  {
+    "char": "礌",
+    "jyutping": "leoi6",
+    "tone": 6,
+    "frequency_rank": 1495
+  },
+  {
+    "char": "𥖨",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1496
+  },
+  {
+    "char": "蹢",
+    "jyutping": "zaak6",
+    "tone": 6,
+    "frequency_rank": 1497
+  },
+  {
+    "char": "蹜",
+    "jyutping": "suk1",
+    "tone": 1,
+    "frequency_rank": 1498
+  },
+  {
+    "char": "蟫",
+    "jyutping": "jam4",
+    "tone": 4,
+    "frequency_rank": 1499
+  },
+  {
+    "char": "䗴",
+    "jyutping": "ting4",
+    "tone": 4,
+    "frequency_rank": 1500
+  },
+  {
+    "char": "嚚",
+    "jyutping": "ngan4",
+    "tone": 4,
+    "frequency_rank": 1501
+  },
+  {
+    "char": "髃",
+    "jyutping": "jyu4",
+    "tone": 4,
+    "frequency_rank": 1502
+  },
+  {
+    "char": "镮",
+    "jyutping": "waan4",
+    "tone": 4,
+    "frequency_rank": 1503
+  },
+  {
+    "char": "镱",
+    "jyutping": "ji3",
+    "tone": 3,
+    "frequency_rank": 1504
+  },
+  {
+    "char": "酂",
+    "jyutping": "zaan3",
+    "tone": 3,
+    "frequency_rank": 1505
+  },
+  {
+    "char": "馧",
+    "jyutping": "wan1",
+    "tone": 1,
+    "frequency_rank": 1506
+  },
+  {
+    "char": "簠",
+    "jyutping": "fu2",
+    "tone": 2,
+    "frequency_rank": 1507
+  },
+  {
+    "char": "簝",
+    "jyutping": "liu4",
+    "tone": 4,
+    "frequency_rank": 1508
+  },
+  {
+    "char": "簰",
+    "jyutping": "paai4",
+    "tone": 4,
+    "frequency_rank": 1509
+  },
+  {
+    "char": "鼫",
+    "jyutping": "sek6",
+    "tone": 6,
+    "frequency_rank": 1510
+  },
+  {
+    "char": "鼩",
+    "jyutping": "keoi4",
+    "tone": 4,
+    "frequency_rank": 1511
+  },
+  {
+    "char": "皦",
+    "jyutping": "giu2",
+    "tone": 2,
+    "frequency_rank": 1512
+  },
+  {
+    "char": "臑",
+    "jyutping": "naau6",
+    "tone": 6,
+    "frequency_rank": 1513
+  },
+  {
+    "char": "䲢",
+    "jyutping": "tang4",
+    "tone": 4,
+    "frequency_rank": 1514
+  },
+  {
+    "char": "鳑",
+    "jyutping": "pong4",
+    "tone": 4,
+    "frequency_rank": 1515
+  },
+  {
+    "char": "鳒",
+    "jyutping": "gim1",
+    "tone": 1,
+    "frequency_rank": 1516
+  },
+  {
+    "char": "鹱",
+    "jyutping": "wok3",
+    "tone": 3,
+    "frequency_rank": 1517
+  },
+  {
+    "char": "鹯",
+    "jyutping": "zin1",
+    "tone": 1,
+    "frequency_rank": 1518
+  },
+  {
+    "char": "癗",
+    "jyutping": "leoi5",
+    "tone": 5,
+    "frequency_rank": 1519
+  },
+  {
+    "char": "𦒍",
+    "jyutping": "tung4",
+    "tone": 4,
+    "frequency_rank": 1520
+  },
+  {
+    "char": "旞",
+    "jyutping": "seoi6",
+    "tone": 6,
+    "frequency_rank": 1521
+  },
+  {
+    "char": "翷",
+    "jyutping": "leon4",
+    "tone": 4,
+    "frequency_rank": 1522
+  },
+  {
+    "char": "冁",
+    "jyutping": "cin2",
+    "tone": 2,
+    "frequency_rank": 1523
+  },
+  {
+    "char": "䎖",
+    "jyutping": "zang1",
+    "tone": 1,
+    "frequency_rank": 1524
+  },
+  {
+    "char": "瀔",
+    "jyutping": "guk1",
+    "tone": 1,
+    "frequency_rank": 1525
+  },
+  {
+    "char": "瀍",
+    "jyutping": "cin4",
+    "tone": 4,
+    "frequency_rank": 1526
+  },
+  {
+    "char": "瀌",
+    "jyutping": "biu1",
+    "tone": 1,
+    "frequency_rank": 1527
+  },
+  {
+    "char": "襜",
+    "jyutping": "cim1",
+    "tone": 1,
+    "frequency_rank": 1528
+  },
+  {
+    "char": "䴙",
+    "jyutping": "pik1",
+    "tone": 1,
+    "frequency_rank": 1529
+  },
+  {
+    "char": "𬙊",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1530
+  },
+  {
+    "char": "嚭",
+    "jyutping": "pei2",
+    "tone": 2,
+    "frequency_rank": 1531
+  },
+  {
+    "char": "㰀",
+    "jyutping": "lai4",
+    "tone": 4,
+    "frequency_rank": 1532
+  },
+  {
+    "char": "鬷",
+    "jyutping": "zung1",
+    "tone": 1,
+    "frequency_rank": 1533
+  },
+  {
+    "char": "醭",
+    "jyutping": "buk6",
+    "tone": 6,
+    "frequency_rank": 1534
+  },
+  {
+    "char": "蹯",
+    "jyutping": "faan4",
+    "tone": 4,
+    "frequency_rank": 1535
+  },
+  {
+    "char": "蠋",
+    "jyutping": "zuk1",
+    "tone": 1,
+    "frequency_rank": 1536
+  },
+  {
+    "char": "翾",
+    "jyutping": "hyun1",
+    "tone": 1,
+    "frequency_rank": 1537
+  },
+  {
+    "char": "鳘",
+    "jyutping": "man5",
+    "tone": 5,
+    "frequency_rank": 1538
+  },
+  {
+    "char": "儳",
+    "jyutping": "caam3",
+    "tone": 3,
+    "frequency_rank": 1539
+  },
+  {
+    "char": "儴",
+    "jyutping": "joeng4",
+    "tone": 4,
+    "frequency_rank": 1540
+  },
+  {
+    "char": "鼗",
+    "jyutping": "tou4",
+    "tone": 4,
+    "frequency_rank": 1541
+  },
+  {
+    "char": "𬶭",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1542
+  },
+  {
+    "char": "𩾌",
+    "jyutping": "hong1",
+    "tone": 1,
+    "frequency_rank": 1543
+  },
+  {
+    "char": "鳚",
+    "jyutping": "wai3",
+    "tone": 3,
+    "frequency_rank": 1544
+  },
+  {
+    "char": "鳛",
+    "jyutping": "zaap6",
+    "tone": 6,
+    "frequency_rank": 1545
+  },
+  {
+    "char": "麑",
+    "jyutping": "ngai4",
+    "tone": 4,
+    "frequency_rank": 1546
+  },
+  {
+    "char": "麖",
+    "jyutping": "ging1",
+    "tone": 1,
+    "frequency_rank": 1547
+  },
+  {
+    "char": "蠃",
+    "jyutping": "lo2",
+    "tone": 2,
+    "frequency_rank": 1548
+  },
+  {
+    "char": "彟",
+    "jyutping": "wok6",
+    "tone": 6,
+    "frequency_rank": 1549
+  },
+  {
+    "char": "嬿",
+    "jyutping": "jin2",
+    "tone": 2,
+    "frequency_rank": 1550
+  },
+  {
+    "char": "鬒",
+    "jyutping": "can2",
+    "tone": 2,
+    "frequency_rank": 1551
+  },
+  {
+    "char": "蘘",
+    "jyutping": "joeng4",
+    "tone": 4,
+    "frequency_rank": 1552
+  },
+  {
+    "char": "欂",
+    "jyutping": "bok3",
+    "tone": 3,
+    "frequency_rank": 1553
+  },
+  {
+    "char": "醵",
+    "jyutping": "geoi6",
+    "tone": 6,
+    "frequency_rank": 1554
+  },
+  {
+    "char": "颥",
+    "jyutping": "jyu4",
+    "tone": 4,
+    "frequency_rank": 1555
+  },
+  {
+    "char": "甗",
+    "jyutping": "jin5",
+    "tone": 5,
+    "frequency_rank": 1556
+  },
+  {
+    "char": "𨟠",
+    "jyutping": "hyun1",
+    "tone": 1,
+    "frequency_rank": 1557
+  },
+  {
+    "char": "巇",
+    "jyutping": "hei1",
+    "tone": 1,
+    "frequency_rank": 1558
+  },
+  {
+    "char": "酅",
+    "jyutping": "kwai4",
+    "tone": 4,
+    "frequency_rank": 1559
+  },
+  {
+    "char": "髎",
+    "jyutping": "liu4",
+    "tone": 4,
+    "frequency_rank": 1560
+  },
+  {
+    "char": "犨",
+    "jyutping": "cau4",
+    "tone": 4,
+    "frequency_rank": 1561
+  },
+  {
+    "char": "𬶮",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1562
+  },
+  {
+    "char": "𨭉",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1563
+  },
+  {
+    "char": "㸌",
+    "jyutping": "fok3",
+    "tone": 3,
+    "frequency_rank": 1564
+  },
+  {
+    "char": "爔",
+    "jyutping": "hei1",
+    "tone": 1,
+    "frequency_rank": 1565
+  },
+  {
+    "char": "瀱",
+    "jyutping": "gai3",
+    "tone": 3,
+    "frequency_rank": 1566
+  },
+  {
+    "char": "瀹",
+    "jyutping": "joek6",
+    "tone": 6,
+    "frequency_rank": 1567
+  },
+  {
+    "char": "瀼",
+    "jyutping": "joeng4",
+    "tone": 4,
+    "frequency_rank": 1568
+  },
+  {
+    "char": "瀵",
+    "jyutping": "fan3",
+    "tone": 3,
+    "frequency_rank": 1569
+  },
+  {
+    "char": "襫",
+    "jyutping": "sik1",
+    "tone": 1,
+    "frequency_rank": 1570
+  },
+  {
+    "char": "孅",
+    "jyutping": "cim1",
+    "tone": 1,
+    "frequency_rank": 1571
+  },
+  {
+    "char": "骦",
+    "jyutping": "soeng1",
+    "tone": 1,
+    "frequency_rank": 1572
+  },
+  {
+    "char": "𬙋",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1573
+  },
+  {
+    "char": "耰",
+    "jyutping": "jau1",
+    "tone": 1,
+    "frequency_rank": 1574
+  },
+  {
+    "char": "𤫉",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1575
+  },
+  {
+    "char": "瓖",
+    "jyutping": "soeng1",
+    "tone": 1,
+    "frequency_rank": 1576
+  },
+  {
+    "char": "鬘",
+    "jyutping": "maan4",
+    "tone": 4,
+    "frequency_rank": 1577
+  },
+  {
+    "char": "趯",
+    "jyutping": "tik1",
+    "tone": 1,
+    "frequency_rank": 1578
+  },
+  {
+    "char": "𬺓",
+    "jyutping": NaN,
+    "tone": 1,
+    "frequency_rank": 1579
+  },
+  {
+    "char": "罍",
+    "jyutping": "leoi4",
+    "tone": 4,
+    "frequency_rank": 1580
+  },
+  {
+    "char": "鼱",
+    "jyutping": "zing1",
+    "tone": 1,
+    "frequency_rank": 1581
+  },
+  {
+    "char": "鳠",
+    "jyutping": "wu6",
+    "tone": 6,
+    "frequency_rank": 1582
+  },
+  {
+    "char": "鳡",
+    "jyutping": "gam2",
+    "tone": 2,
+    "frequency_rank": 1583
+  },
+  {
+    "char": "鳣",
+    "jyutping": "zin1",
+    "tone": 1,
+    "frequency_rank": 1584
+  },
+  {
+    "char": "爟",
+    "jyutping": "gun3",
+    "tone": 3,
+    "frequency_rank": 1585
+  },
+  {
+    "char": "爚",
+    "jyutping": "joek6",
+    "tone": 6,
+    "frequency_rank": 1586
+  },
+  {
+    "char": "灈",
+    "jyutping": "keoi4",
+    "tone": 4,
+    "frequency_rank": 1587
+  },
+  {
+    "char": "韂",
+    "jyutping": "cim3",
+    "tone": 3,
+    "frequency_rank": 1588
+  },
+  {
+    "char": "糵",
+    "jyutping": "jit6",
+    "tone": 6,
+    "frequency_rank": 1589
+  },
+  {
+    "char": "蘼",
+    "jyutping": "mei4",
+    "tone": 4,
+    "frequency_rank": 1590
+  },
+  {
+    "char": "礵",
+    "jyutping": "soeng1",
+    "tone": 1,
+    "frequency_rank": 1591
+  },
+  {
+    "char": "鹴",
+    "jyutping": "soeng1",
+    "tone": 1,
+    "frequency_rank": 1592
+  },
+  {
+    "char": "躔",
+    "jyutping": "cin4",
+    "tone": 4,
+    "frequency_rank": 1593
+  },
+  {
+    "char": "皭",
+    "jyutping": "zoek3",
+    "tone": 3,
+    "frequency_rank": 1594
+  },
+  {
+    "char": "龢",
+    "jyutping": "wo4",
+    "tone": 4,
+    "frequency_rank": 1595
+  },
+  {
+    "char": "鳤",
+    "jyutping": "gun2",
+    "tone": 2,
+    "frequency_rank": 1596
+  },
+  {
+    "char": "亹",
+    "jyutping": "mei5",
+    "tone": 5,
+    "frequency_rank": 1597
+  },
+  {
+    "char": "籥",
+    "jyutping": "joek6",
+    "tone": 6,
+    "frequency_rank": 1598
+  },
+  {
+    "char": "鼷",
+    "jyutping": "hai4",
+    "tone": 4,
+    "frequency_rank": 1599
+  },
+  {
+    "char": "𫚭",
+    "jyutping": "lip6",
+    "tone": 6,
+    "frequency_rank": 1600
+  },
+  {
+    "char": "玃",
+    "jyutping": "fok3",
+    "tone": 3,
+    "frequency_rank": 1601
+  },
+  {
+    "char": "醾",
+    "jyutping": "mei4",
+    "tone": 4,
+    "frequency_rank": 1602
+  },
+  {
+    "char": "齇",
+    "jyutping": "zaa1",
+    "tone": 1,
+    "frequency_rank": 1603
+  },
+  {
+    "char": "觿",
+    "jyutping": "kwai4",
+    "tone": 4,
+    "frequency_rank": 1604
+  },
+  {
+    "char": "蠼",
+    "jyutping": "keoi4",
+    "tone": 4,
+    "frequency_rank": 1605
+  }
+]
