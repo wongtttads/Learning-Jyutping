@@ -1,0 +1,128 @@
+{
+  "totalCharacters": 8105,
+  "identifiedPolyphones": 17,
+  "existingPolyphones": 17,
+  "missingPolyphones": 0,
+  "polyphones": [
+    {
+      "character": "和",
+      "pronunciations": [
+        "wo4",
+        "wo6"
+      ]
+    },
+    {
+      "character": "中",
+      "pronunciations": [
+        "zung1",
+        "zung3"
+      ]
+    },
+    {
+      "character": "好",
+      "pronunciations": [
+        "hou2",
+        "hou3"
+      ]
+    },
+    {
+      "character": "着",
+      "pronunciations": [
+        "zoek6",
+        "zyu3"
+      ]
+    },
+    {
+      "character": "地",
+      "pronunciations": [
+        "dei6",
+        "di6"
+      ]
+    },
+    {
+      "character": "得",
+      "pronunciations": [
+        "dak1",
+        "dak6"
+      ]
+    },
+    {
+      "character": "只",
+      "pronunciations": [
+        "zi2",
+        "zek3"
+      ]
+    },
+    {
+      "character": "长",
+      "pronunciations": [
+        "coeng4",
+        "zoeng2"
+      ]
+    },
+    {
+      "character": "间",
+      "pronunciations": [
+        "gaan1",
+        "gaan3"
+      ]
+    },
+    {
+      "character": "便",
+      "pronunciations": [
+        "bin6",
+        "pin4"
+      ]
+    },
+    {
+      "character": "发",
+      "pronunciations": [
+        "faat3",
+        "faat1"
+      ]
+    },
+    {
+      "character": "行",
+      "pronunciations": [
+        "haang4",
+        "hong4"
+      ]
+    },
+    {
+      "character": "少",
+      "pronunciations": [
+        "siu2",
+        "siu3"
+      ]
+    },
+    {
+      "character": "相",
+      "pronunciations": [
+        "soeng1",
+        "seong3"
+      ]
+    },
+    {
+      "character": "重",
+      "pronunciations": [
+        "cung5",
+        "cung4"
+      ]
+    },
+    {
+      "character": "数",
+      "pronunciations": [
+        "sou3",
+        "suk6"
+      ]
+    },
+    {
+      "character": "乐",
+      "pronunciations": [
+        "lok6",
+        "ngok6"
+      ]
+    }
+  ],
+  "missing": []
+}
