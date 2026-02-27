@@ -60,6 +60,16 @@ class DataManager {
                 char_count: charCount
             });
         }
+        
+        // 添加多音字专栏
+        this.chapters.push({
+            id: 11,
+            title: "多音字专栏",
+            start_rank: 1,
+            end_rank: 100, // 估计值，实际会根据数据更新
+            char_count: 100 // 估计值，实际会根据数据更新
+        });
+        
         console.log('⚠️ 使用默认章节数据');
     }
 

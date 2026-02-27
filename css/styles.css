@@ -192,6 +192,122 @@ body {
     border-color: #667eea;
 }
 
+/* 方案A - 增加独立粤拼卡片 */
+.character-card-group {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.secondary-card {
+    background: linear-gradient(135deg, #f0f4ff 0%, #e6efff 100%);
+    border: 2px dashed #667eea;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.secondary-label {
+    font-size: 0.8rem;
+    color: #667eea;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.secondary-pinyin {
+    color: #764ba2;
+    font-size: 1.2rem;
+}
+
+/* 方案B - 卡片内部分区展示 */
+.primary-pinyin {
+    color: #667eea;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.secondary-pinyin {
+    color: #764ba2;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.pronunciation-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.primary-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.secondary-btn {
+    background: linear-gradient(135deg, #764ba2 0%, #f093fb 100%);
+}
+
+/* 方案C - 悬浮显示方案 */
+.character-card.has-secondary:hover .secondary-pinyin {
+    display: block !important;
+}
+
+.character-card.has-secondary:hover .secondary-btn {
+    display: inline-flex !important;
+}
+
+.character-card.has-secondary:hover .secondary-hint {
+    display: none !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.secondary-hint {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* 方案D - 标签切换方案 */
+.pinyin-tabs {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.tab {
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: #f0f0f0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.tab:hover {
+    background: #e0e0e0;
+}
+
+.tab.active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.pinyin-content {
+    position: relative;
+}
+
+.pinyin-panel {
+    display: none;
+}
+
+.pinyin-panel.active {
+    display: block;
+}
+
 .character-char {
     font-size: 3.5rem;
     font-weight: bold;
@@ -271,6 +387,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    margin-bottom: 10px;
 }
 
 .pronunciation-btn:hover {
@@ -429,6 +546,38 @@ body {
     }
 }
 
+/* 多音字专用卡片样式 */
+.polyphone-card {
+    min-height: 380px;
+}
+
+.polyphone-card .pinyin-tabs {
+    margin-bottom: 15px;
+}
+
+.polyphone-card .tab {
+    font-size: 0.85rem;
+    padding: 6px 14px;
+}
+
+.polyphone-card .pinyin-panel {
+    min-height: 200px;
+}
+
+.polyphone-card .character-examples {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.polyphone-card .examples-list {
+    gap: 6px;
+}
+
+.polyphone-card .example-word {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+}
+
 @media (max-width: 768px) {
     .app {
         padding: 10px;
@@ -471,5 +620,23 @@ body {
 
     .character-pinyin {
         font-size: 1.1rem;
+    }
+
+    .polyphone-card {
+        min-height: 320px;
+    }
+
+    .polyphone-card .pinyin-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .polyphone-card .tab {
+        width: 100%;
+        text-align: center;
+    }
+
+    .polyphone-card .pinyin-panel {
+        min-height: 180px;
     }
 }

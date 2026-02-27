@@ -1,0 +1,342 @@
+[
+  {
+    "char": "和",
+    "jyutping": "wo4",
+    "tone": 4,
+    "frequency_rank": 6,
+    "wordfreq_score": 0.00724,
+    "secondary_jyutping": "wo6",
+    "examples": {
+      "primary": [
+        "和平",
+        "和谐",
+        "和你"
+      ],
+      "secondary": [
+        "暖和",
+        "和面",
+        "和稀泥"
+      ]
+    }
+  },
+  {
+    "char": "中",
+    "jyutping": "zung1",
+    "tone": 1,
+    "frequency_rank": 15,
+    "wordfreq_score": 0.00447,
+    "secondary_jyutping": "zung3",
+    "examples": {
+      "primary": [
+        "中国",
+        "中间",
+        "中心"
+      ],
+      "secondary": [
+        "中奖",
+        "中暑",
+        "中毒"
+      ]
+    }
+  },
+  {
+    "char": "好",
+    "jyutping": "hou2",
+    "tone": 2,
+    "frequency_rank": 46,
+    "wordfreq_score": 0.00174,
+    "secondary_jyutping": "hou3",
+    "examples": {
+      "primary": [
+        "好人",
+        "好事",
+        "好看"
+      ],
+      "secondary": [
+        "好学",
+        "好强",
+        "好胜"
+      ]
+    }
+  },
+  {
+    "char": "着",
+    "jyutping": "zoek6",
+    "tone": 6,
+    "frequency_rank": 50,
+    "wordfreq_score": 0.00166,
+    "secondary_jyutping": "zyu3",
+    "examples": {
+      "primary": [
+        "看着",
+        "听着",
+        "说着"
+      ],
+      "secondary": [
+        "穿着",
+        "着装",
+        "着陆"
+      ]
+    }
+  },
+  {
+    "char": "地",
+    "jyutping": "dei6",
+    "tone": 6,
+    "frequency_rank": 64,
+    "wordfreq_score": 0.0012,
+    "secondary_jyutping": "di6",
+    "examples": {
+      "primary": [
+        "地方",
+        "地球",
+        "地面"
+      ],
+      "secondary": [
+        "慢慢地",
+        "轻轻地",
+        "悄悄地"
+      ]
+    }
+  },
+  {
+    "char": "得",
+    "jyutping": "dak1",
+    "tone": 1,
+    "frequency_rank": 71,
+    "wordfreq_score": 0.0011,
+    "secondary_jyutping": "dak6",
+    "examples": {
+      "primary": [
+        "得到",
+        "得分",
+        "得体"
+      ],
+      "secondary": [
+        "跑得快",
+        "做得好",
+        "说得对"
+      ]
+    }
+  },
+  {
+    "char": "只",
+    "jyutping": "zi2",
+    "tone": 2,
+    "frequency_rank": 82,
+    "wordfreq_score": 0.000871,
+    "secondary_jyutping": "zek3",
+    "examples": {
+      "primary": [
+        "只有",
+        "只是",
+        "只要"
+      ],
+      "secondary": [
+        "一只",
+        "只身",
+        "只言片语"
+      ]
+    }
+  },
+  {
+    "char": "长",
+    "jyutping": "coeng4",
+    "tone": 4,
+    "frequency_rank": 103,
+    "wordfreq_score": 0.000589,
+    "secondary_jyutping": "zoeng2",
+    "examples": {
+      "primary": [
+        "长度",
+        "长期",
+        "长河"
+      ],
+      "secondary": [
+        "长大",
+        "长高",
+        "成长"
+      ]
+    }
+  },
+  {
+    "char": "间",
+    "jyutping": "gaan1",
+    "tone": 1,
+    "frequency_rank": 157,
+    "wordfreq_score": 0.000339,
+    "secondary_jyutping": "gaan3",
+    "examples": {
+      "primary": [
+        "房间",
+        "时间",
+        "中间"
+      ],
+      "secondary": [
+        "间隔",
+        "间隙",
+        "间断"
+      ]
+    }
+  },
+  {
+    "char": "便",
+    "jyutping": "bin6",
+    "tone": 6,
+    "frequency_rank": 158,
+    "wordfreq_score": 0.000339,
+    "secondary_jyutping": "pin4",
+    "examples": {
+      "primary": [
+        "便利",
+        "方便",
+        "便捷"
+      ],
+      "secondary": [
+        "便宜",
+        "便便",
+        "便饭"
+      ]
+    }
+  },
+  {
+    "char": "发",
+    "jyutping": "faat3",
+    "tone": 3,
+    "frequency_rank": 160,
+    "wordfreq_score": 0.000331,
+    "secondary_jyutping": "faat1",
+    "examples": {
+      "primary": [
+        "发展",
+        "发生",
+        "发现"
+      ],
+      "secondary": [
+        "头发",
+        "毛发",
+        "发型"
+      ]
+    }
+  },
+  {
+    "char": "行",
+    "jyutping": "haang4",
+    "tone": 4,
+    "frequency_rank": 191,
+    "wordfreq_score": 0.000269,
+    "secondary_jyutping": "hong4",
+    "examples": {
+      "primary": [
+        "行动",
+        "行业",
+        "行走"
+      ],
+      "secondary": [
+        "银行",
+        "行列",
+        "行距"
+      ]
+    }
+  },
+  {
+    "char": "少",
+    "jyutping": "siu2",
+    "tone": 2,
+    "frequency_rank": 251,
+    "wordfreq_score": 0.000166,
+    "secondary_jyutping": "siu3",
+    "examples": {
+      "primary": [
+        "少数",
+        "少年",
+        "少女"
+      ],
+      "secondary": [
+        "多少",
+        "减少",
+        "缺少"
+      ]
+    }
+  },
+  {
+    "char": "相",
+    "jyutping": "soeng1",
+    "tone": 1,
+    "frequency_rank": 293,
+    "wordfreq_score": 0.000145,
+    "secondary_jyutping": "seong3",
+    "examples": {
+      "primary": [
+        "相信",
+        "相互",
+        "相处"
+      ],
+      "secondary": [
+        "相貌",
+        "相片",
+        "长相"
+      ]
+    }
+  },
+  {
+    "char": "重",
+    "jyutping": "cung5",
+    "tone": 5,
+    "frequency_rank": 312,
+    "wordfreq_score": 0.000129,
+    "secondary_jyutping": "cung4",
+    "examples": {
+      "primary": [
+        "重要",
+        "重量",
+        "重点"
+      ],
+      "secondary": [
+        "重复",
+        "重新",
+        "重叠"
+      ]
+    }
+  },
+  {
+    "char": "数",
+    "jyutping": "sou3",
+    "tone": 3,
+    "frequency_rank": 315,
+    "wordfreq_score": 0.000126,
+    "secondary_jyutping": "suk6",
+    "examples": {
+      "primary": [
+        "数字",
+        "数学",
+        "数量"
+      ],
+      "secondary": [
+        "数数",
+        "数不胜数",
+        "数不清"
+      ]
+    }
+  },
+  {
+    "char": "乐",
+    "jyutping": "lok6",
+    "tone": 6,
+    "frequency_rank": 531,
+    "wordfreq_score": 0.0000603,
+    "secondary_jyutping": "ngok6",
+    "examples": {
+      "primary": [
+        "快乐",
+        "乐意",
+        "乐事"
+      ],
+      "secondary": [
+        "音乐",
+        "乐器",
+        "乐章"
+      ]
+    }
+  }
+]

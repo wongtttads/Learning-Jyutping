@@ -491,28 +491,40 @@ class UIRenderer {
             console.log(`   ${index + 1}. ${char.char} - 排名: ${char.frequency_rank}`);
         });
 
-        const html = sortedCharacters.map(char => {
-            const frequencyLevel = this.getFrequencyLevel(char.frequency_rank);
-            const examples = this.getCharacterExamples(char.char);
-            return `
-                <div class="character-card" data-char="${char.char}" data-pinyin="${char.jyutping}">
-                    <div class="character-char">${char.char}</div>
-                    <div class="character-pinyin">${char.jyutping}</div>
-                    <div class="character-rank">排名: ${char.frequency_rank}</div>
-                    <div class="character-frequency">频率: ${frequencyLevel}</div>
-                    <button class="pronunciation-btn" data-char="${char.char}" data-pinyin="${char.jyutping}">
-                        <i class="fas fa-volume-up"></i>
-                        <span>朗读</span>
-                    </button>
-                    <div class="character-examples">
-                        <div class="examples-title">常用例词:</div>
-                        <div class="examples-list">
-                            ${examples.map(example => `<span class="example-word">${example}</span>`).join('')}
-                        </div>
-                    </div>
-                </div>
-            `;
-        }).join('');
+        // 检查是否是多音字章节
+        const isPolyphoneChapter = chapterTitle === '多音字专栏';
+        
+        let html;
+        
+        if (isPolyphoneChapter) {
+            // 使用多音字专用卡片
+            html = sortedCharacters.map(char => {
+                const frequencyLevel = this.getFrequencyLevel(char.frequency_rank);
+                return this.renderPolyphoneCard(char, frequencyLevel);
+            }).join('');
+        } else {
+            // 使用普通卡片
+            const displayScheme = window.config ? window.config.displayScheme : 3;
+            
+            html = sortedCharacters.map(char => {
+                const frequencyLevel = this.getFrequencyLevel(char.frequency_rank);
+                const examples = this.getCharacterExamples(char.char);
+                const hasSecondaryJyutping = char.secondary_jyutping && char.secondary_jyutping !== '';
+                
+                switch (displayScheme) {
+                    case 1: // 方案A - 增加独立粤拼卡片
+                        return this.renderSchemeA(char, frequencyLevel, examples, hasSecondaryJyutping);
+                    case 2: // 方案B - 卡片内部分区展示
+                        return this.renderSchemeB(char, frequencyLevel, examples, hasSecondaryJyutping);
+                    case 3: // 方案C - 悬浮显示方案
+                        return this.renderSchemeC(char, frequencyLevel, examples, hasSecondaryJyutping);
+                    case 4: // 方案D - 标签切换方案
+                        return this.renderSchemeD(char, frequencyLevel, examples, hasSecondaryJyutping);
+                    default:
+                        return this.renderSchemeC(char, frequencyLevel, examples, hasSecondaryJyutping);
+                }
+            }).join('');
+        }
 
         this.charactersGrid.innerHTML = html;
 
@@ -524,6 +536,202 @@ class UIRenderer {
                 this.onPronunciationClick(char, pinyin, btn);
             });
         });
+    }
+
+    // 方案A - 增加独立粤拼卡片
+    renderSchemeA(char, frequencyLevel, examples, hasSecondaryJyutping) {
+        const baseCard = `
+            <div class="character-card" data-char="${char.char}" data-pinyin="${char.jyutping}">
+                <div class="character-char">${char.char}</div>
+                <div class="character-pinyin">${char.jyutping}</div>
+                <div class="character-rank">排名: ${char.frequency_rank}</div>
+                <div class="character-frequency">频率: ${frequencyLevel}</div>
+                <button class="pronunciation-btn" data-char="${char.char}" data-pinyin="${char.jyutping}">
+                    <i class="fas fa-volume-up"></i>
+                    <span>朗读</span>
+                </button>
+                <div class="character-examples">
+                    <div class="examples-title">常用例词:</div>
+                    <div class="examples-list">
+                        ${examples.map(example => `<span class="example-word">${example}</span>`).join('')}
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        if (hasSecondaryJyutping) {
+            return `
+                <div class="character-card-group">
+                    ${baseCard}
+                    <div class="character-card secondary-card" data-char="${char.char}" data-pinyin="${char.secondary_jyutping}">
+                        <div class="character-char">${char.char}</div>
+                        <div class="character-pinyin secondary-pinyin">${char.secondary_jyutping}</div>
+                        <div class="secondary-label">第二发音</div>
+                        <button class="pronunciation-btn" data-char="${char.char}" data-pinyin="${char.secondary_jyutping}">
+                            <i class="fas fa-volume-up"></i>
+                            <span>朗读</span>
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+        return baseCard;
+    }
+
+    // 方案B - 卡片内部分区展示
+    renderSchemeB(char, frequencyLevel, examples, hasSecondaryJyutping) {
+        let pinyinHtml = `<div class="character-pinyin primary-pinyin">${char.jyutping}</div>`;
+        if (hasSecondaryJyutping) {
+            pinyinHtml += `<div class="character-pinyin secondary-pinyin">${char.secondary_jyutping}</div>`;
+        }
+        
+        return `
+            <div class="character-card" data-char="${char.char}" data-pinyin="${char.jyutping}">
+                <div class="character-char">${char.char}</div>
+                ${pinyinHtml}
+                <div class="character-rank">排名: ${char.frequency_rank}</div>
+                <div class="character-frequency">频率: ${frequencyLevel}</div>
+                <div class="pronunciation-buttons">
+                    <button class="pronunciation-btn primary-btn" data-char="${char.char}" data-pinyin="${char.jyutping}">
+                        <i class="fas fa-volume-up"></i>
+                        <span>朗读</span>
+                    </button>
+                    ${hasSecondaryJyutping ? `
+                        <button class="pronunciation-btn secondary-btn" data-char="${char.char}" data-pinyin="${char.secondary_jyutping}">
+                            <i class="fas fa-volume-up"></i>
+                            <span>朗读</span>
+                        </button>
+                    ` : ''}
+                </div>
+                <div class="character-examples">
+                    <div class="examples-title">常用例词:</div>
+                    <div class="examples-list">
+                        ${examples.map(example => `<span class="example-word">${example}</span>`).join('')}
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    // 方案C - 悬浮显示方案
+    renderSchemeC(char, frequencyLevel, examples, hasSecondaryJyutping) {
+        let pinyinHtml = `<div class="character-pinyin primary-pinyin">${char.jyutping}</div>`;
+        if (hasSecondaryJyutping) {
+            pinyinHtml += `<div class="character-pinyin secondary-pinyin hidden">${char.secondary_jyutping}</div>`;
+        }
+        
+        return `
+            <div class="character-card ${hasSecondaryJyutping ? 'has-secondary' : ''}" data-char="${char.char}" data-pinyin="${char.jyutping}">
+                <div class="character-char">${char.char}</div>
+                ${pinyinHtml}
+                <div class="character-rank">排名: ${char.frequency_rank}</div>
+                <div class="character-frequency">频率: ${frequencyLevel}</div>
+                <button class="pronunciation-btn" data-char="${char.char}" data-pinyin="${char.jyutping}">
+                    <i class="fas fa-volume-up"></i>
+                    <span>朗读</span>
+                </button>
+                ${hasSecondaryJyutping ? `
+                    <button class="pronunciation-btn secondary-btn hidden" data-char="${char.char}" data-pinyin="${char.secondary_jyutping}">
+                        <i class="fas fa-volume-up"></i>
+                        <span>朗读</span>
+                    </button>
+                    <div class="secondary-hint">悬停查看第二发音</div>
+                ` : ''}
+                <div class="character-examples">
+                    <div class="examples-title">常用例词:</div>
+                    <div class="examples-list">
+                        ${examples.map(example => `<span class="example-word">${example}</span>`).join('')}
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    // 方案D - 标签切换方案
+    renderSchemeD(char, frequencyLevel, examples, hasSecondaryJyutping) {
+        return `
+            <div class="character-card" data-char="${char.char}" data-pinyin="${char.jyutping}">
+                <div class="character-char">${char.char}</div>
+                ${hasSecondaryJyutping ? `
+                    <div class="pinyin-tabs">
+                        <div class="tab active" data-tab="primary">发音1</div>
+                        <div class="tab" data-tab="secondary">发音2</div>
+                    </div>
+                ` : ''}
+                <div class="pinyin-content">
+                    <div class="pinyin-panel active" id="primary-${char.char}">
+                        <div class="character-pinyin">${char.jyutping}</div>
+                        <button class="pronunciation-btn" data-char="${char.char}" data-pinyin="${char.jyutping}">
+                            <i class="fas fa-volume-up"></i>
+                            <span>朗读</span>
+                        </button>
+                    </div>
+                    ${hasSecondaryJyutping ? `
+                        <div class="pinyin-panel" id="secondary-${char.char}">
+                            <div class="character-pinyin">${char.secondary_jyutping}</div>
+                            <button class="pronunciation-btn" data-char="${char.char}" data-pinyin="${char.secondary_jyutping}">
+                                <i class="fas fa-volume-up"></i>
+                                <span>朗读</span>
+                            </button>
+                        </div>
+                    ` : ''}
+                </div>
+                <div class="character-rank">排名: ${char.frequency_rank}</div>
+                <div class="character-frequency">频率: ${frequencyLevel}</div>
+                <div class="character-examples">
+                    <div class="examples-title">常用例词:</div>
+                    <div class="examples-list">
+                        ${examples.map(example => `<span class="example-word">${example}</span>`).join('')}
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    // 多音字专用卡片渲染
+    renderPolyphoneCard(char, frequencyLevel) {
+        const primaryExamples = char.examples?.primary || ["暂无例词", "暂无例词", "暂无例词"];
+        const secondaryExamples = char.examples?.secondary || ["暂无例词", "暂无例词", "暂无例词"];
+        
+        return `
+            <div class="character-card polyphone-card" data-char="${char.char}" data-pinyin="${char.jyutping}">
+                <div class="character-char">${char.char}</div>
+                <div class="pinyin-tabs">
+                    <div class="tab active" data-tab="primary">主要读音</div>
+                    <div class="tab" data-tab="secondary">次要读音</div>
+                </div>
+                <div class="pinyin-content">
+                    <div class="pinyin-panel active" id="primary-${char.char}">
+                        <div class="character-pinyin primary-pinyin">${char.jyutping}</div>
+                        <button class="pronunciation-btn" data-char="${char.char}" data-pinyin="${char.jyutping}">
+                            <i class="fas fa-volume-up"></i>
+                            <span>朗读</span>
+                        </button>
+                        <div class="character-examples">
+                            <div class="examples-title">典型例词:</div>
+                            <div class="examples-list">
+                                ${primaryExamples.map(example => `<span class="example-word">${example}</span>`).join('')}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pinyin-panel" id="secondary-${char.char}">
+                        <div class="character-pinyin secondary-pinyin">${char.secondary_jyutping}</div>
+                        <button class="pronunciation-btn" data-char="${char.char}" data-pinyin="${char.secondary_jyutping}">
+                            <i class="fas fa-volume-up"></i>
+                            <span>朗读</span>
+                        </button>
+                        <div class="character-examples">
+                            <div class="examples-title">典型例词:</div>
+                            <div class="examples-list">
+                                ${secondaryExamples.map(example => `<span class="example-word">${example}</span>`).join('')}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="character-rank">排名: ${char.frequency_rank}</div>
+                <div class="character-frequency">频率: ${frequencyLevel}</div>
+            </div>
+        `;
     }
 
     showChaptersView() {

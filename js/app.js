@@ -77,11 +77,43 @@ class App {
             window.uiRenderer.renderCharacters(characters, chapter.title);
             window.uiRenderer.showChapterView();
             window.uiRenderer.hideLoading();
+            
+            // 为标签切换方案添加事件监听器
+            this.setupTabEventListeners();
         } catch (error) {
             console.error('❌ 章节加载失败:', error);
             window.uiRenderer.hideLoading();
             this.showError('章节内容加载失败');
         }
+    }
+
+    setupTabEventListeners() {
+        // 为标签切换方案添加事件监听器
+        const tabs = document.querySelectorAll('.tab');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const parentCard = tab.closest('.character-card');
+                const tabsContainer = parentCard.querySelector('.pinyin-tabs');
+                const contentContainer = parentCard.querySelector('.pinyin-content');
+                
+                // 移除所有标签的active类
+                tabsContainer.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                // 添加当前标签的active类
+                tab.classList.add('active');
+                
+                // 隐藏所有内容面板
+                contentContainer.querySelectorAll('.pinyin-panel').forEach(panel => {
+                    panel.classList.remove('active');
+                });
+                // 显示当前标签对应的内容面板
+                const tabId = tab.dataset.tab;
+                const char = parentCard.dataset.char;
+                const targetPanel = contentContainer.querySelector(`#${tabId}-${char}`);
+                if (targetPanel) {
+                    targetPanel.classList.add('active');
+                }
+            });
+        });
     }
 
     async playPronunciation(char, pinyin, button) {
