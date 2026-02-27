@@ -692,6 +692,8 @@ class UIRenderer {
     renderPolyphoneCard(char, frequencyLevel) {
         const primaryExamples = char.examples?.primary || ["暂无例词", "暂无例词", "暂无例词"];
         const secondaryExamples = char.examples?.secondary || ["暂无例词", "暂无例词", "暂无例词"];
+        const primaryDefinition = char.definitions?.primary || "暂无释义";
+        const secondaryDefinition = char.definitions?.secondary || "暂无释义";
         
         return `
             <div class="character-card polyphone-card" data-char="${char.char}" data-pinyin="${char.jyutping}">
@@ -703,6 +705,7 @@ class UIRenderer {
                 <div class="pinyin-content">
                     <div class="pinyin-panel active" id="primary-${char.char}">
                         <div class="character-pinyin primary-pinyin">${char.jyutping}</div>
+                        <div class="character-definition">${primaryDefinition}</div>
                         <button class="pronunciation-btn" data-char="${char.char}" data-pinyin="${char.jyutping}">
                             <i class="fas fa-volume-up"></i>
                             <span>朗读</span>
@@ -716,6 +719,7 @@ class UIRenderer {
                     </div>
                     <div class="pinyin-panel" id="secondary-${char.char}">
                         <div class="character-pinyin secondary-pinyin">${char.secondary_jyutping}</div>
+                        <div class="character-definition">${secondaryDefinition}</div>
                         <button class="pronunciation-btn" data-char="${char.char}" data-pinyin="${char.secondary_jyutping}">
                             <i class="fas fa-volume-up"></i>
                             <span>朗读</span>
