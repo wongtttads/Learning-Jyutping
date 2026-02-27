@@ -209,7 +209,52 @@ body {
 .character-rank {
     font-size: 0.9rem;
     color: #999;
+    margin-bottom: 8px;
+    background: #f0f0f0;
+    padding: 4px 12px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.character-frequency {
+    font-size: 0.9rem;
+    color: #667eea;
     margin-bottom: 15px;
+}
+
+.character-examples {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.examples-title {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.examples-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.example-word {
+    background: #f0f0f0;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #333;
+    border: 1px solid #e0e0e0;
+    transition: all 0.2s ease;
+}
+
+.example-word:hover {
+    background: #e0e0e0;
+    transform: translateY(-2px);
 }
 
 .pronunciation-btn {
